@@ -7,6 +7,12 @@
 {
     "name":"pkg_projets",
     "titre":"Gestion des projets",
+    "ordre": 3
+}
+,
+{
+    "name":"PkgBlog",
+    "titre":"Gestion de Blog",
     "ordre": 2
 }
 ]
