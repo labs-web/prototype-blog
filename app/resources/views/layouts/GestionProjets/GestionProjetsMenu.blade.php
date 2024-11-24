@@ -9,13 +9,13 @@
     </a>
     <ul class="nav nav-treeview">
         <li class="nav-item ">
-            <a href="{{ route('projets.index') }}" class="nav-link nav-link {{ Request::is('projets*') ? 'active' : '' }}">
+            <a href="#" class="nav-link nav-link {{ Request::is('projets*') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-table"></i>
                 <p>Projets</p>
             </a>
         </li>
         <li class="nav-item ">
-            <a href="{{ route('tags.index') }}" class="nav-link nav-link {{ Request::is('tags*') ? 'active' : '' }}">
+            <a href="#" class="nav-link nav-link {{ Request::is('tags*') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-tags"></i>
                 <p>Tags</p>
             </a>
