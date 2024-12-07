@@ -5,7 +5,9 @@
 namespace Modules\PkgBlog\Controllers;
 
 
-use App\Http\Controllers\AppBaseController;
+use Modules\Core\Controllers\AppBaseController;
+
+
 use Modules\PkgBlog\App\Requests\CategoryRequest;
 use Modules\PkgBlog\Repositories\CategoryRepository;
 use Illuminate\Http\Request;

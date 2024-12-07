@@ -2,7 +2,7 @@
 namespace Modules\PkgProjets\Repositories;
 
 use App\Models\GestionTasks\Task;
-use App\Repositories\BaseRepository;
+use Modules\Core\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
 use App\Exceptions\GestionTasks\ProjectAlreadyExistException;
 

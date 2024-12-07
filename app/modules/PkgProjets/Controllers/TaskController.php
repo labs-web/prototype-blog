@@ -8,7 +8,7 @@ use App\Models\GestionTasks\Task;
 use Illuminate\Http\Request;
 use App\Http\Requests\GestionTasks\taskRequest;
 use Modules\PkgProjets\Repositories\TaskRepository;
-use App\Http\Controllers\AppBaseController;
+use Modules\Core\Controllers\AppBaseController;
 use Carbon\Carbon;
 use App\Exports\GestionTasks\taskExport;
 use Maatwebsite\Excel\Facades\Excel;

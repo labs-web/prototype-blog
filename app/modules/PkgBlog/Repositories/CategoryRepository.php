@@ -6,7 +6,8 @@
 namespace Modules\PkgBlog\Repositories;
 
 use Modules\PkgBlog\Models\Category;
-use App\Repositories\BaseRepository;
+use Modules\Core\Repositories\BaseRepository;
+
 
 /**
  * Classe CategoryRepository pour gérer la persistance de l'entité Category.

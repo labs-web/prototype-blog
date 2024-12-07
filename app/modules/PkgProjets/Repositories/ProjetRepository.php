@@ -2,7 +2,7 @@
 namespace Modules\PkgProjets\Repositories;
 
 use Modules\PkgProjets\Models\Projet;
-use App\Repositories\BaseRepository;
+use Modules\Core\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
 use Modules\PkgProjets\App\Exceptions\ProjectAlreadyExistException;
 use Modules\PkgProjets\Models\Tag;

@@ -9,7 +9,7 @@ use Modules\PkgProjets\Models\Projet;
 use Illuminate\Http\Request;
 use Modules\PkgProjets\App\Requests\projetRequest;
 use Modules\PkgProjets\Repositories\ProjetRepository;
-use App\Http\Controllers\AppBaseController;
+use Modules\Core\Controllers\AppBaseController;
 use Carbon\Carbon;
 use Modules\PkgProjets\App\Exports\projetExport;
 use Modules\PkgProjets\App\Requests\tagRequest;
