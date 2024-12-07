@@ -1,0 +1,65 @@
+classDiagram
+    class User {
+        - id: int
+        - name: string
+        - email: string
+        - password: string
+        - created_at: timestamp
+        - updated_at: timestamp
+        + articles(): Article[]
+        + comments(): Comment[]
+    }
+
+    class Article {
+        - id: int
+        - title: string
+        - content: text
+        - user_id: int
+        - category_id: int
+        - created_at: timestamp
+        - updated_at: timestamp
+        + user(): User
+        + category(): Category
+        + comments(): Comment[]
+        + tags(): Tag[]
+    }
+
+    class Category {
+        - id: int
+        - name: string
+        - slug: string
+        - created_at: timestamp
+        - updated_at: timestamp
+        + articles(): Article[]
+    }
+
+    class Tag {
+        - id: int
+        - name: string
+        - slug: string
+        - created_at: timestamp
+        - updated_at: timestamp
+        + articles(): Article[]
+    }
+
+    class Comment {
+        - id: int
+        - content: text
+        - user_id: int
+        - article_id: int
+        - created_at: timestamp
+        - updated_at: timestamp
+        + user(): User
+        + article(): Article
+    }
+
+    %% Relations
+    User "1" --> "many" Article : hasMany
+    User "1" --> "many" Comment : hasMany
+    Article "many" --> "1" User : belongsTo
+    Article "many" --> "1" Category : belongsTo
+    Article "1" --> "many" Comment : hasMany
+    Article "many" --> "many" Tag : belongsToMany
+    Category "1" --> "many" Article : hasMany
+    Comment "many" --> "1" User : belongsTo
+    Comment "many" --> "1" Article : belongsTo
