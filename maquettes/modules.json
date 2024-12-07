@@ -1,0 +1,11 @@
+[ 
+    {
+    "name":"PkgBlog",
+    "titre":"Blog"
+    
+},
+    {
+        "name":"pkg_autorisation",
+        "titre":"Gestion des Autorisation"
+    }
+  ]
