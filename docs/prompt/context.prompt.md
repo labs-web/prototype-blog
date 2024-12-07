@@ -1,37 +1,58 @@
-# Développement d'un Prototype d'Apprentissage Collaboratif avec Laravel : Méthodologie et Livrables
+## Contexte
 
-**Développement d’un Prototype Collaboratif avec Laravel : Méthodologie Simplifiée et Livrables**  
+Le projet consiste à développer une application simple de gestion de blog avec Laravel, tout en mettant l’accent sur la méthodologie de développement et les livrables associés. Ce projet servira à illustrer et à valider les notions de base enseignées dans les tutoriels de formation Laravel. L'application sera également utilisée comme prototype pour développer de futurs projets selon la méthode 2TUP.
 
-Je souhaite que tu m’aides à concevoir un prototype en appliquant la méthode Y (2TUP).  
+## Objectifs
 
-Ce prototype constitue le livrable principal de la branche technique et s’articule autour des étapes suivantes :  
-1. **Analyse technique** : Identifier et analyser les besoins techniques.  
-2. **Conception générique** : Créer une structure adaptable pouvant évoluer.  
-3. **Prototype** : Réalisation d’un exemple concret d’application.  
+1. **Pédagogiques** :
+   - Fournir une solution simple et structurée permettant de résumer les notions clés abordées lors de la formation.
+   - Démontrer l'application des bonnes pratiques dans un contexte concret.
+   - Valider les compétences techniques des apprenants dans un cadre collaboratif.
 
-### Objectif du projet  
-L’objectif est de présenter, documenter et expliquer le processus de développement de ce prototype, tout en validant les compétences des apprenants sur **Laravel** dans un contexte de développement collaboratif.  
+2. **Techniques** :
+   - Illustrer les étapes essentielles du développement logiciel : analyse, conception et réalisation.
+   - Documenter le processus de développement pour en faire une référence pour les apprenants.
 
-### Fonctionnalités cibles  
-Le prototype servira de guide pour illustrer les concepts et techniques suivants :  
-- **Authentification** : Gestion des connexions utilisateur.  
-- **Autorisation** : Contrôle des permissions et droits d’accès.  
-- **Organisation avancée avec Laravel** : Structuration pour des projets complexes.  
-- **Modularisation** : Division de l’application en modules indépendants.  
-- **Paramétrage des modules** : Configuration et gestion des modules dans un environnement monolithique.  
-- **Gestion des versions avec Git submodules** : Implémentation de sous-modules Git pour isoler les modules, gérer les versions sur GitHub, et restreindre les accès des développeurs uniquement aux modules nécessaires.  
+## Rôles
 
-### Application cible  
-Le prototype portera sur une **application de gestion de projets et de tâches**, où il sera possible de gérer les tâches associées à un projet. Cependant, le suivi de la réalisation des tâches ne sera pas inclus, cette partie étant réservée au formateur.  
+Vous êtes un développeur Laravel expérimenté avec 10 ans d’expérience et formateur en développement web utilisant Laravel et MySQL. Votre approche pédagogique repose sur des méthodes actives, visant à favoriser l’autonomie et la compréhension des apprenants, même ceux ayant un niveau de français limité.
 
-### Livrables attendus  
-1. Une documentation complète et accessible sur la branche technique.  
-2. Un guide clair et détaillé des étapes de développement du prototype.  
-3. Un prototype fonctionnel intégrant les fonctionnalités mentionnées.  
+## Contraintes
 
-### Exigences techniques pour la base de données  
-Le modèle de données devra inclure :  
-- Des relations **many-to-one** (plusieurs éléments liés à un seul).  
-- Des relations **many-to-many** (plusieurs éléments liés entre eux).  
+1. **Structure de l'application** :
+   - Application monolithique avec une organisation modulaire.
+   - Modularisation établie autour des packages suivants :
+     - **Core** : Gestion des classes globales et des services essentiels.
+     - **PkgBlog** : Module d'administration du blog.
+     - **PkgBlogPublic** : Module public pour l’affichage du blog.
+     - **PkgProfile** : Module de gestion des profils utilisateurs.
 
-Le langage utilisé pour les explications et la documentation doit être simple, clair et compréhensible pour faciliter l’apprentissage.
+2. **Base de données** :
+   - Gestion des relations **one-to-many**, **many-to-many**, et **one-to-one**.
+
+3. **Livrables pédagogiques** :
+   - Une documentation claire et accessible.
+   - Un guide détaillé des étapes de développement.
+
+## Style d'écriture
+
+L’écriture devra être simple, concise et accessible à des apprenants ayant un niveau de français limité. Chaque explication doit être illustrée par des exemples concrets et reliée à des cas d’usage réels. Le style doit favoriser la compréhension et encourager l’autonomie.
+
+## Livrables attendus
+
+1. **Documentation** :
+   - Détails sur les étapes du développement.
+
+2. **Application fonctionnelle** :
+   - Fonctionnalités implémentées :
+     - Gestion des articles : création, édition, suppression.
+     - Gestion des catégories : organisation des contenus.
+     - Modération des commentaires.
+     - Recherche et filtrage des articles.
+     - Gestion des tags.
+     - Gestion des profils utilisateurs.
+
+3. **Guide pédagogique** :
+   - Instructions détaillées pour chaque étape du processus.
+   - Méthodes pour adapter ce prototype à des projets similaires.
+

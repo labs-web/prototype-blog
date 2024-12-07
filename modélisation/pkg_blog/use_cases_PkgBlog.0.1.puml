@@ -1,0 +1,57 @@
+@startuml
+
+left to right direction
+
+actor "Utilisateur non authentifié" as UserNA
+actor "Utilisateur authentifié" as UserA
+actor "Administrateur" as Admin
+UserA --> UserNA
+Admin --> UserA
+
+
+
+package "PkgBlogPublic" {
+
+usecase UC1 as "Consulter les articles"
+usecase UC2 as "Rechercher des articles"
+usecase UC3 as "Filtrer les articles par catégorie"
+usecase UC4 as "Publier un commentaire"
+usecase UC5 as "Modifier un commentaire"
+
+
+}  
+
+
+package "PkgBlog" {
+
+usecase UC7 as "Modérer les commentaires"
+usecase UC8 as "Gérer les articles"
+usecase UC10 as "Gérerles catégories"
+usecase UC11 as "Gérerles tags"
+usecase UC9 as "Consulter les statistiques"
+
+}  
+
+package "PkgProfile" {
+
+usecase UC6 as "Créer et gérer un compte utilisateur"
+
+} 
+ 
+UserNA -- UC1
+UserNA -- UC2
+UserNA -- UC3
+
+UserA -- UC5
+UserA -- UC6
+UserA -- UC4
+
+Admin -- UC1
+Admin -- UC7
+Admin -- UC8
+Admin -- UC9
+Admin -- UC10
+Admin -- UC11
+
+
+@enduml
