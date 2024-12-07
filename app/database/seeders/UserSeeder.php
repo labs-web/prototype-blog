@@ -16,13 +16,13 @@ class UserSeeder extends Seeder
         $users = [
             [
                 'name' => 'membre',
-                'email' => 'membre@gmail.com',
+                'email' => 'membre@solicode.co',
                 'password' => 'membre',
                 'role' => User::MEMBRE,
             ],
             [
                 'name' => 'admin',
-                'email' => 'admin@gmail.com',
+                'email' => 'admin@solicode.co',
                 'password' => 'admin',
                 'role' => User::ADMIN,
             ],
