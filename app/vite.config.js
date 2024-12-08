@@ -18,4 +18,10 @@ export default defineConfig({
           ])
     
     ],
+    build: {
+        sourcemap: true, // Générer les sourcemaps pour le débogage
+    },
+    server: {
+        port: 3000, // Assurez-vous que le port correspond à celui que vous utiliserez dans le débogueur
+    },
 });

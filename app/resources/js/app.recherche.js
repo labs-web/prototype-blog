@@ -1,4 +1,8 @@
 
+import $ from 'admin-lte/plugins/jquery/jquery.min.js';
+import { showLoading } from './app.loading';
+
+
 $(document).ready(function () {
 
     // 
@@ -63,9 +67,6 @@ $(document).ready(function () {
                 );
             }
         }
-
-
- origin/develop-pkg_rh
     }
 
     function getUrlParameter(name) {
@@ -117,3 +118,5 @@ $(document).ready(function () {
 
     $(".dropdown-toggle").dropdown();
 });
+
+
