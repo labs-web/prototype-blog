@@ -106,18 +106,16 @@ abstract class BaseRepository implements RepositoryInterface
         return $query;
     }
 
-    /**
+    /** 
      * Effectue une recherche basée sur des critères spécifiques.
-     *
-     * @param array $searchableData Données de recherche.
-     * @param int $perPage Nombre d'éléments par page.
-     * @return void
+     * Essayer d'utiliser this.paginate();
      */
-    public function searchData($searchableData, $perPage = 0)
-    {   
-        if ($perPage == 0) { $perPage = $this->paginationLimit;}
-        $query =  $this->allQuery($searchableData);
-    }
+    // public function searchData($searchableData, $perPage = 0)
+    // {   
+    //     if ($perPage == 0) { $perPage = $this->paginationLimit;}
+    //     $query =  $this->allQuery($searchableData);
+    //     return $query->get();;
+    // }
 
     /**
      * Renvoie tous les éléments correspondants aux critères donnés.

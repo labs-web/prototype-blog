@@ -28,9 +28,10 @@ class CategoryController extends AppBaseController
     {
         if ($request->ajax()) {
             $searchValue = $request->get('searchValue');
+            $page = $request->get('page');
             if ($searchValue !== '') {
                 $searchQuery = str_replace(' ', '%', $searchValue);
-                $data = $this->categoryRepository->searchData($searchQuery);
+                $data = $this->categoryRepository->paginate($searchQuery);
                 return view('PkgBlog::category.index', compact('data'))->render();
             }
         }
