@@ -1,6 +1,6 @@
 {{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
 
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('title', __('app.edit') . ' ' . __('PkgBlog::category.singular'))
 
 @section('content')

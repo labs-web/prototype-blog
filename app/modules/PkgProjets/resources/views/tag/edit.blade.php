@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('title', __('app.edit') . ' ' . __('PkgProjets::tag.singular'))
 
 @section('content')

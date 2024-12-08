@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('title', __('app.add') . ' ' . __('GestionTasks/task/message.titre'))
 @section('content')
     <div class="content-header">

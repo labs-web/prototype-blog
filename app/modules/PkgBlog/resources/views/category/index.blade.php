@@ -1,6 +1,6 @@
 {{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
 
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('title', curd_index_title('PkgBlog::category'))
 @section('content')
     <div class="content-header">

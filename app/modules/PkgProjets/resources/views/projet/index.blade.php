@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('title',curd_index_title('PkgProjets::projet'))
 @section('content')
     <div class="content-header">

@@ -1,6 +1,6 @@
 {{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
 
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('title', __('app.show') . ' ' . __('PkgBlog::category.singular'))
 @section('content')
     <div class="content-header">
