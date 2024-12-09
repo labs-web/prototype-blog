@@ -36,8 +36,7 @@ class CategoryController extends AdminController
             }
         }
 
-        $data = null;
-        //  $data = $this->categoryRepository->paginate();
+        $data = $this->categoryRepository->paginate();
         return view('PkgBlog::category.index', compact('data'));
     }
 
