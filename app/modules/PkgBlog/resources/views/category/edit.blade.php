@@ -1,7 +1,7 @@
 {{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
 
 @extends('layouts.admin')
-@section('title', __('app.edit') . ' ' . __('PkgBlog::category.singular'))
+@section('title', __('Core::app.edit') . ' ' . __('PkgBlog::category.singular'))
 
 @section('content')
     <div class="content-header">
@@ -14,7 +14,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="nav-icon fas fa-table"></i>
-                                {{ __('app.edit') }}
+                                {{ __('Core::app.edit') }}
                             </h3>
                         </div>
                         <!-- Inclure le formulaire -->

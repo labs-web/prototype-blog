@@ -59,9 +59,9 @@ class ProjetController extends AdminController
         try {
             $validatedData = $request->validated();
             $this->projectRepository->create($validatedData);
-            return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('app.addSucées'));
+            return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('Core::app.addSucées'));
         } catch (ProjectAlreadyExistException $e) {
-            return back()->withInput()->withErrors(['project_exists' => __('PkgProjets::projet.singular') . ' ' . __('app.existdeja')]);
+            return back()->withInput()->withErrors(['project_exists' => __('PkgProjets::projet.singular') . ' ' . __('Core::app.existdeja')]);
         } catch (\Exception $e) {
             return abort(500);
         }
@@ -90,14 +90,14 @@ class ProjetController extends AdminController
     {
         $validatedData = $request->validated();
         $this->projectRepository->update($id, $validatedData);
-        return redirect()->route('projets.index', $id)->with('success', __('PkgProjets::projet.singular') . ' ' . __('app.updateSucées'));
+        return redirect()->route('projets.index', $id)->with('success', __('PkgProjets::projet.singular') . ' ' . __('Core::app.updateSucées'));
     }
 
 
     public function destroy(string $id)
     {
         $this->projectRepository->destroy($id);
-        return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('app.deleteSucées'));
+        return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('Core::app.deleteSucées'));
     }
 
 
@@ -120,6 +120,6 @@ class ProjetController extends AdminController
         } catch (\InvalidArgumentException $e) {
             return redirect()->route('projets.index')->withError('Le symbole de séparation est introuvable. Pas assez de données disponibles pour satisfaire au format.');
         }
-        return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('app.addSucées'));
+        return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('Core::app.addSucées'));
     }
 }

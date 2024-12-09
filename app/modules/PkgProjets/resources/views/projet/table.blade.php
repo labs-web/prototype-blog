@@ -3,9 +3,9 @@
         <thead>
             <tr>
                 <th>{{ __('PkgProjets::projet.singular') }}</th>
-                <th>{{ __('app.description') }}</th>
+                <th>{{ __('Core::app.description') }}</th>
                 <th>{{ __('PkgProjets::tag.plural') }}</th>
-                <th class="text-center">{{ __('app.action') }}</th>
+                <th class="text-center">{{ __('Core::app.action') }}</th>
             </tr>
         </thead>
         <tbody>
@@ -58,7 +58,7 @@
                 @csrf
                 <label for="upload" class="btn btn-default btn-sm font-weight-normal">
                     <i class="fas fa-file-download"></i>
-                    {{ __('app.import') }}
+                    {{ __('Core::app.import') }}
                 </label>
                 <input type="file" id="upload" name="file" style="display:none;" onchange="submitForm()" />
             </form>
@@ -67,7 +67,7 @@
             <form class="">
                 <a href="{{ route('projets.export') }}" class="btn btn-default btn-sm mt-0 mx-2">
                     <i class="fas fa-file-export"></i>
-                    {{ __('app.export') }}</a>
+                    {{ __('Core::app.export') }}</a>
             </form>
         @endcan
     </div>

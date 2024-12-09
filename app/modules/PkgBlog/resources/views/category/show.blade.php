@@ -1,18 +1,18 @@
 {{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
 
 @extends('layouts.admin')
-@section('title', __('app.show') . ' ' . __('PkgBlog::category.singular'))
+@section('title', __('Core::app.show') . ' ' . __('PkgBlog::category.singular'))
 @section('content')
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>{{ __('app.detail') }}</h1>
+                    <h1>{{ __('Core::app.detail') }}</h1>
                 </div>
                 <div class="col-sm-6">
                     <a href="{{ route('categories.edit', $item->id) }}" class="btn btn-default float-right">
                         <i class="far fa-edit"></i>
-                        {{ __('app.edit') }}
+                        {{ __('Core::app.edit') }}
                     </a>
                 </div>
             </div>

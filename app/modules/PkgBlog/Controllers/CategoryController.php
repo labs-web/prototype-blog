@@ -55,7 +55,7 @@ class CategoryController extends AdminController
     {
         $validatedData = $request->validated();
         $this->categoryRepository->create($validatedData);
-        return redirect()->route('categories.index')->with('success', __('app.addSuccess'));
+        return redirect()->route('categories.index')->with('success', __('Core::app.addSuccess'));
     }
 
     public function show(string $id)
@@ -74,13 +74,13 @@ class CategoryController extends AdminController
     {
         $validatedData = $request->validated();
         $this->categoryRepository->update($id, $validatedData);
-        return redirect()->route('categories.index')->with('success', __('app.updateSuccess'));
+        return redirect()->route('categories.index')->with('success', __('Core::app.updateSuccess'));
     }
 
     public function destroy(string $id)
     {
         $this->categoryRepository->destroy($id);
-        return redirect()->route('categories.index')->with('success', __('app.deleteSuccess'));
+        return redirect()->route('categories.index')->with('success', __('Core::app.deleteSuccess'));
     }
 
     public function export()
@@ -100,6 +100,6 @@ class CategoryController extends AdminController
             return redirect()->route('categories.index')->withError('Invalid format or missing data.');
         }
 
-        return redirect()->route('categories.index')->with('success', __('app.importSuccess'));
+        return redirect()->route('categories.index')->with('success', __('Core::app.importSuccess'));
     }
 }

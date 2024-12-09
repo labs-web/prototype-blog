@@ -52,7 +52,7 @@ class TagController extends AdminController
         try {
             $validatedData = $request->validated();
             $this->tagRepository->create($validatedData);
-            return redirect()->route('tags.index')->with('success', __('PkgProjets::tag.singular') . ' ' . __('app.addSucées'));
+            return redirect()->route('tags.index')->with('success', __('PkgProjets::tag.singular') . ' ' . __('Core::app.addSucées'));
         } catch (ProjectAlreadyExistException $e) {
             return back()->withInput()->withErrors(['tag_exists' => __('PkgProjets::projet/message.createProjectException')]);
         } catch (\Exception $e) {
@@ -79,7 +79,7 @@ class TagController extends AdminController
     {
         $validatedData = $request->validated();
         $this->tagRepository->update($id, $validatedData);
-        return redirect()->route('tags.index', $id)->with('success', __('PkgProjets::tag.singular') . ' ' . __('app.updateSucées'));
+        return redirect()->route('tags.index', $id)->with('success', __('PkgProjets::tag.singular') . ' ' . __('Core::app.updateSucées'));
     }
 
 

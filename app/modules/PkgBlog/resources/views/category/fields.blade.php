@@ -16,7 +16,7 @@
                     <span class="text-danger">*</span>
                 
             </label>
-            <input name="name" type="input" class="form-control" id="name" placeholder="Entrez name"
+            <input name="name" type="input" class="form-control" id="name" placeholder="Entrez {{__('PkgBlog::category.name')}}"
                 value="{{ $item ? $item->name : old('name') }}">
             @error('name')
                 <div class="text-danger">{{ $message }}</div>
@@ -28,7 +28,7 @@
                 {{ ucfirst(__('PkgBlog::category.description')) }}
                 
             </label>
-            <input name="description" type="input" class="form-control" id="description" placeholder="Entrez description"
+            <input name="description" type="input" class="form-control" id="description" placeholder="Entrez {{__('PkgBlog::category.description')}}"
                 value="{{ $item ? $item->description : old('description') }}">
             @error('description')
                 <div class="text-danger">{{ $message }}</div>
@@ -38,7 +38,7 @@
     </div>
 
     <div class="card-footer">
-        <a href="{{ route('categories.index') }}" class="btn btn-default">{{ __('app.cancel') }}</a>
-        <button type="submit" class="btn btn-info ml-2">{{ $item->id ? __('app.edit') : __('app.add') }}</button>
+        <a href="{{ route('categories.index') }}" class="btn btn-default">{{ __('Core::app.cancel') }}</a>
+        <button type="submit" class="btn btn-info ml-2">{{ $item->id ? __('Core::app.edit') : __('Core::app.add') }}</button>
     </div>
 </form>

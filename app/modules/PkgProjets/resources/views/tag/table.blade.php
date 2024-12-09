@@ -2,9 +2,9 @@
     <table class="table table-striped text-nowrap">
         <thead>
             <tr>
-                <th>{{ __('app.name') }}</th>
-                <th>{{ __('app.description') }}</th>
-                <th class="text-center">{{ __('app.action') }}</th>
+                <th>{{ __('Core::app.name') }}</th>
+                <th>{{ __('Core::app.description') }}</th>
+                <th class="text-center">{{ __('Core::app.action') }}</th>
             </tr>
         </thead>
         <tbody>

@@ -18,7 +18,7 @@
                 <div class="col-sm-6">
                     <h1>
                          @php
-                            title(__('app.list'), __('GestionTasks/task/message.titre'), Config::get('app.locale') );
+                            title(__('Core::app.list'), __('GestionTasks/task/message.titre'), Config::get('app.locale') );
                         @endphp
                     </h1>
                 </div>
@@ -27,7 +27,7 @@
                     <div class="float-sm-right">
                         <a href="{{ route('tasks.create') }}" class="btn btn-info">
                             <i class="fas fa-plus"></i>
-                            {{ __('app.add') }} {{ __('GestionTasks/task/message.titre') }}
+                            {{ __('Core::app.add') }} {{ __('GestionTasks/task/message.titre') }}
                         </a>
                     </div>
                 </div>
