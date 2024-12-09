@@ -5,7 +5,7 @@
 namespace Modules\PkgBlog\Controllers;
 
 
-use Modules\Core\Controllers\AppBaseController;
+use Modules\Core\Controllers\AdminController;
 
 
 use Modules\PkgBlog\App\Requests\CategoryRequest;
@@ -15,7 +15,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use Modules\PkgBlog\App\Exports\CategoryExport;
 use Modules\PkgBlog\App\Imports\CategoryImport;
 
-class CategoryController extends AppBaseController
+class CategoryController extends AdminController
 {
     protected $categoryRepository;
 

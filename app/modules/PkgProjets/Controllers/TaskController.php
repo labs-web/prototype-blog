@@ -8,12 +8,12 @@ use App\Models\GestionTasks\Task;
 use Illuminate\Http\Request;
 use App\Http\Requests\GestionTasks\taskRequest;
 use Modules\PkgProjets\Repositories\TaskRepository;
-use Modules\Core\Controllers\AppBaseController;
+use Modules\Core\Controllers\AdminController;
 use Carbon\Carbon;
 use App\Exports\GestionTasks\taskExport;
 use Maatwebsite\Excel\Facades\Excel;
 
-class TaskController extends AppBaseController
+class TaskController extends AdminController
 {
     protected $projectRepository;
     public function __construct(TaskRepository $taskRepository)

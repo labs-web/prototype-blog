@@ -9,13 +9,13 @@ use Modules\PkgProjets\Models\Projet;
 use Illuminate\Http\Request;
 use Modules\PkgProjets\App\Requests\projetRequest;
 use Modules\PkgProjets\Repositories\ProjetRepository;
-use Modules\Core\Controllers\AppBaseController;
+use Modules\Core\Controllers\AdminController;
 use Carbon\Carbon;
 use Modules\PkgProjets\App\Exports\projetExport;
 use Modules\PkgProjets\Repositories\TagRepository;
 use Maatwebsite\Excel\Facades\Excel;
 
-class ProjetController extends AppBaseController
+class ProjetController extends AdminController
 {
     protected $projectRepository;
     public function __construct(ProjetRepository $projetRepository)
