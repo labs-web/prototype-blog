@@ -49,7 +49,9 @@
                                 </div>
                             </div>
                         </div>
-                        @include('PkgBlog::category.table')
+                        <div id="data-container">
+                            @include('PkgBlog::category.table')
+                        </div>
                     </div>
                 </div>
             </div>

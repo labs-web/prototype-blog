@@ -63,7 +63,7 @@ export function setupSearchHandler() {
 // Met à jour un paramètre dans l'URL
 function updateURLParameter(param, value) {
     const url = new URL(window.location.href);
-    if (value === undefined || value === null) {
+    if (value === undefined || value === null || value === "" ) {
         url.searchParams.delete(param);
     } else {
         url.searchParams.set(param, value);
@@ -90,11 +90,8 @@ function fetchData(page = 1, searchValue = "") {
         $.ajax({
             url,
             method: "GET",
-            success(data) {
-                const newData = $(data);
-                $("tbody").html(newData.find("tbody").html());
-                $("#card-footer").html(newData.find("#card-footer").html());
-                $(".pagination").html(newData.find(".pagination").html() || "");
+            success(response) {
+                $('#data-container').html(response.html);
                 hideLoading();
             },
             error(xhr, status, errorThrown) {

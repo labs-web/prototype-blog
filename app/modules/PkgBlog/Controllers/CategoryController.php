@@ -26,19 +26,24 @@ class CategoryController extends AdminController
 
     public function index(Request $request)
     {
+        // Récupérer la valeur de recherche et paginer
+        $searchValue = $request->get('searchValue', '');
+        $searchQuery = str_replace(' ', '%', $searchValue);
+    
+        // Appel de la méthode paginate avec ou sans recherche
+        $data = $this->categoryRepository->paginate($searchQuery);
+    
+        // Gestion AJAX
         if ($request->ajax()) {
-            $searchValue = $request->get('searchValue');
-            $page = $request->get('page');
-            if ($searchValue !== '') {
-                $searchQuery = str_replace(' ', '%', $searchValue);
-                $data = $this->categoryRepository->paginate($searchQuery);
-                return view('PkgBlog::category.index', compact('data'))->render();
-            }
+            return response()->json([
+                'html' => view('PkgBlog::category.table', compact('data'))->render()
+            ]);
         }
-
-        $data = $this->categoryRepository->paginate();
+    
+        // Vue principale pour le chargement initial
         return view('PkgBlog::category.index', compact('data'));
     }
+    
 
     public function create()
     {
