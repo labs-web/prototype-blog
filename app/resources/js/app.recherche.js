@@ -61,11 +61,18 @@ function fetchData(page = 1, searchValue = "") {
 // Initialise les gestionnaires d'événements
 export function setupSearchHandler() {
     $(document).ready(() => {
+
+         // Check if the element with the ID "crud_search_input" exists
+        if ($("#crud_search_input").length === 0) {
+            // If it doesn't exist, return early and do nothing
+            return;
+        }
+
         // Initialisation des paramètres à partir de l'URL
         const searchValue = getUrlParameter("searchValue");
         const page = getUrlParameter("page") || 1;
 
-        if (searchValue) $("#table_search").val(searchValue);
+        if (searchValue) $("#crud_search_input").val(searchValue);
 
         fetchData(page, searchValue);
 
@@ -76,13 +83,13 @@ export function setupSearchHandler() {
             const page = $(event.target).data("page") || $(event.target).attr("data-page") || $(event.target).text().trim();
 
 
-            const searchValue = $("#table_search").val();
+            const searchValue = $("#crud_search_input").val();
             fetchData(page, searchValue);
         });
 
         // Gestion des recherches
-        $("body").on("keyup", "#table_search", () => {
-            const searchValue = $("#table_search").val();
+        $("body").on("keyup", "#crud_search_input", () => {
+            const searchValue = $("#crud_search_input").val();
             if (searchValue === "") {
                 updateURLParameter("searchValue", undefined);
                 fetchData(1, "");

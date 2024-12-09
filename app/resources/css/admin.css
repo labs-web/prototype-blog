@@ -11,6 +11,7 @@
 @import 'admin-lte/plugins/daterangepicker/daterangepicker.css';
 @import 'admin-lte/plugins/summernote/summernote-bs4.min.css';
 @import 'admin-lte/plugins/select2/css/select2.min.css';
+@import './loading-spin';
 
 * {
     font-family: "Nunito", sans-serif;

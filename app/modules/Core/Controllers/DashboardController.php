@@ -2,6 +2,8 @@
 
 namespace Modules\Core\Controllers;
 
+use Modules\Core\Controllers\Base\AppController;
+
 /**
  * DashboardController est responsable de la gestion de la logique et des affichages liés au tableau de bord de l'application.
  * 
@@ -20,6 +22,6 @@ class DashboardController extends AppController
      */
     public function index()
     {
-        return view('dashboard.index'); // Charge la vue `dashboard/index.blade.php`.
+        return view('Core::dashboard.index'); // Charge la vue `dashboard/index.blade.php`.
     }
 }

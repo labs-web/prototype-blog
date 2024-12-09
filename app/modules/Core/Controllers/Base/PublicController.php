@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Core\Controllers;
+namespace Modules\Core\Controllers\Base;
 
 /**
  * PublicController est un contrôleur destiné aux fonctionnalités accessibles publiquement.

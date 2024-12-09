@@ -11,7 +11,7 @@
     <title>@yield('title')</title>
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/admin.css', 'resources/js/admin.js'])
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

@@ -5,10 +5,18 @@ import webfontDownload from 'vite-plugin-webfont-dl';
 export default defineConfig({
     plugins: [
         laravel({
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-            ],
+            input: {
+                // Fichiers pour la partie publique
+                public: [
+                    'resources/css/public.css',
+                    'resources/js/public.js',
+                ],
+                // Fichiers pour la partie admin
+                admin: [
+                    'resources/css/admin.css',
+                    'resources/js/admin.js',
+                ],
+            },
             refresh: true,
         }),
 

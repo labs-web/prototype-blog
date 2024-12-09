@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Core\Controllers;
+namespace Modules\Core\Controllers\Base;
 
 use App\Http\Controllers\Controller; // Importation du contrôleur de base de l'application Laravel.
 

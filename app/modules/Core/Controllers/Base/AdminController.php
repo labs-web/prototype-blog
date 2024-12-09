@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Core\Controllers;
+namespace Modules\Core\Controllers\Base;
 
 /**
  * AdminController est responsable de la gestion des fonctionnalités liées aux administrateurs.

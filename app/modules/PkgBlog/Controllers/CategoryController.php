@@ -5,8 +5,7 @@
 namespace Modules\PkgBlog\Controllers;
 
 
-use Modules\Core\Controllers\AdminController;
-
+use Modules\Core\Controllers\Base\AdminController;
 
 use Modules\PkgBlog\App\Requests\CategoryRequest;
 use Modules\PkgBlog\Repositories\CategoryRepository;

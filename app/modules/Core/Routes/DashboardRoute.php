@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Core\Controllers\AdminController;
-
+use Modules\Core\Controllers\DashboardController;
 
 Route::middleware('auth')->prefix('admin')->group(function () {
-    Route::get('/', [AdminController::class, 'index']);
+    Route::get('/', [DashboardController::class, 'index']);
 });

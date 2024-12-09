@@ -7,8 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title')</title>
-    
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Scripts -->
+    @vite(['resources/css/public.css', 'resources/js/public.js'])
 </head>
 <body class="bg-gray-100 text-gray-800">
   <!-- Header -->
@@ -20,6 +20,7 @@
           <li><a href="#" class="text-gray-600 hover:text-blue-500">Accueil</a></li>
           <li><a href="#" class="text-gray-600 hover:text-blue-500">Articles</a></li>
           <li><a href="#" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+          <li><a href="/admin/" class="text-gray-600 hover:text-blue-500">Admin</a></li>
         </ul>
       </nav>
     </div>

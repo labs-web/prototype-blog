@@ -2,6 +2,8 @@
 
 namespace Modules\Core\Controllers;
 
+use Modules\Core\Controllers\Base\PublicController;
+
 /**
  * HomeController est responsable de gérer la logique pour la page d'accueil de l'application.
  * 
