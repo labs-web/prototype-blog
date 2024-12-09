@@ -1,8 +1,8 @@
 <li class="nav-item">
-    <a href="{{ route('home') }}" class="nav-link {{ Request::is('home*') || Request::is('/') ? 'active' : '' }}">
+    <a href="{{ route('dashbaord') }}" class="nav-link {{ Request::is('admin*') || Request::is('/') ? 'active' : '' }}">
         <i class="nav-icon fas fa-home"></i>
         <p>
-            {{ __('app.home') }}
+            {{ __('Core::dashboard.title') }}
         </p>
     </a>
 </li>

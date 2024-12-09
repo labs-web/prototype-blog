@@ -87,16 +87,23 @@ export function setupSearchHandler() {
             fetchData(page, searchValue);
         });
 
-        // Gestion des recherches
+        // Ajout d'un délai pour limiter les requêtes envoyées au serveur
+        let debounceTimeout;
+
         $("body").on("keyup", "#crud_search_input", () => {
             const searchValue = $("#crud_search_input").val();
-            if (searchValue === "") {
-                updateURLParameter("searchValue", undefined);
-                fetchData(1, "");
-            } else {
-                fetchData(1, searchValue);
-            }
+
+            clearTimeout(debounceTimeout); // Annule le délai précédent
+            debounceTimeout = setTimeout(() => {
+                if (searchValue === "") {
+                    updateURLParameter("searchValue", undefined); // Réinitialise l'URL
+                    fetchData(1, ""); // Charge les données par défaut
+                } else {
+                    fetchData(1, searchValue); // Charge les données filtrées
+                }
+            }, 500); // Délais de 500ms avant la requête
         });
+
 
         // Gestion de l'import
         $(document).on("change", "#upload", () => {

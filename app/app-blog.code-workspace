@@ -9,6 +9,10 @@
 		{
 			"path": "./../docs/pkg_global",
 			"name": "docs/pkg_global"
+		},
+		{
+			"path": "./../prompts",
+
 		}
 	],
 	"settings": {}

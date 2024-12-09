@@ -1,93 +1,122 @@
 @extends('layouts.admin')
-@section('title', __('app.home'))
+
+
+@section('title', __('Core::dashboard.title'))
 
 @section('content')
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>{{ __('Statistiques') }}</h1>
-                </div>
+
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">{{__('Core::dashboard.title')}}</h1>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
             </div>
-        </div>
-    </div>
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-6">
+            <!-- /.content-header -->
 
-                    <div class="small-box bg-info">
-                        <div class="inner">
-                            <h3>23</h3>
-                            <p>{{ __('Projets') }}</p>
-
-@if ($errors->any())
-<div class="alert alert-danger">
-<ul>
-@foreach ($errors->all() as $error)
-<li>{{ $error }}</li>
-@endforeach
-
-</ul>
-</div>
-@endif
-
-</div>
-                        <div class="icon">
-                            <i class="ion ion-bag"></i>
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <!-- Overview boxes -->
+                    <div class="row">
+                        <!-- Box 1 -->
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-info">
+                                <div class="inner">
+                                    <h3>150</h3>
+                                    <p>{{__('Core::dashboard.articles')}}</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <a href="posts.html" class="small-box-footer">Voir les détails <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
                         </div>
-                        <a href="#" class="small-box-footer">{{ __('Plus d\'informations') }} <i
-                                class="fas fa-arrow-circle-right"></i></a>
+                        <!-- Box 2 -->
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-success">
+                                <div class="inner">
+                                    <h3>53</h3>
+                                    <p>{{__('Core::dashboard.categories')}}</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-th"></i>
+                                </div>
+                                <a href="categories.html" class="small-box-footer">Voir les détails <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Box 3 -->
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-warning">
+                                <div class="inner">
+                                    <h3>44</h3>
+                                    <p>{{__('Core::dashboard.commentaires')}}</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <a href="comments.html" class="small-box-footer">Voir les détails <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Box 4 -->
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>65</h3>
+                                    <p>{{__('Core::dashboard.utilisateurs')}}</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <a href="users.html" class="small-box-footer">Voir les détails <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-6">
-
-                    <div class="small-box bg-success">
-                        <div class="inner">
-                            <h3>13</h3>
-                            <p>{{ __('Administrateurs') }}</p>
+                    <!-- Blog Posts -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">{{__('Core::dashboard.Derniers_Articles')}}</h3>
+                                    <div class="card-tools">
+                                        <a href="posts.html" class="btn btn-tool">Voir tout</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Titre de l'article 1 <span class="badge badge-primary">Nouvelle</span></li>
+                                        <li class="list-group-item">Titre de l'article 2 <span class="badge badge-secondary">Terminé</span></li>
+                                        <li class="list-group-item">Titre de l'article 3 <span class="badge badge-success">Publié</span></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">{{ __('Plus d\'informations') }} <i
-                                class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-6">
-
-                    <div class="small-box bg-warning">
-                        <div class="inner">
-                            <h3>6</h3>
-                            <p>{{ __('Congé actuel') }}</p>
+                    <!-- Activity Log -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">{{__('Core::dashboard.Journal_activité')}}</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">John Doe a ajouté un nouveau commentaire</li>
+                                        <li class="list-group-item">Margarita a créé une nouvelle catégorie</li>
+                                        <li class="list-group-item">James a publié un nouvel article</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">{{ __('Plus d\'informations') }} <i
-                                class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-6">
-
-                    <div class="small-box bg-danger">
-                        <div class="inner">
-                            <h3>70 {{ __('Jours') }}</h3>
-                            <p>{{ __('Absences') }}</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-person-add"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">{{ __('Plus d\'informations') }} <i
-                                class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-
+                </div><!-- /.container-fluid -->
             </div>
-        </div>
-    </section>
+            <!-- /.content -->
+
+
 @endsection

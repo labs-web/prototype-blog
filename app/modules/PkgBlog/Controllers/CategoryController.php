@@ -4,12 +4,13 @@
 
 namespace Modules\PkgBlog\Controllers;
 
-
+use Illuminate\Database\Eloquent\Collection;
 use Modules\Core\Controllers\Base\AdminController;
 
 use Modules\PkgBlog\App\Requests\CategoryRequest;
 use Modules\PkgBlog\Repositories\CategoryRepository;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\PkgBlog\App\Exports\CategoryExport;
 use Modules\PkgBlog\App\Imports\CategoryImport;
@@ -35,7 +36,8 @@ class CategoryController extends AdminController
             }
         }
 
-        $data = $this->categoryRepository->paginate();
+        $data = null;
+        //  $data = $this->categoryRepository->paginate();
         return view('PkgBlog::category.index', compact('data'));
     }
 
