@@ -25,10 +25,10 @@ class CategoryRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'name.required' => __('validation.nameRequired'),
-            'name.max' => __('validation.nameMax'),
-            'description.required' => __('validation.descriptionRequired'),
-            'description.max' => __('validation.descriptionMax')
+            'name.required' => __('validation.required', ['attribute' => __('PkgBlog::category.name')]),
+            'name.max' => __('validation.max', ['attribute' => 'Nom', 'max' => 255]),
+            'description.required' => __('validation.required', ['attribute' => 'Description']),
+            'description.max' => __('validation.max', ['attribute' => 'Description', 'max' => 500]),
         ];
     }
 }
