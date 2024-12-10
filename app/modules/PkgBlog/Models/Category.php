@@ -15,8 +15,10 @@ class Category extends Model
     protected $fillable = ['name', 'slug'];
 
 
+
     public function __toString()
     {
         return $this->name;
     }
+
 }

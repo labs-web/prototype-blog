@@ -59,6 +59,7 @@ class CategoryController extends AdminController
                 'entityName' =>  __('PkgBlog::category.singular')
                 ])
         );
+
     }
 
     public function show(string $id)
@@ -84,7 +85,6 @@ class CategoryController extends AdminController
                 'entityName' =>  __('PkgBlog::category.singular')
                 ])
         );
-
     }
 
     public function destroy(string $id)
