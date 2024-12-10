@@ -10,33 +10,30 @@ class CoreSeeder extends Seeder
 
     public function loadAndRun(string $moduleSeederDir, string $moduleNamespace): void
     {
-
+        // Extraire le nom du module à partir de l'espace de noms
         $parts = explode('\\', $moduleNamespace);
-        $moduleName = $parts[1]; // Accède au deuxième élément du tableau, qui est "PkgBlog"
-
- 
-       
-        // Filter out the current module's seeder file
-        $moduleSeederFile = $moduleName . 'Seeder.php';
- 
+        $moduleName = $parts[1]; // Exemple : "PkgBlog" extrait de "Modules\PkgBlog\Database\Seeders"
+    
+        // Déterminer le fichier principal du seeder du module
+        $moduleSeederFile = $moduleName . 'Seeder.php'; // Exemple : "PkgBlogSeeder.php"
+    
+        // Charger et filtrer les fichiers seeder
         $seeders = collect(File::files($moduleSeederDir))
-            ->filter(fn ($file) => $file->getFilename() !== $moduleSeederFile)
-            ->map(fn ($file) => $moduleNamespace . '\\' . pathinfo($file->getFilename(), PATHINFO_FILENAME))
-            ->filter(fn ($class) => class_exists($class));
-
-        // Charger les seeders
-        $seeders = collect(File::files($moduleSeederDir))
-        ->filter(fn($file) => $file->getFilename() !== $moduleSeederFile)
-        ->map(fn($file) => $moduleNamespace . '\\' . pathinfo($file->getFilename(), PATHINFO_FILENAME))
-        ->filter(fn($class) => class_exists($class))
-        ->map(fn($class) => ['class' => $class, 'order' => $class::$order ?? PHP_INT_MAX])
-        ->sortBy('order')
-        ->pluck('class')
-        ->toArray();
-
+            ->filter(fn($file) => $file->getFilename() !== $moduleSeederFile) // Exclure le fichier seeder principal
+            ->map(fn($file) => $moduleNamespace . '\\' . pathinfo($file->getFilename(), PATHINFO_FILENAME)) // Construire le chemin complet des classes
+            ->filter(fn($class) => class_exists($class)) // Vérifier que la classe existe
+            ->map(fn($class) => [
+                'class' => $class, 
+                'order' => $class::$order ?? PHP_INT_MAX // Extraire l'ordre si défini, sinon valeur par défaut
+            ])
+            ->sortBy('order') // Trier les seeders par ordre
+            ->pluck('class') // Récupérer uniquement les noms de classes triés
+            ->toArray(); // Convertir en tableau
+    
+        // Exécuter les seeders dans l'ordre spécifié
         $this->call($seeders);
-       
     }
+    
 
 
     // public function load_and_run($seeders_dir,$namesapce_dir): void
