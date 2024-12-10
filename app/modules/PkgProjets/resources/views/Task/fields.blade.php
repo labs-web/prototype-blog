@@ -5,7 +5,7 @@
     @endif
     <div class="card-body">
         <div class="form-group">
-            <label for="nom">{{ __('Core::app.name') }} <span
+            <label for="nom">{{ __('Core::msg.name') }} <span
                     class="text-danger">*</span></label>
             <input name="nom" type="text" class="form-control" id="nom" placeholder="Entrez le titre"
                 value="{{ $dataToEdit ? $dataToEdit->nom : old('nom') }}">
@@ -17,7 +17,7 @@
 
        
         <div class="form-group">
-            <label for="inputDescription">{{ __('Core::app.description') }}</label>
+            <label for="inputDescription">{{ __('Core::msg.description') }}</label>
             <textarea name="description" id="editor" class="form-control" rows="7" placeholder="Entrez la description">
                 {{ $dataToEdit ? $dataToEdit->description : old('description') }}
             </textarea>
@@ -29,8 +29,8 @@
 
     <div class="card-footer">
         <a href="{{ route('tasks.index') }}"
-            class="btn btn-default">{{ __('Core::app.cancel') }}</a>
+            class="btn btn-default">{{ __('Core::msg.cancel') }}</a>
         <button type="submit"
-            class="btn btn-info">{{ $dataToEdit ? __('Core::app.edit') : __('Core::app.add') }}</button>
+            class="btn btn-info">{{ $dataToEdit ? __('Core::msg.edit') : __('Core::msg.add') }}</button>
     </div>
 </form>

@@ -26,7 +26,7 @@ class CategoryExport implements FromCollection, WithHeadings, ShouldAutoSize, Wi
     {
         return [
             'name',
-            'description',
+            'slug',
         ];
     }
 
@@ -35,7 +35,7 @@ class CategoryExport implements FromCollection, WithHeadings, ShouldAutoSize, Wi
         return $this->data->map(function ($category) {
             return [
                 'name' => $category->name,
-                'description' => $category->description,
+                'slug' => $category->slug,
             ];
         });
     }

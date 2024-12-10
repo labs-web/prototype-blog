@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', __('Core::app.add') . ' ' . __('GestionTasks/task/message.titre'))
+@section('title', __('Core::msg.add') . ' ' . __('GestionTasks/task/message.titre'))
 @section('content')
     <div class="content-header">
         @if ($errors->has('project_exists'))
@@ -22,7 +22,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="nav-icon fas fa-table"></i>
-                                {{ __('Core::app.add') }} {{ __('GestionTasks/task/message.titre') }}
+                                {{ __('Core::msg.add') }} {{ __('GestionTasks/task/message.titre') }}
                             </h3>
                         </div>
                         <!-- Obtenir le formulaire -->

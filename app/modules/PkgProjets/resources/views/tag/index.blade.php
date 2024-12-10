@@ -22,7 +22,7 @@
                         @can('create-TagController')
                             <a href="{{ route('tags.create') }}" class="btn btn-info">
                                 <i class="fas fa-plus"></i>
-                                {{ __('Core::app.add') }} {{ __('PkgProjets::tag.singular') }}
+                                {{ __('Core::msg.add') }} {{ __('PkgProjets::tag.singular') }}
                             </a>
                         @endcan
                     </div>

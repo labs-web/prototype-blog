@@ -1,21 +1,32 @@
-name,description
-Exemple pour name 1,Exemple pour description 1
-Exemple pour name 2,Exemple pour description 2
-Exemple pour name 3,Exemple pour description 3
-Exemple pour name 4,Exemple pour description 4
-Exemple pour name 5,Exemple pour description 5
-Exemple pour name 6,Exemple pour description 6
-Exemple pour name 7,Exemple pour description 7
-Exemple pour name 8,Exemple pour description 8
-Exemple pour name 9,Exemple pour description 9
-Exemple pour name 10,Exemple pour description 10
-Exemple pour name 11,Exemple pour description 11
-Exemple pour name 12,Exemple pour description 12
-Exemple pour name 13,Exemple pour description 13
-Exemple pour name 14,Exemple pour description 14
-Exemple pour name 15,Exemple pour description 15
-Exemple pour name 16,Exemple pour description 16
-Exemple pour name 17,Exemple pour description 17
-Exemple pour name 18,Exemple pour description 18
-Exemple pour name 19,Exemple pour description 19
-Exemple pour name 20,Exemple pour description 20
+name,slug
+Frontend Development,frontend-development
+Backend Development,backend-development
+Fullstack Development,fullstack-development
+DevOps,devops
+Data Science,data-science
+Machine Learning,machine-learning
+Cybersecurity,cybersecurity
+Cloud Computing,cloud-computing
+Mobile Development,mobile-development
+Game Development,game-development
+UI/UX Design,ui-ux-design
+Blockchain Development,blockchain-development
+Artificial Intelligence,artificial-intelligence
+Database Management,database-management
+API Development,api-development
+Testing and QA,testing-and-qa
+E-commerce Development,ecommerce-development
+Big Data,big-data
+IoT Development,iot-development
+Embedded Systems,embedded-systems
+AR/VR Development,ar-vr-development
+Software Engineering,software-engineering
+IT Support,it-support
+Desktop Application Development,desktop-application-development
+Web Design,web-design
+Open Source Development,open-source-development
+Performance Optimization,performance-optimization
+Networking,networking
+Robotics,robotics
+System Administration,system-administration
+Tech Writing,tech-writing

@@ -12,7 +12,11 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'description'];
+    protected $fillable = ['name', 'slug'];
 
 
+    public function __toString()
+    {
+        return $this->name;
+    }
 }

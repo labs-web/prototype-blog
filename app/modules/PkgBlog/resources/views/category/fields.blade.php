@@ -24,13 +24,15 @@
         </div>
         
         <div class="form-group">
-            <label for="description">
-                {{ ucfirst(__('PkgBlog::category.description')) }}
+            <label for="slug">
+                {{ ucfirst(__('PkgBlog::category.slug')) }}
+                
+                    <span class="text-danger">*</span>
                 
             </label>
-            <input name="description" type="input" class="form-control" id="description" placeholder="Entrez {{__('PkgBlog::category.description')}}"
-                value="{{ $item ? $item->description : old('description') }}">
-            @error('description')
+            <input name="slug" type="input" class="form-control" id="slug" placeholder="Entrez {{__('PkgBlog::category.slug')}}"
+                value="{{ $item ? $item->slug : old('slug') }}">
+            @error('slug')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
@@ -38,7 +40,7 @@
     </div>
 
     <div class="card-footer">
-        <a href="{{ route('categories.index') }}" class="btn btn-default">{{ __('Core::app.cancel') }}</a>
-        <button type="submit" class="btn btn-info ml-2">{{ $item->id ? __('Core::app.edit') : __('Core::app.add') }}</button>
+        <a href="{{ route('categories.index') }}" class="btn btn-default">{{ __('Core::msg.cancel') }}</a>
+        <button type="submit" class="btn btn-info ml-2">{{ $item->id ? __('Core::msg.edit') : __('Core::msg.add') }}</button>
     </div>
 </form>

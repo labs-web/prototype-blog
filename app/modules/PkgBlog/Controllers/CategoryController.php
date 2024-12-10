@@ -4,13 +4,11 @@
 
 namespace Modules\PkgBlog\Controllers;
 
-use Illuminate\Database\Eloquent\Collection;
-use Modules\Core\Controllers\Base\AdminController;
 
+use Modules\Core\Controllers\Base\AdminController;
 use Modules\PkgBlog\App\Requests\CategoryRequest;
 use Modules\PkgBlog\Services\CategoryService;
 use Illuminate\Http\Request;
-use Illuminate\Pagination\LengthAwarePaginator;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\PkgBlog\App\Exports\CategoryExport;
 use Modules\PkgBlog\App\Imports\CategoryImport;
@@ -43,7 +41,6 @@ class CategoryController extends AdminController
         // Vue principale pour le chargement initial
         return view('PkgBlog::category.index', compact('data'));
     }
-    
 
     public function create()
     {
@@ -54,8 +51,14 @@ class CategoryController extends AdminController
     public function store(CategoryRequest $request)
     {
         $validatedData = $request->validated();
-        $this->categoryService->create($validatedData);
-        return redirect()->route('categories.index')->with('success', __('Core::app.addSuccess'));
+        $category = $this->categoryService->create($validatedData);
+        return redirect()->route('categories.index')->with(
+            'success',
+            __('Core::msg.addSuccess', [
+                'entityToString' => $category,
+                'entityName' =>  __('PkgBlog::category.singular')
+                ])
+        );
     }
 
     public function show(string $id)
@@ -73,14 +76,27 @@ class CategoryController extends AdminController
     public function update(CategoryRequest $request, string $id)
     {
         $validatedData = $request->validated();
-        $this->categoryService->update($id, $validatedData);
-        return redirect()->route('categories.index')->with('success', __('Core::app.updateSuccess'));
+        $category = $this->categoryService->update($id, $validatedData);
+        return redirect()->route('categories.index')->with(
+            'success',
+            __('Core::msg.updateSuccess', [
+                'entityToString' => $category,
+                'entityName' =>  __('PkgBlog::category.singular')
+                ])
+        );
+
     }
 
     public function destroy(string $id)
     {
-        $this->categoryService->destroy($id);
-        return redirect()->route('categories.index')->with('success', __('Core::app.deleteSuccess'));
+        $category = $this->categoryService->destroy($id);
+        return redirect()->route('categories.index')->with(
+            'success',
+            __('Core::msg.deleteSuccess', [
+                'entityToString' => $category,
+                'entityName' =>  __('PkgBlog::category.singular')
+                ])
+        );
     }
 
     public function export()
@@ -100,6 +116,6 @@ class CategoryController extends AdminController
             return redirect()->route('categories.index')->withError('Invalid format or missing data.');
         }
 
-        return redirect()->route('categories.index')->with('success', __('Core::app.importSuccess'));
+        return redirect()->route('categories.index')->with('success', __('Core::msg.importSuccess'));
     }
 }

@@ -8,7 +8,6 @@ namespace Modules\PkgBlog\Services;
 use Modules\PkgBlog\Models\Category;
 use Modules\Core\Services\BaseService;
 
-
 /**
  * Classe CategoryService pour gérer la persistance de l'entité Category.
  */
@@ -21,7 +20,7 @@ class CategoryService extends BaseService
      */
     protected $fieldsSearchable = [
         'name',
-        'description'
+        'slug'
     ];
 
     /**

@@ -159,7 +159,7 @@ abstract class BaseService implements ServiceInterface
      *
      * @param mixed $id Identifiant de l'élément à mettre à jour.
      * @param array $data Données à mettre à jour.
-     * @return bool
+     * @return Entity modifié
      */
     public function update($id, array $data)
     {
@@ -168,8 +168,8 @@ abstract class BaseService implements ServiceInterface
         if (!$record) {
             return false;
         }
-
-        return $record->update($data);
+        $record->update($data);
+        return $record;
     }
 
     /**
@@ -180,7 +180,9 @@ abstract class BaseService implements ServiceInterface
      */
     public function destroy($id){
         $record = $this->model->find($id);
-        return $record->delete();
+        // TODO :throw exception if $record is null
+        $record->delete();
+        return  $record;
     }
 
     public function createInstance(){

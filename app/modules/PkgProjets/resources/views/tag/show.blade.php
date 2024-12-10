@@ -1,17 +1,17 @@
 @extends('layouts.admin')
-@section('title', __('Core::app.show') . ' ' . __('PkgProjets::projet.singular'))
+@section('title', __('Core::msg.show') . ' ' . __('PkgProjets::projet.singular'))
 @section('content')
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>{{ __('Core::app.detail') }}</h1>
+                    <h1>{{ __('Core::msg.detail') }}</h1>
                 </div>
                 @can('edit-TagController')
                     <div class="col-sm-6">
                         <a href="{{ route('tags.edit', $fetchedData->id) }}" class="btn btn-default float-right">
                             <i class="far fa-edit"></i>
-                            {{ __('Core::app.edit') }}
+                            {{ __('Core::msg.edit') }}
                         </a>
                     </div>
                 @endcan
@@ -25,13 +25,13 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="col-sm-12">
-                                <label for="nom">{{ __('Core::app.name') }}:</label>
+                                <label for="nom">{{ __('Core::msg.name') }}:</label>
                                 <p>{{ $fetchedData->nom }}</p>
                             </div>
 
                             <!-- Description Field -->
                             <div class="col-sm-12">
-                                <label for="description">{{ __('Core::app.description') }}:</label>
+                                <label for="description">{{ __('Core::msg.description') }}:</label>
                                 @if ($fetchedData->description)
                                     <p>
                                         {!! $fetchedData->description !!}

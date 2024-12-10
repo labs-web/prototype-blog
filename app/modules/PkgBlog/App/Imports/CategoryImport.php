@@ -39,7 +39,7 @@ class CategoryImport implements ToModel, WithHeadingRow
         // Crée un nouvel enregistrement à partir des données importées
         return new Category([
             'name' => $row['name'],
-            'description' => $row['description'],
+            'slug' => $row['slug'],
         ]);
     }
 }

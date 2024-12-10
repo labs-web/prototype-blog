@@ -30,8 +30,7 @@
             </div>
         </div>
     </div>
-
-    <section class="content" >
+    <section class="content" id="section_crud">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">

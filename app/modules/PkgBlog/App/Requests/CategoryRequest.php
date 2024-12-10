@@ -18,7 +18,7 @@ class CategoryRequest extends FormRequest
     {
         return [
             'name' => 'required|max:255',
-            'description' => 'nullable|max:255'
+            'slug' => 'required|max:255'
         ];
     }
 
@@ -26,9 +26,9 @@ class CategoryRequest extends FormRequest
     {
         return [
             'name.required' => __('validation.required', ['attribute' => __('PkgBlog::category.name')]),
-            'name.max' => __('validation.max', ['attribute' => 'Nom', 'max' => 255]),
-            'description.required' => __('validation.required', ['attribute' => 'Description']),
-            'description.max' => __('validation.max', ['attribute' => 'Description', 'max' => 500]),
+            'name.max' => __('validation.nameMax'),
+            'slug.required' => __('validation.required', ['attribute' => __('PkgBlog::category.slug')]),
+            'slug.max' => __('validation.slugMax')
         ];
     }
 }

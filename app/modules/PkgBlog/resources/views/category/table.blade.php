@@ -6,16 +6,16 @@
             <tr>
                 <th>{{ ucfirst(__('PkgBlog::category.name')) }}</th>
                 
-                <th>{{ ucfirst(__('PkgBlog::category.description')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::category.slug')) }}</th>
                 
-                <th class="text-center">{{ __('Core::app.action') }}</th>
+                <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($data as $category)
                 <tr>
                     <td>{{ $category->name }}</td>
-                    <td>{{ $category->description }}</td>
+                    <td>{{ $category->slug }}</td>
                     <td class="text-center">
                         @can('show-CategoryController')
                             <a href="{{ route('categories.show', $category) }}" class="btn btn-default btn-sm">
@@ -52,7 +52,7 @@
                 @csrf
                 <label for="upload" class="btn btn-default btn-sm font-weight-normal">
                     <i class="fas fa-file-download"></i>
-                    {{ __('Core::app.import') }}
+                    {{ __('Core::msg.import') }}
                 </label>
                 <input type="file" id="upload" name="file" style="display:none;" onchange="submitForm()" />
             </form>
@@ -61,7 +61,7 @@
             <form class="">
                 <a href="{{ route('categories.export') }}" class="btn btn-default btn-sm mt-0 mx-2">
                     <i class="fas fa-file-export"></i>
-                    {{ __('Core::app.export') }}</a>
+                    {{ __('Core::msg.export') }}</a>
             </form>
         @endcan
     </div>

@@ -28,7 +28,7 @@ class CategorySeeder extends Seeder
             if (!$firstline) {
                 Category::create([
                     "name" => $data[0] ,
-                    "description" => $data[1] 
+                    "slug" => $data[1] 
                 ]);
             }
             $firstline = false;
