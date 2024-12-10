@@ -106,7 +106,6 @@ class CategoryController extends AdminController
     }
     public function import(Request $request)
     {
-
         $request->validate([
             'file' => 'required|mimes:xlsx,xls,csv',
         ]);
@@ -117,8 +116,12 @@ class CategoryController extends AdminController
             return redirect()->route('categories.index')->withError('Invalid format or missing data.');
         }
 
-        return redirect()->route('categories.index')->with('success', __('Core::msg.importSuccess', [
+        return redirect()->route('categories.index')->with(
+            'success', __('Core::msg.importSuccess', [
             'entityNames' =>  __('PkgBlog::category.plural')
             ]));
+
+
+
     }
 }
