@@ -24,8 +24,17 @@ class CoreSeeder extends Seeder
             ->map(fn ($file) => $moduleNamespace . '\\' . pathinfo($file->getFilename(), PATHINFO_FILENAME))
             ->filter(fn ($class) => class_exists($class));
 
-      
-        $this->call($seeders->toArray());
+        // Charger les seeders
+        $seeders = collect(File::files($moduleSeederDir))
+        ->filter(fn($file) => $file->getFilename() !== $moduleSeederFile)
+        ->map(fn($file) => $moduleNamespace . '\\' . pathinfo($file->getFilename(), PATHINFO_FILENAME))
+        ->filter(fn($class) => class_exists($class))
+        ->map(fn($class) => ['class' => $class, 'order' => $class::$order ?? PHP_INT_MAX])
+        ->sortBy('order')
+        ->pluck('class')
+        ->toArray();
+
+        $this->call($seeders);
        
     }
 

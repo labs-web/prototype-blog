@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Schema;
 
 class TagSeeder extends Seeder
 {
+    public static int $order = 2;
+
     public function run(): void
     {
         $AdminRole = User::ADMIN;
