@@ -1,5 +1,5 @@
 
-@import './webfonts';
+@import './font-adminlte/fonts.css';
 @import 'admin-lte/dist/css/adminlte.min.css';
 @import 'admin-lte/plugins/fontawesome-free/css/all.min.css';
 @import 'admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
@@ -11,9 +11,10 @@
 @import 'admin-lte/plugins/select2/css/select2.min.css';
 @import './loading-spin';
 
+/* 
 * {
     font-family: "Nunito", sans-serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
-}
+} */
 

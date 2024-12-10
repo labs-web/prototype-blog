@@ -1,184 +1,4 @@
 {
-  "KFOkCnqEu92Fr1MmgVxEIzIFKw.woff2": {
-    "file": "assets/KFOkCnqEu92Fr1MmgVxEIzIFKw-Jm1vXfA2.woff2",
-    "src": "KFOkCnqEu92Fr1MmgVxEIzIFKw.woff2"
-  },
-  "KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2": {
-    "file": "assets/KFOkCnqEu92Fr1MmgVxFIzIFKw-jEftjRjC.woff2",
-    "src": "KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2"
-  },
-  "KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2": {
-    "file": "assets/KFOkCnqEu92Fr1MmgVxGIzIFKw-CfLndg9g.woff2",
-    "src": "KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2"
-  },
-  "KFOkCnqEu92Fr1MmgVxHIzIFKw.woff2": {
-    "file": "assets/KFOkCnqEu92Fr1MmgVxHIzIFKw-B8sQl7U6.woff2",
-    "src": "KFOkCnqEu92Fr1MmgVxHIzIFKw.woff2"
-  },
-  "KFOkCnqEu92Fr1MmgVxIIzI.woff2": {
-    "file": "assets/KFOkCnqEu92Fr1MmgVxIIzI-UGhH1PRC.woff2",
-    "src": "KFOkCnqEu92Fr1MmgVxIIzI.woff2"
-  },
-  "KFOkCnqEu92Fr1MmgVxLIzIFKw.woff2": {
-    "file": "assets/KFOkCnqEu92Fr1MmgVxLIzIFKw-DNMC-RtV.woff2",
-    "src": "KFOkCnqEu92Fr1MmgVxLIzIFKw.woff2"
-  },
-  "KFOkCnqEu92Fr1MmgVxMIzIFKw.woff2": {
-    "file": "assets/KFOkCnqEu92Fr1MmgVxMIzIFKw-Bul7q2KG.woff2",
-    "src": "KFOkCnqEu92Fr1MmgVxMIzIFKw.woff2"
-  },
-  "KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmEU9fABc4EsA-_hamcpv8.woff2",
-    "src": "KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmEU9fBBc4.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmEU9fBBc4-C6iW8rdg.woff2",
-    "src": "KFOlCnqEu92Fr1MmEU9fBBc4.woff2"
-  },
-  "KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmEU9fBxc4EsA-Bg8BLohm.woff2",
-    "src": "KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmEU9fCBc4EsA-BpeNdPLE.woff2",
-    "src": "KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmEU9fCRc4EsA-BJvL3D7h.woff2",
-    "src": "KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmEU9fChc4EsA-OQJhyaXd.woff2",
-    "src": "KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmEU9fCxc4EsA-p0V0BAAE.woff2",
-    "src": "KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmSU5fABc4EsA-DJfICpyc.woff2",
-    "src": "KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmSU5fBBc4.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmSU5fBBc4-BizgZZ3y.woff2",
-    "src": "KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
-  },
-  "KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmSU5fBxc4EsA-Bx8edVml.woff2",
-    "src": "KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmSU5fCBc4EsA-CHja2Rnh.woff2",
-    "src": "KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmSU5fCRc4EsA-Chhwl1Jq.woff2",
-    "src": "KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmSU5fChc4EsA-BzRVPTS2.woff2",
-    "src": "KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmSU5fCxc4EsA-PZa9KE_J.woff2",
-    "src": "KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmWUlfABc4EsA-jruQITdB.woff2",
-    "src": "KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmWUlfBBc4.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmWUlfBBc4-CbYYDfWS.woff2",
-    "src": "KFOlCnqEu92Fr1MmWUlfBBc4.woff2"
-  },
-  "KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmWUlfBxc4EsA-Bs05n1ZH.woff2",
-    "src": "KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmWUlfCBc4EsA-CqebB7cL.woff2",
-    "src": "KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmWUlfCRc4EsA-CyZgh00P.woff2",
-    "src": "KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmWUlfChc4EsA-DchBbzVz.woff2",
-    "src": "KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2"
-  },
-  "KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2": {
-    "file": "assets/KFOlCnqEu92Fr1MmWUlfCxc4EsA-CBbheh0s.woff2",
-    "src": "KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2"
-  },
-  "KFOmCnqEu92Fr1Mu4WxKOzY.woff2": {
-    "file": "assets/KFOmCnqEu92Fr1Mu4WxKOzY-LPh2sqOm.woff2",
-    "src": "KFOmCnqEu92Fr1Mu4WxKOzY.woff2"
-  },
-  "KFOmCnqEu92Fr1Mu4mxK.woff2": {
-    "file": "assets/KFOmCnqEu92Fr1Mu4mxK-DXyFPIdK.woff2",
-    "src": "KFOmCnqEu92Fr1Mu4mxK.woff2"
-  },
-  "KFOmCnqEu92Fr1Mu5mxKOzY.woff2": {
-    "file": "assets/KFOmCnqEu92Fr1Mu5mxKOzY-BiRJyiea.woff2",
-    "src": "KFOmCnqEu92Fr1Mu5mxKOzY.woff2"
-  },
-  "KFOmCnqEu92Fr1Mu72xKOzY.woff2": {
-    "file": "assets/KFOmCnqEu92Fr1Mu72xKOzY-D76n7Daw.woff2",
-    "src": "KFOmCnqEu92Fr1Mu72xKOzY.woff2"
-  },
-  "KFOmCnqEu92Fr1Mu7GxKOzY.woff2": {
-    "file": "assets/KFOmCnqEu92Fr1Mu7GxKOzY-DgXbz5gU.woff2",
-    "src": "KFOmCnqEu92Fr1Mu7GxKOzY.woff2"
-  },
-  "KFOmCnqEu92Fr1Mu7WxKOzY.woff2": {
-    "file": "assets/KFOmCnqEu92Fr1Mu7WxKOzY-DhTUfTw_.woff2",
-    "src": "KFOmCnqEu92Fr1Mu7WxKOzY.woff2"
-  },
-  "KFOmCnqEu92Fr1Mu7mxKOzY.woff2": {
-    "file": "assets/KFOmCnqEu92Fr1Mu7mxKOzY-Dduq6i1a.woff2",
-    "src": "KFOmCnqEu92Fr1Mu7mxKOzY.woff2"
-  },
-  "XRXV3I6Li01BKofIMeaBXso.woff2": {
-    "file": "assets/XRXV3I6Li01BKofIMeaBXso-C3IBG1kp.woff2",
-    "src": "XRXV3I6Li01BKofIMeaBXso.woff2"
-  },
-  "XRXV3I6Li01BKofINeaB.woff2": {
-    "file": "assets/XRXV3I6Li01BKofINeaB-BaTF6Vo7.woff2",
-    "src": "XRXV3I6Li01BKofINeaB.woff2"
-  },
-  "XRXV3I6Li01BKofIO-aBXso.woff2": {
-    "file": "assets/XRXV3I6Li01BKofIO-aBXso-DcJfvmGA.woff2",
-    "src": "XRXV3I6Li01BKofIO-aBXso.woff2"
-  },
-  "XRXV3I6Li01BKofIOOaBXso.woff2": {
-    "file": "assets/XRXV3I6Li01BKofIOOaBXso-BWI5zH9R.woff2",
-    "src": "XRXV3I6Li01BKofIOOaBXso.woff2"
-  },
-  "XRXV3I6Li01BKofIOuaBXso.woff2": {
-    "file": "assets/XRXV3I6Li01BKofIOuaBXso-B55YuedR.woff2",
-    "src": "XRXV3I6Li01BKofIOuaBXso.woff2"
-  },
-  "XRXX3I6Li01BKofIMNaDRs4.woff2": {
-    "file": "assets/XRXX3I6Li01BKofIMNaDRs4-BbMn9XSX.woff2",
-    "src": "XRXX3I6Li01BKofIMNaDRs4.woff2"
-  },
-  "XRXX3I6Li01BKofIMNaHRs71cA.woff2": {
-    "file": "assets/XRXX3I6Li01BKofIMNaHRs71cA-Cznx39fA.woff2",
-    "src": "XRXX3I6Li01BKofIMNaHRs71cA.woff2"
-  },
-  "XRXX3I6Li01BKofIMNaMRs71cA.woff2": {
-    "file": "assets/XRXX3I6Li01BKofIMNaMRs71cA-CuWrHpFO.woff2",
-    "src": "XRXX3I6Li01BKofIMNaMRs71cA.woff2"
-  },
-  "XRXX3I6Li01BKofIMNaNRs71cA.woff2": {
-    "file": "assets/XRXX3I6Li01BKofIMNaNRs71cA-D1eeM49Z.woff2",
-    "src": "XRXX3I6Li01BKofIMNaNRs71cA.woff2"
-  },
-  "XRXX3I6Li01BKofIMNaORs71cA.woff2": {
-    "file": "assets/XRXX3I6Li01BKofIMNaORs71cA-Bm_i0Dk1.woff2",
-    "src": "XRXX3I6Li01BKofIMNaORs71cA.woff2"
-  },
   "node_modules/admin-lte/plugins/fontawesome-free/webfonts/fa-brands-400.eot": {
     "file": "assets/fa-brands-400-DnkPfk3o.eot",
     "src": "node_modules/admin-lte/plugins/fontawesome-free/webfonts/fa-brands-400.eot"
@@ -255,82 +75,66 @@
     "file": "assets/summernote-CG9AQWUQ.woff2",
     "src": "node_modules/admin-lte/plugins/summernote/font/summernote.woff2"
   },
-  "pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLBT5Z1JlFc-K-DPEExWNF.woff2",
-    "src": "pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2"
-  },
-  "pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLBT5Z1xlFQ-BmL1zqjw.woff2",
-    "src": "pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2"
-  },
-  "pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLCz7Z1JlFc-K-cby-RkWa.woff2",
-    "src": "pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2"
-  },
-  "pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLCz7Z1xlFQ-Qrb0O0WB.woff2",
-    "src": "pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2"
-  },
-  "pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLDD4Z1JlFc-K-CDgOlX-1.woff2",
-    "src": "pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2"
-  },
-  "pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLDD4Z1xlFQ-Bd8-pIP1.woff2",
-    "src": "pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2"
-  },
-  "pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLDz8Z1JlFc-K-Cirz0Guu.woff2",
-    "src": "pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2"
-  },
-  "pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLDz8Z1xlFQ-Dku2WoCh.woff2",
-    "src": "pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2"
-  },
-  "pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLEj6Z1JlFc-K-CAhIAdZj.woff2",
-    "src": "pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2"
-  },
-  "pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLEj6Z1xlFQ-zEkxB9Mr.woff2",
-    "src": "pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2"
-  },
-  "pxiByp8kv8JHgFVrLFj_Z1JlFc-K.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLFj_Z1JlFc-K-C8LeRBwY.woff2",
-    "src": "pxiByp8kv8JHgFVrLFj_Z1JlFc-K.woff2"
-  },
-  "pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLFj_Z1xlFQ-B8tqA5oA.woff2",
-    "src": "pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2"
-  },
-  "pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLGT9Z1JlFc-K-CK-6C4Hw.woff2",
-    "src": "pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2"
-  },
-  "pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2": {
-    "file": "assets/pxiByp8kv8JHgFVrLGT9Z1xlFQ-C8OXljZJ.woff2",
-    "src": "pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2"
-  },
-  "pxiEyp8kv8JHgFVrJJfecg.woff2": {
-    "file": "assets/pxiEyp8kv8JHgFVrJJfecg-cpxAROuN.woff2",
-    "src": "pxiEyp8kv8JHgFVrJJfecg.woff2"
-  },
-  "pxiEyp8kv8JHgFVrJJnecmNE.woff2": {
-    "file": "assets/pxiEyp8kv8JHgFVrJJnecmNE-by3JarPu.woff2",
-    "src": "pxiEyp8kv8JHgFVrJJnecmNE.woff2"
-  },
-  "pxiGyp8kv8JHgFVrLPTucHtA.woff2": {
-    "file": "assets/pxiGyp8kv8JHgFVrLPTucHtA-CY-M_i9k.woff2",
-    "src": "pxiGyp8kv8JHgFVrLPTucHtA.woff2"
-  },
-  "pxiGyp8kv8JHgFVrLPTufntAKPY.woff2": {
-    "file": "assets/pxiGyp8kv8JHgFVrLPTufntAKPY-C9Knam7P.woff2",
-    "src": "pxiGyp8kv8JHgFVrLPTufntAKPY.woff2"
-  },
   "resources/css/admin.css": {
-    "file": "assets/admin-DGh65-zN.css",
+    "file": "assets/admin-DQ4e6xo7.css",
     "src": "resources/css/admin.css",
     "isEntry": true
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_300_normal.ttf": {
+    "file": "assets/Source_Sans_Pro_300_normal-DJPu8iZ4.ttf",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_300_normal.ttf"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_300_normal.woff": {
+    "file": "assets/Source_Sans_Pro_300_normal-D4ancB8J.woff",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_300_normal.woff"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_300_normal.woff2": {
+    "file": "assets/Source_Sans_Pro_300_normal-YcLNfB1o.woff2",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_300_normal.woff2"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_italic.ttf": {
+    "file": "assets/Source_Sans_Pro_400_italic-5gjoCvR4.ttf",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_italic.ttf"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_italic.woff": {
+    "file": "assets/Source_Sans_Pro_400_italic-B3zxsS0f.woff",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_italic.woff"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_italic.woff2": {
+    "file": "assets/Source_Sans_Pro_400_italic-ByC9qz2h.woff2",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_italic.woff2"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_normal.eot": {
+    "file": "assets/Source_Sans_Pro_400_normal-DYyObItq.eot",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_normal.eot"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_normal.svg": {
+    "file": "assets/Source_Sans_Pro_400_normal-SbUj4EfH.svg",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_normal.svg"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_normal.ttf": {
+    "file": "assets/Source_Sans_Pro_400_normal-DafSct7v.ttf",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_normal.ttf"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_normal.woff": {
+    "file": "assets/Source_Sans_Pro_400_normal-R7DZS9ko.woff",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_normal.woff"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_400_normal.woff2": {
+    "file": "assets/Source_Sans_Pro_400_normal-tpsLXCSJ.woff2",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_400_normal.woff2"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_700_normal.ttf": {
+    "file": "assets/Source_Sans_Pro_700_normal-DXft90YR.ttf",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_700_normal.ttf"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_700_normal.woff": {
+    "file": "assets/Source_Sans_Pro_700_normal-BNdTgDH_.woff",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_700_normal.woff"
+  },
+  "resources/css/font-adminlte/Source+Sans+Pro_700_normal.woff2": {
+    "file": "assets/Source_Sans_Pro_700_normal-DL7J4422.woff2",
+    "src": "resources/css/font-adminlte/Source+Sans+Pro_700_normal.woff2"
   },
   "resources/css/public.css": {
     "file": "assets/public-DJ2uaRVi.css",
@@ -348,9 +152,5 @@
     "name": "public",
     "src": "resources/js/public.js",
     "isEntry": true
-  },
-  "webfonts.css": {
-    "file": "assets/webfonts-CwynGuor.css",
-    "src": "webfonts.css"
   }
 }

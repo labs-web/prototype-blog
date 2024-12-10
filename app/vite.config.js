@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import webfontDownload from 'vite-plugin-webfont-dl';
 
 export default defineConfig({
     plugins: [
@@ -12,13 +11,7 @@ export default defineConfig({
                 'resources/js/admin.js',
             ],
             refresh: true,
-        }),
-
-        webfontDownload([
-            'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap'
-
-          ])
-    
+        })
     ],
     build: {
         sourcemap: true, // Générer les sourcemaps pour le débogage
