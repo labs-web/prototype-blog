@@ -111,5 +111,6 @@
             }
         ]
     },
-    "creationOrder": 3
+    "creationOrder": 3,
+    "isPivotTable": false
 }

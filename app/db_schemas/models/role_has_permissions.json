@@ -40,5 +40,6 @@
         ],
         "manyToMany": []
     },
-    "creationOrder": 17
+    "creationOrder": 17,
+    "isPivotTable": true
 }

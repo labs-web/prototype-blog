@@ -67,5 +67,6 @@
             }
         ]
     },
-    "creationOrder": 12
+    "creationOrder": 12,
+    "isPivotTable": false
 }

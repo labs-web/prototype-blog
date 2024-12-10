@@ -117,5 +117,6 @@
         "manyToOne": [],
         "manyToMany": []
     },
-    "creationOrder": 9
+    "creationOrder": 9,
+    "isPivotTable": false
 }

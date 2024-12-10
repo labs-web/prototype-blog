@@ -62,5 +62,6 @@
         "manyToOne": [],
         "manyToMany": []
     },
-    "creationOrder": 1
+    "creationOrder": 1,
+    "isPivotTable": false
 }
