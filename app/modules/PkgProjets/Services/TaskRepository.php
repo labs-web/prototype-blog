@@ -1,15 +1,15 @@
 <?php
-namespace Modules\PkgProjets\Repositories;
+namespace Modules\PkgProjets\Services;
 
 use App\Models\GestionTasks\Task;
-use Modules\Core\Repositories\BaseRepository;
+use Modules\Core\Services\BaseService;
 use Illuminate\Database\Eloquent\Model;
 use App\Exceptions\GestionTasks\ProjectAlreadyExistException;
 
 /**
- * Classe TaskRepository qui gère la persistance des tasks dans la base de données.
+ * Classe TaskService qui gère la persistance des tasks dans la base de données.
  */
-class TaskRepository extends BaseRepository
+class TaskService extends BaseService
 {
     /**
      * Les champs de recherche disponibles pour les tasks.
@@ -31,7 +31,7 @@ class TaskRepository extends BaseRepository
     }
 
     /**
-     * Constructeur de la classe TaskRepository.
+     * Constructeur de la classe TaskService.
      */
     public function __construct()
     {

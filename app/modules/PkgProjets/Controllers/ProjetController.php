@@ -8,19 +8,19 @@ use Modules\PkgProjets\App\Imports\ProjetImport;
 use Modules\PkgProjets\Models\Projet;
 use Illuminate\Http\Request;
 use Modules\PkgProjets\App\Requests\projetRequest;
-use Modules\PkgProjets\Repositories\ProjetRepository;
+use Modules\PkgProjets\Services\ProjetService;
 use Modules\Core\Controllers\Base\AdminController;
 use Carbon\Carbon;
 use Modules\PkgProjets\App\Exports\projetExport;
-use Modules\PkgProjets\Repositories\TagRepository;
+use Modules\PkgProjets\Services\TagService;
 use Maatwebsite\Excel\Facades\Excel;
 
 class ProjetController extends AdminController
 {
-    protected $projectRepository;
-    public function __construct(ProjetRepository $projetRepository)
+    protected $projectService;
+    public function __construct(ProjetService $projetService)
     {
-        $this->projectRepository = $projetRepository;
+        $this->projectService = $projetService;
     }
 
     // public function index(){
@@ -35,20 +35,20 @@ class ProjetController extends AdminController
             $searchValue = $request->get('searchValue');
             if ($searchValue !== '') {
                 $searchQuery = str_replace(' ', '%', $searchValue);
-                $projectData = $this->projectRepository->searchData($searchQuery);
+                $projectData = $this->projectService->searchData($searchQuery);
                 return view('PkgProjets::projet.index', compact('projectData'))->render();
             }
         }
-        $projectData = $this->projectRepository->paginate();
+        $projectData = $this->projectService->paginate();
       
         return view('PkgProjets::projet.index', compact('projectData'));
     }
 
 
-    public function create(TagRepository $tagRepository)
+    public function create(TagService $tagService)
     {
         $dataToEdit = null;
-        $tags = $tagRepository->all();
+        $tags = $tagService->all();
         return view('PkgProjets::projet.create', compact('dataToEdit', 'tags'));
     }
 
@@ -58,7 +58,7 @@ class ProjetController extends AdminController
 
         try {
             $validatedData = $request->validated();
-            $this->projectRepository->create($validatedData);
+            $this->projectService->create($validatedData);
             return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('Core::app.addSucées'));
         } catch (ProjectAlreadyExistException $e) {
             return back()->withInput()->withErrors(['project_exists' => __('PkgProjets::projet.singular') . ' ' . __('Core::app.existdeja')]);
@@ -70,17 +70,17 @@ class ProjetController extends AdminController
 
     public function show(string $id)
     {
-        $fetchedData = $this->projectRepository->find($id);
+        $fetchedData = $this->projectService->find($id);
         return view('PkgProjets::projet.show', compact('fetchedData'));
     }
 
 
-    public function edit(string $id,TagRepository $tagRepository)
+    public function edit(string $id,TagService $tagService)
     {
-        $dataToEdit = $this->projectRepository->find($id);
+        $dataToEdit = $this->projectService->find($id);
         $dataToEdit->date_debut = Carbon::parse($dataToEdit->date_debut)->format('Y-m-d');
         $dataToEdit->date_de_fin = Carbon::parse($dataToEdit->date_de_fin)->format('Y-m-d');
-        $tags = $tagRepository->all();
+        $tags = $tagService->all();
 
         return view('PkgProjets::projet.edit', compact('dataToEdit','tags'));
     }
@@ -89,14 +89,14 @@ class ProjetController extends AdminController
     public function update(projetRequest $request, string $id)
     {
         $validatedData = $request->validated();
-        $this->projectRepository->update($id, $validatedData);
+        $this->projectService->update($id, $validatedData);
         return redirect()->route('projets.index', $id)->with('success', __('PkgProjets::projet.singular') . ' ' . __('Core::app.updateSucées'));
     }
 
 
     public function destroy(string $id)
     {
-        $this->projectRepository->destroy($id);
+        $this->projectService->destroy($id);
         return redirect()->route('projets.index')->with('success', __('PkgProjets::projet.singular') . ' ' . __('Core::app.deleteSucées'));
     }
 

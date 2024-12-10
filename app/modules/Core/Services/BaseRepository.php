@@ -1,18 +1,18 @@
 <?php
 
-namespace Modules\Core\Repositories;
+namespace Modules\Core\Services;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
-use Modules\Core\Repositories\Contracts\RepositoryInterface;
+use Modules\Core\Services\Contracts\ServiceInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
  
 /**
- * Classe abstraite BaseRepository qui fournit une implémentation de base
+ * Classe abstraite BaseService qui fournit une implémentation de base
  * pour les opérations courantes de manipulation des données.
  */
-abstract class BaseRepository implements RepositoryInterface
+abstract class BaseService implements ServiceInterface
 {
 
     /**
@@ -37,7 +37,7 @@ abstract class BaseRepository implements RepositoryInterface
     abstract public function getFieldsSearchable(): array;
 
     /**
-     * Constructeur de la classe BaseRepository.
+     * Constructeur de la classe BaseService.
      *
      * @param Model $model Le modèle Eloquent associé au référentiel.
      */

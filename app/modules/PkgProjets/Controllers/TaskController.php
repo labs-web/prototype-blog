@@ -7,7 +7,7 @@ use App\Imports\GestionTasks\TaskImport;
 use App\Models\GestionTasks\Task;
 use Illuminate\Http\Request;
 use App\Http\Requests\GestionTasks\taskRequest;
-use Modules\PkgProjets\Repositories\TaskRepository;
+use Modules\PkgProjets\Services\TaskService;
 use Modules\Core\Controllers\Base\AdminController;
 use Carbon\Carbon;
 use App\Exports\GestionTasks\taskExport;
@@ -15,10 +15,10 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class TaskController extends AdminController
 {
-    protected $projectRepository;
-    public function __construct(TaskRepository $taskRepository)
+    protected $projectService;
+    public function __construct(TaskService $taskService)
     {
-        $this->projectRepository = $taskRepository;
+        $this->projectService = $taskService;
     }
 
     public function index(Request $request)
@@ -28,11 +28,11 @@ class TaskController extends AdminController
             $searchValue = $request->get('searchValue');
             if ($searchValue !== '') {
                 $searchQuery = str_replace(' ', '%', $searchValue);
-                $projectData = $this->projectRepository->searchData($searchQuery);
+                $projectData = $this->projectService->searchData($searchQuery);
                 return view('GestionTasks.task.index', compact('projectData'))->render();
             }
         }
-        $projectData = $this->projectRepository->paginate();
+        $projectData = $this->projectService->paginate();
         return view('GestionTasks.task.index', compact('projectData'));
     }
 
@@ -49,7 +49,7 @@ class TaskController extends AdminController
 
         try {
             $validatedData = $request->validated();
-            $this->projectRepository->create($validatedData);
+            $this->projectService->create($validatedData);
             return redirect()->route('tasks.index')->with('success', 'Le task a été ajouté avec succès.');
 
         } catch (ProjectAlreadyExistException $e) {
@@ -62,14 +62,14 @@ class TaskController extends AdminController
 
     public function show(string $id)
     {
-        $fetchedData = $this->projectRepository->find($id);
+        $fetchedData = $this->projectService->find($id);
         return view('GestionTasks.task.show', compact('fetchedData'));
     }
 
 
     public function edit(string $id)
     {
-        $dataToEdit = $this->projectRepository->find($id);
+        $dataToEdit = $this->projectService->find($id);
         $dataToEdit->date_debut = Carbon::parse($dataToEdit->date_debut)->format('Y-m-d');
         $dataToEdit->date_de_fin = Carbon::parse($dataToEdit->date_de_fin)->format('Y-m-d');
 
@@ -80,15 +80,15 @@ class TaskController extends AdminController
     public function update(taskRequest $request, string $id)
     {
         $validatedData = $request->validated();
-        $this->projectRepository->update($id, $validatedData);
+        $this->projectService->update($id, $validatedData);
         return redirect()->route('tasks.index', $id)->with('success', 'Le task a été modifier avec succès.');
     }
 
 
     public function destroy(string $id)
     {
-        $this->projectRepository->destroy($id);
-        $projectData = $this->projectRepository->paginate();
+        $this->projectService->destroy($id);
+        $projectData = $this->projectService->paginate();
         return view('GestionTasks.task.index', compact('projectData'))->with('succes', 'Le task a été supprimer avec succés.');
     }
 

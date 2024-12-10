@@ -8,20 +8,20 @@ use Modules\PkgProjets\App\Imports\ProjetImport;
 use Modules\PkgProjets\Models\Projet;
 use Illuminate\Http\Request;
 use Modules\PkgProjets\App\Requests\projetRequest;
-use Modules\PkgProjets\Repositories\ProjetRepository;
+use Modules\PkgProjets\Services\ProjetService;
 use Modules\Core\Controllers\Base\AdminController;
 use Carbon\Carbon;
 use Modules\PkgProjets\App\Exports\projetExport;
 use Modules\PkgProjets\App\Requests\tagRequest;
-use Modules\PkgProjets\Repositories\TagRepository;
+use Modules\PkgProjets\Services\TagService;
 use Maatwebsite\Excel\Facades\Excel;
 
 class TagController extends AdminController
 {
-    protected $tagRepository;
-    public function __construct(TagRepository $tagRepository)
+    protected $tagService;
+    public function __construct(TagService $tagService)
     {
-        $this->tagRepository = $tagRepository;
+        $this->tagService = $tagService;
     }
 
     public function index(Request $request)
@@ -31,11 +31,11 @@ class TagController extends AdminController
             $searchValue = $request->get('searchValue');
             if ($searchValue !== '') {
                 $searchQuery = str_replace(' ', '%', $searchValue);
-                $tagsData = $this->tagRepository->searchData($searchQuery);
+                $tagsData = $this->tagService->searchData($searchQuery);
                 return view('PkgProjets::tag.index', compact('tagsData'))->render();
             }
         }
-        $tagsData = $this->tagRepository->paginate();
+        $tagsData = $this->tagService->paginate();
         return view('PkgProjets::tag.index', compact('tagsData'));
     }
 
@@ -51,7 +51,7 @@ class TagController extends AdminController
     {
         try {
             $validatedData = $request->validated();
-            $this->tagRepository->create($validatedData);
+            $this->tagService->create($validatedData);
             return redirect()->route('tags.index')->with('success', __('PkgProjets::tag.singular') . ' ' . __('Core::app.addSucées'));
         } catch (ProjectAlreadyExistException $e) {
             return back()->withInput()->withErrors(['tag_exists' => __('PkgProjets::projet/message.createProjectException')]);
@@ -63,14 +63,14 @@ class TagController extends AdminController
 
     public function show(string $id)
     {
-        $fetchedData = $this->tagRepository->find($id);
+        $fetchedData = $this->tagService->find($id);
         return view('PkgProjets::tag.show', compact('fetchedData'));
     }
 
 
     public function edit(string $id)
     {
-        $dataToEdit = $this->tagRepository->find($id);
+        $dataToEdit = $this->tagService->find($id);
         return view('PkgProjets::tag.edit', compact('dataToEdit'));
     }
 
@@ -78,14 +78,14 @@ class TagController extends AdminController
     public function update(projetRequest $request, string $id)
     {
         $validatedData = $request->validated();
-        $this->tagRepository->update($id, $validatedData);
+        $this->tagService->update($id, $validatedData);
         return redirect()->route('tags.index', $id)->with('success', __('PkgProjets::tag.singular') . ' ' . __('Core::app.updateSucées'));
     }
 
 
     public function destroy(string $id)
     {
-        $this->tagRepository->destroy($id);
+        $this->tagService->destroy($id);
         return redirect()->route('tags.index')->with('success', 'Le tag a été supprimer avec succés.');
     }
 

@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Modules\Core\Repositories\Contracts;
+namespace Modules\Core\Services\Contracts;
 
-interface RepositoryInterface {
+interface ServiceInterface {
 
     public function paginate();
 

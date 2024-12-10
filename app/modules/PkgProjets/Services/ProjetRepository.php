@@ -1,17 +1,17 @@
 <?php
-namespace Modules\PkgProjets\Repositories;
+namespace Modules\PkgProjets\Services;
 
 use Modules\PkgProjets\Models\Projet;
-use Modules\Core\Repositories\BaseRepository;
+use Modules\Core\Services\BaseService;
 use Illuminate\Database\Eloquent\Model;
 use Modules\PkgProjets\App\Exceptions\ProjectAlreadyExistException;
 use Modules\PkgProjets\Models\Tag;
 
 
 /**
- * Classe ProjetRepository qui gère la persistance des projets dans la base de données.
+ * Classe ProjetService qui gère la persistance des projets dans la base de données.
  */
-class ProjetRepository extends BaseRepository
+class ProjetService extends BaseService
 {
     /**
      * Les champs de recherche disponibles pour les projets.
@@ -33,7 +33,7 @@ class ProjetRepository extends BaseRepository
     }
 
     /**
-     * Constructeur de la classe ProjetRepository.
+     * Constructeur de la classe ProjetService.
      */
     public function __construct()
     {

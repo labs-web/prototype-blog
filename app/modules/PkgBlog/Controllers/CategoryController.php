@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Modules\Core\Controllers\Base\AdminController;
 
 use Modules\PkgBlog\App\Requests\CategoryRequest;
-use Modules\PkgBlog\Repositories\CategoryRepository;
+use Modules\PkgBlog\Services\CategoryService;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Maatwebsite\Excel\Facades\Excel;
@@ -17,11 +17,11 @@ use Modules\PkgBlog\App\Imports\CategoryImport;
 
 class CategoryController extends AdminController
 {
-    protected $categoryRepository;
+    protected $categoryService;
 
-    public function __construct(CategoryRepository $categoryRepository)
+    public function __construct(CategoryService $categoryService)
     {
-        $this->categoryRepository = $categoryRepository;
+        $this->categoryService = $categoryService;
     }
 
     public function index(Request $request)
@@ -31,7 +31,7 @@ class CategoryController extends AdminController
         $searchQuery = str_replace(' ', '%', $searchValue);
     
         // Appel de la méthode paginate avec ou sans recherche
-        $data = $this->categoryRepository->paginate($searchQuery);
+        $data = $this->categoryService->paginate($searchQuery);
     
         // Gestion AJAX
         if ($request->ajax()) {
@@ -47,45 +47,45 @@ class CategoryController extends AdminController
 
     public function create()
     {
-        $item = $this->categoryRepository->createInstance();
+        $item = $this->categoryService->createInstance();
         return view('PkgBlog::category.create', compact('item'));
     }
 
     public function store(CategoryRequest $request)
     {
         $validatedData = $request->validated();
-        $this->categoryRepository->create($validatedData);
+        $this->categoryService->create($validatedData);
         return redirect()->route('categories.index')->with('success', __('Core::app.addSuccess'));
     }
 
     public function show(string $id)
     {
-        $item = $this->categoryRepository->find($id);
+        $item = $this->categoryService->find($id);
         return view('PkgBlog::category.show', compact('item'));
     }
 
     public function edit(string $id)
     {
-        $item = $this->categoryRepository->find($id);
+        $item = $this->categoryService->find($id);
         return view('PkgBlog::category.edit', compact('item'));
     }
 
     public function update(CategoryRequest $request, string $id)
     {
         $validatedData = $request->validated();
-        $this->categoryRepository->update($id, $validatedData);
+        $this->categoryService->update($id, $validatedData);
         return redirect()->route('categories.index')->with('success', __('Core::app.updateSuccess'));
     }
 
     public function destroy(string $id)
     {
-        $this->categoryRepository->destroy($id);
+        $this->categoryService->destroy($id);
         return redirect()->route('categories.index')->with('success', __('Core::app.deleteSuccess'));
     }
 
     public function export()
     {
-        $data = $this->categoryRepository->all();
+        $data = $this->categoryService->all();
         return Excel::download(new CategoryExport($data), 'category_export.xlsx');
     }
     public function import(Request $request)

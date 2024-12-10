@@ -1,15 +1,15 @@
 <?php
-namespace Modules\PkgProjets\Repositories;
+namespace Modules\PkgProjets\Services;
 
 use Modules\PkgProjets\Models\Tag;
-use Modules\Core\Repositories\BaseRepository;
+use Modules\Core\Services\BaseService;
 use Illuminate\Database\Eloquent\Model;
 use Modules\PkgProjets\App\Exceptions\TagAlreadyExistException;
 
 /**
- * Classe TagRepository qui gère la persistance des tags dans la base de données.
+ * Classe TagService qui gère la persistance des tags dans la base de données.
  */
-class TagRepository extends BaseRepository
+class TagService extends BaseService
 {
     /**
      * Les champs de recherche disponibles pour les tags.
@@ -31,7 +31,7 @@ class TagRepository extends BaseRepository
     }
 
     /**
-     * Constructeur de la classe TagRepository.
+     * Constructeur de la classe TagService.
      */
     public function __construct()
     {

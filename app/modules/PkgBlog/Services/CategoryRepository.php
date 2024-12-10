@@ -3,16 +3,16 @@
 
 
 
-namespace Modules\PkgBlog\Repositories;
+namespace Modules\PkgBlog\Services;
 
 use Modules\PkgBlog\Models\Category;
-use Modules\Core\Repositories\BaseRepository;
+use Modules\Core\Services\BaseService;
 
 
 /**
- * Classe CategoryRepository pour gérer la persistance de l'entité Category.
+ * Classe CategoryService pour gérer la persistance de l'entité Category.
  */
-class CategoryRepository extends BaseRepository
+class CategoryService extends BaseService
 {
     /**
      * Les champs de recherche disponibles pour categories.
@@ -35,7 +35,7 @@ class CategoryRepository extends BaseRepository
     }
 
     /**
-     * Constructeur de la classe CategoryRepository.
+     * Constructeur de la classe CategoryService.
      */
     public function __construct()
     {
