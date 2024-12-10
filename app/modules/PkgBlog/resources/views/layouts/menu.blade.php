@@ -10,9 +10,21 @@
     </a>
     <ul class="nav nav-treeview">
         <li class="nav-item">
+            <a href="{{ route('articles.index') }}" class="nav-link {{ Request::is('PkgBlog/articles') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-table"></i>
+                <p>Articles</p>
+            </a>
+        </li>
+        <li class="nav-item">
             <a href="{{ route('categories.index') }}" class="nav-link {{ Request::is('PkgBlog/categories') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-table"></i>
                 <p>Categories</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('tags.index') }}" class="nav-link {{ Request::is('PkgBlog/tags') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-table"></i>
+                <p>Tags</p>
             </a>
         </li>
     </ul>
