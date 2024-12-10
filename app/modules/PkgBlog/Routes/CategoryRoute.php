@@ -11,7 +11,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('/admin/PkgBlog')->group(function () {
         Route::resource('categories', CategoryController::class);
         // Routes supplémentaires avec préfixe
-        Route::prefix('posts/data')->group(function () {
+        Route::prefix('data')->group(function () {
             Route::get('categories/export', [CategoryController::class, 'export'])->name('categories.export');
             Route::post('categories/import', [CategoryController::class, 'import'])->name('categories.import');
         });

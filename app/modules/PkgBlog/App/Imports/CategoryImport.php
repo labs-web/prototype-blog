@@ -21,7 +21,7 @@ class CategoryImport implements ToModel, WithHeadingRow
      */
     private function recordExists(array $row): bool
     {
-        return Category::where('nom', $row['nom'])->exists();
+        return Category::where('name', $row['name'])->exists();
     }
 
     /**

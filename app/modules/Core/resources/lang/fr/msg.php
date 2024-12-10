@@ -19,6 +19,7 @@ return [
     'addSuccess' => ':entityName (:entityToString) a été ajouté avec succès.',
     'updateSuccess' => ':entityName (:entityToString) a été mis à jour avec succès.',
     'deleteSuccess' => ':entityName (:entityToString) a été supprimé avec succès.',
+    'importSuccess' => 'les :entityNames ont étés ajoutés avec succès.',
     'previous' => 'Précédent',
     'next' => 'Suivant',
     'submit' => 'Soumettre',
