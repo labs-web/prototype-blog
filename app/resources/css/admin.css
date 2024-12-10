@@ -1,7 +1,5 @@
 
-
-@import url('public/build/assets/webfonts-G0Y2Iy8c.css');
-
+@import './webfonts';
 @import 'admin-lte/dist/css/adminlte.min.css';
 @import 'admin-lte/plugins/fontawesome-free/css/all.min.css';
 @import 'admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
