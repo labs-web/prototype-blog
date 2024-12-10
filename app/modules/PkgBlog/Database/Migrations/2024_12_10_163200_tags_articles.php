@@ -15,16 +15,11 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('articles', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('slug');
-            $table->string('content');
+        Schema::create('tags_articles', function (Blueprint $table) {
 
-            $table->timestamps();
 
-            $table->foreignId('category_id')->constrained('categories');
-            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('tag_id')->constrained('tags');
+            $table->foreignId('article_id')->constrained('articles');
 
         });
     }
@@ -34,6 +29,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('articles');
+        Schema::dropIfExists('tags_articles');
     }
 };

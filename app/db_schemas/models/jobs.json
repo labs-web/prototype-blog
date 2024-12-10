@@ -1,0 +1,88 @@
+{
+    "name": "job",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "queue",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "payload",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "attempts",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "reserved_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "available_at",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        }
+    ],
+    "relations": {
+        "oneToOne": [],
+        "manyToOne": [],
+        "manyToMany": []
+    },
+    "creationOrder": 10
+}

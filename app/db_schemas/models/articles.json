@@ -1,0 +1,115 @@
+{
+    "name": "article",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "title",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "slug",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "content",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "updated_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "category_id",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "user_id",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        }
+    ],
+    "relations": {
+        "oneToOne": [],
+        "manyToOne": [
+            {
+                "column": "category_id",
+                "referencedTable": "categories",
+                "referencedColumn": "id"
+            },
+            {
+                "column": "user_id",
+                "referencedTable": "users",
+                "referencedColumn": "id"
+            }
+        ],
+        "manyToMany": [
+            {
+                "through": "articles_tags",
+                "with": "tags"
+            }
+        ]
+    },
+    "creationOrder": 3
+}

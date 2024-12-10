@@ -1,0 +1,99 @@
+{
+    "name": "user",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "email",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": true
+            },
+            "meta": {}
+        },
+        {
+            "name": "email_verified_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "password",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "remember_token",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "updated_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        }
+    ],
+    "relations": {
+        "oneToOne": [],
+        "manyToOne": [],
+        "manyToMany": []
+    },
+    "creationOrder": 2
+}

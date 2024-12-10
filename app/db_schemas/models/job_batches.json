@@ -1,0 +1,121 @@
+{
+    "name": "job_batch",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "total_jobs",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "pending_jobs",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "failed_jobs",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "failed_job_ids",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "options",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "cancelled_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "finished_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        }
+    ],
+    "relations": {
+        "oneToOne": [],
+        "manyToOne": [],
+        "manyToMany": []
+    },
+    "creationOrder": 9
+}

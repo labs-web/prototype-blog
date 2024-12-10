@@ -1,0 +1,44 @@
+{
+    "name": "cache",
+    "attributes": [
+        {
+            "name": "key",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "value",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "expiration",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        }
+    ],
+    "relations": {
+        "oneToOne": [],
+        "manyToOne": [],
+        "manyToMany": []
+    },
+    "creationOrder": 6
+}

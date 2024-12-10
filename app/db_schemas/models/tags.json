@@ -1,0 +1,71 @@
+{
+    "name": "tag",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "slug",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "updated_at",
+            "type": "string",
+            "options": {
+                "nullable": true,
+                "default": null,
+                "primaryKey": false,
+                "unique": false
+            },
+            "meta": {}
+        }
+    ],
+    "relations": {
+        "oneToOne": [],
+        "manyToOne": [],
+        "manyToMany": [
+            {
+                "through": "articles_tags",
+                "with": "articles"
+            }
+        ]
+    },
+    "creationOrder": 4
+}

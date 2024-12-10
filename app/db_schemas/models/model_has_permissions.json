@@ -1,0 +1,50 @@
+{
+    "name": "model_has_permission",
+    "attributes": [
+        {
+            "name": "permission_id",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "model_type",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        },
+        {
+            "name": "model_id",
+            "type": "string",
+            "options": {
+                "nullable": false,
+                "default": null,
+                "primaryKey": true,
+                "unique": false
+            },
+            "meta": {}
+        }
+    ],
+    "relations": {
+        "oneToOne": [],
+        "manyToOne": [
+            {
+                "column": "permission_id",
+                "referencedTable": "permissions",
+                "referencedColumn": "id"
+            }
+        ],
+        "manyToMany": []
+    },
+    "creationOrder": 13
+}

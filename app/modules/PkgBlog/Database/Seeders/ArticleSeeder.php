@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Schema;
 
 class ArticleSeeder extends Seeder
 {
-    public static int $order = 3;
-
     public function run(): void
     {
         $AdminRole = User::ADMIN;
