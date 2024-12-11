@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "id",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -17,7 +17,7 @@
         },
         {
             "name": "name",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -27,7 +27,7 @@
         },
         {
             "name": "slug",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -37,7 +37,7 @@
         },
         {
             "name": "created_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -47,7 +47,7 @@
         },
         {
             "name": "updated_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

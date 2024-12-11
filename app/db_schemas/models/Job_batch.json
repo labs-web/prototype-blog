@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "id",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -17,7 +17,7 @@
         },
         {
             "name": "name",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -27,7 +27,7 @@
         },
         {
             "name": "total_jobs",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -37,7 +37,7 @@
         },
         {
             "name": "pending_jobs",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -47,7 +47,7 @@
         },
         {
             "name": "failed_jobs",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -57,7 +57,7 @@
         },
         {
             "name": "failed_job_ids",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -67,7 +67,7 @@
         },
         {
             "name": "options",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -77,7 +77,7 @@
         },
         {
             "name": "cancelled_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -87,7 +87,7 @@
         },
         {
             "name": "created_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -97,7 +97,7 @@
         },
         {
             "name": "finished_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

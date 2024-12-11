@@ -56,7 +56,7 @@ class CategoryController extends AdminController
             'success',
             __('Core::msg.addSuccess', [
                 'entityToString' => $category,
-                'entityName' =>  __('PkgBlog::category.singular')
+                'modelName' =>  __('PkgBlog::category.singular')
                 ])
         );
 
@@ -82,7 +82,7 @@ class CategoryController extends AdminController
             'success',
             __('Core::msg.updateSuccess', [
                 'entityToString' => $category,
-                'entityName' =>  __('PkgBlog::category.singular')
+                'modelName' =>  __('PkgBlog::category.singular')
                 ])
         );
     }
@@ -94,7 +94,7 @@ class CategoryController extends AdminController
             'success',
             __('Core::msg.deleteSuccess', [
                 'entityToString' => $category,
-                'entityName' =>  __('PkgBlog::category.singular')
+                'modelName' =>  __('PkgBlog::category.singular')
                 ])
         );
     }
@@ -118,7 +118,7 @@ class CategoryController extends AdminController
 
         return redirect()->route('categories.index')->with(
             'success', __('Core::msg.importSuccess', [
-            'entityNames' =>  __('PkgBlog::category.plural')
+            'modelNames' =>  __('PkgBlog::category.plural')
             ]));
 
 

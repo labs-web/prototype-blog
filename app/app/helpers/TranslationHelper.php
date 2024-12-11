@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Config;
 function curd_index_title(string $entity_key): string
 {
     $locale = Config::get('app.locale', 'en');
-    $entityName = strtolower(trans($entity_key . '.plural'));
+    $modelName = strtolower(trans($entity_key . '.plural'));
 
     $titles = [
-        'fr' => 'Liste des ' . $entityName,
-        'en' => 'List of ' . $entityName,
+        'fr' => 'Liste des ' . $modelName,
+        'en' => 'List of ' . $modelName,
     ];
 
     return $titles[$locale] ?? $titles['en'];
@@ -36,11 +36,11 @@ function curd_index_title(string $entity_key): string
 function curd_index_add_label(string $entity_key): string
 {
     $locale = Config::get('app.locale', 'en');
-    $entityName = strtolower(trans($entity_key . '.singular'));
+    $modelName = strtolower(trans($entity_key . '.singular'));
 
     $messages = [
-        'fr' => "Ajouter un $entityName",
-        'en' => "Add $entityName",
+        'fr' => "Ajouter un $modelName",
+        'en' => "Add $modelName",
     ];
 
     return $messages[$locale] ?? $messages['en'];

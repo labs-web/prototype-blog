@@ -56,7 +56,7 @@ class ArticleController extends AdminController
             'success',
             __('Core::msg.addSuccess', [
                 'entityToString' => $article,
-                'entityName' =>  __('PkgBlog::article.singular')
+                'modelName' =>  __('PkgBlog::article.singular')
                 ])
         );
 
@@ -82,7 +82,7 @@ class ArticleController extends AdminController
             'success',
             __('Core::msg.updateSuccess', [
                 'entityToString' => $article,
-                'entityName' =>  __('PkgBlog::article.singular')
+                'modelName' =>  __('PkgBlog::article.singular')
                 ])
         );
     }
@@ -94,7 +94,7 @@ class ArticleController extends AdminController
             'success',
             __('Core::msg.deleteSuccess', [
                 'entityToString' => $article,
-                'entityName' =>  __('PkgBlog::article.singular')
+                'modelName' =>  __('PkgBlog::article.singular')
                 ])
         );
     }
@@ -118,7 +118,7 @@ class ArticleController extends AdminController
 
         return redirect()->route('articles.index')->with(
             'success', __('Core::msg.importSuccess', [
-            'entityNames' =>  __('PkgBlog::article.plural')
+            'modelNames' =>  __('PkgBlog::article.plural')
             ]));
 
 

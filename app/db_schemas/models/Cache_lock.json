@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "key",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -17,7 +17,7 @@
         },
         {
             "name": "owner",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -27,7 +27,7 @@
         },
         {
             "name": "expiration",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

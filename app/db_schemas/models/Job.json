@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "id",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -17,7 +17,7 @@
         },
         {
             "name": "queue",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -27,7 +27,7 @@
         },
         {
             "name": "payload",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -37,7 +37,7 @@
         },
         {
             "name": "attempts",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -47,7 +47,7 @@
         },
         {
             "name": "reserved_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -57,7 +57,7 @@
         },
         {
             "name": "available_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -67,7 +67,7 @@
         },
         {
             "name": "created_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

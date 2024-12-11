@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "id",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -17,7 +17,7 @@
         },
         {
             "name": "name",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -27,7 +27,7 @@
         },
         {
             "name": "email",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -41,7 +41,7 @@
         },
         {
             "name": "email_verified_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -51,7 +51,7 @@
         },
         {
             "name": "password",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -61,7 +61,7 @@
         },
         {
             "name": "remember_token",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -71,7 +71,7 @@
         },
         {
             "name": "created_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -81,7 +81,7 @@
         },
         {
             "name": "updated_at",
-            "type": "string",
+            "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

@@ -56,7 +56,7 @@ class TagController extends AdminController
             'success',
             __('Core::msg.addSuccess', [
                 'entityToString' => $tag,
-                'entityName' =>  __('PkgBlog::tag.singular')
+                'modelName' =>  __('PkgBlog::tag.singular')
                 ])
         );
 
@@ -82,7 +82,7 @@ class TagController extends AdminController
             'success',
             __('Core::msg.updateSuccess', [
                 'entityToString' => $tag,
-                'entityName' =>  __('PkgBlog::tag.singular')
+                'modelName' =>  __('PkgBlog::tag.singular')
                 ])
         );
     }
@@ -94,7 +94,7 @@ class TagController extends AdminController
             'success',
             __('Core::msg.deleteSuccess', [
                 'entityToString' => $tag,
-                'entityName' =>  __('PkgBlog::tag.singular')
+                'modelName' =>  __('PkgBlog::tag.singular')
                 ])
         );
     }
@@ -118,7 +118,7 @@ class TagController extends AdminController
 
         return redirect()->route('tags.index')->with(
             'success', __('Core::msg.importSuccess', [
-            'entityNames' =>  __('PkgBlog::tag.plural')
+            'modelNames' =>  __('PkgBlog::tag.plural')
             ]));
 
 
