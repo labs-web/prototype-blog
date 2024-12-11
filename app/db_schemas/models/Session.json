@@ -1,8 +1,8 @@
 {
-    "name": "Cache",
+    "name": "Session",
     "attributes": [
         {
-            "name": "key",
+            "name": "id",
             "type": "string",
             "metaAttributes": [
                 {
@@ -16,7 +16,37 @@
             ]
         },
         {
-            "name": "value",
+            "name": "user_id",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "ip_address",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "user_agent",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "payload",
             "type": "string",
             "metaAttributes": [
                 {
@@ -26,7 +56,7 @@
             ]
         },
         {
-            "name": "expiration",
+            "name": "last_activity",
             "type": "string",
             "metaAttributes": [
                 {
@@ -42,7 +72,7 @@
     "metaModels": [
         {
             "key": "creationOrder",
-            "value": 6
+            "value": 10
         },
         {
             "key": "isPivotTable",

@@ -1,22 +1,8 @@
 {
-    "name": "Cache",
+    "name": "Articles_tag",
     "attributes": [
         {
-            "name": "key",
-            "type": "string",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": false
-                },
-                {
-                    "key": "db_primaryKey",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "value",
+            "name": "article_id",
             "type": "string",
             "metaAttributes": [
                 {
@@ -26,7 +12,7 @@
             ]
         },
         {
-            "name": "expiration",
+            "name": "tag_id",
             "type": "string",
             "metaAttributes": [
                 {
@@ -37,16 +23,27 @@
         }
     ],
     "oneToOneRelations": [],
-    "manyToOneRelations": [],
+    "manyToOneRelations": [
+        {
+            "column": "article_id",
+            "referencedTable": "articles",
+            "referencedColumn": "id"
+        },
+        {
+            "column": "tag_id",
+            "referencedTable": "tags",
+            "referencedColumn": "id"
+        }
+    ],
     "manyToManyRelations": [],
     "metaModels": [
         {
             "key": "creationOrder",
-            "value": 6
+            "value": 5
         },
         {
             "key": "isPivotTable",
-            "value": false
+            "value": true
         }
     ]
 }

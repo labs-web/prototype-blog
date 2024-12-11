@@ -1,0 +1,118 @@
+{
+    "name": "Article",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                },
+                {
+                    "key": "db_primaryKey",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "slug",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "content",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "updated_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "category_id",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "user_id",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "oneToOneRelations": [],
+    "manyToOneRelations": [
+        {
+            "column": "category_id",
+            "referencedTable": "categories",
+            "referencedColumn": "id"
+        },
+        {
+            "column": "user_id",
+            "referencedTable": "users",
+            "referencedColumn": "id"
+        }
+    ],
+    "manyToManyRelations": [
+        {
+            "through": "articles_tags",
+            "with": "tags"
+        }
+    ],
+    "metaModels": [
+        {
+            "key": "creationOrder",
+            "value": 3
+        },
+        {
+            "key": "isPivotTable",
+            "value": false
+        }
+    ]
+}

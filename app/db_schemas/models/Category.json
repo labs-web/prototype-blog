@@ -1,8 +1,8 @@
 {
-    "name": "Cache",
+    "name": "Category",
     "attributes": [
         {
-            "name": "key",
+            "name": "id",
             "type": "string",
             "metaAttributes": [
                 {
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "name": "value",
+            "name": "name",
             "type": "string",
             "metaAttributes": [
                 {
@@ -26,12 +26,32 @@
             ]
         },
         {
-            "name": "expiration",
+            "name": "slug",
             "type": "string",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
                     "value": false
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "updated_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
                 }
             ]
         }
@@ -42,7 +62,7 @@
     "metaModels": [
         {
             "key": "creationOrder",
-            "value": 6
+            "value": 1
         },
         {
             "key": "isPivotTable",

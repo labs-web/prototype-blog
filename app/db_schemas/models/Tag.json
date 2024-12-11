@@ -1,8 +1,8 @@
 {
-    "name": "Cache",
+    "name": "Tag",
     "attributes": [
         {
-            "name": "key",
+            "name": "id",
             "type": "string",
             "metaAttributes": [
                 {
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "name": "value",
+            "name": "name",
             "type": "string",
             "metaAttributes": [
                 {
@@ -26,7 +26,7 @@
             ]
         },
         {
-            "name": "expiration",
+            "name": "slug",
             "type": "string",
             "metaAttributes": [
                 {
@@ -34,15 +34,40 @@
                     "value": false
                 }
             ]
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "updated_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
         }
     ],
     "oneToOneRelations": [],
     "manyToOneRelations": [],
-    "manyToManyRelations": [],
+    "manyToManyRelations": [
+        {
+            "through": "articles_tags",
+            "with": "articles"
+        }
+    ],
     "metaModels": [
         {
             "key": "creationOrder",
-            "value": 6
+            "value": 4
         },
         {
             "key": "isPivotTable",

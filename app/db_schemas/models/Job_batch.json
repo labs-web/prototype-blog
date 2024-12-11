@@ -1,0 +1,122 @@
+{
+    "name": "Job_batch",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                },
+                {
+                    "key": "db_primaryKey",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "total_jobs",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "pending_jobs",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "failed_jobs",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "failed_job_ids",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "options",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "cancelled_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "finished_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "oneToOneRelations": [],
+    "manyToOneRelations": [],
+    "manyToManyRelations": [],
+    "metaModels": [
+        {
+            "key": "creationOrder",
+            "value": 8
+        },
+        {
+            "key": "isPivotTable",
+            "value": false
+        }
+    ]
+}

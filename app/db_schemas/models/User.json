@@ -1,0 +1,106 @@
+{
+    "name": "User",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                },
+                {
+                    "key": "db_primaryKey",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "email",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                },
+                {
+                    "key": "db_unique",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "email_verified_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "password",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "remember_token",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "updated_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "oneToOneRelations": [],
+    "manyToOneRelations": [],
+    "manyToManyRelations": [],
+    "metaModels": [
+        {
+            "key": "creationOrder",
+            "value": 2
+        },
+        {
+            "key": "isPivotTable",
+            "value": false
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "name": "Cache",
+    "name": "Cache_lock",
     "attributes": [
         {
             "name": "key",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "name": "value",
+            "name": "owner",
             "type": "string",
             "metaAttributes": [
                 {
@@ -42,7 +42,7 @@
     "metaModels": [
         {
             "key": "creationOrder",
-            "value": 6
+            "value": 7
         },
         {
             "key": "isPivotTable",

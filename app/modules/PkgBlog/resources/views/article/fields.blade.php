@@ -55,6 +55,8 @@
             <label for="category_id">
                 {{ ucfirst(__('PkgBlog::article.category_id')) }}
                 
+                    <span class="text-danger">*</span>
+                
             </label>
             <input name="category_id" type="input" class="form-control" id="category_id" placeholder="Entrez {{__('PkgBlog::article.category_id')}}"
                 value="{{ $item ? $item->category_id : old('category_id') }}">
@@ -66,6 +68,8 @@
         <div class="form-group">
             <label for="user_id">
                 {{ ucfirst(__('PkgBlog::article.user_id')) }}
+                
+                    <span class="text-danger">*</span>
                 
             </label>
             <input name="user_id" type="input" class="form-control" id="user_id" placeholder="Entrez {{__('PkgBlog::article.user_id')}}"

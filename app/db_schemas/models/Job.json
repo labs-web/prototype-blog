@@ -1,0 +1,92 @@
+{
+    "name": "Job",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                },
+                {
+                    "key": "db_primaryKey",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "queue",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "payload",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "attempts",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "reserved_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "available_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "string",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
+                }
+            ]
+        }
+    ],
+    "oneToOneRelations": [],
+    "manyToOneRelations": [],
+    "manyToManyRelations": [],
+    "metaModels": [
+        {
+            "key": "creationOrder",
+            "value": 9
+        },
+        {
+            "key": "isPivotTable",
+            "value": false
+        }
+    ]
+}
