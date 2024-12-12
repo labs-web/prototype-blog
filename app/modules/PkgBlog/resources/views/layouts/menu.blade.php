@@ -22,6 +22,12 @@
             </a>
         </li>
         <li class="nav-item">
+            <a href="{{ route('comments.index') }}" class="nav-link {{ Request::is('PkgBlog/comments') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-table"></i>
+                <p>Comments</p>
+            </a>
+        </li>
+        <li class="nav-item">
             <a href="{{ route('tags.index') }}" class="nav-link {{ Request::is('PkgBlog/tags') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-table"></i>
                 <p>Tags</p>

@@ -5,15 +5,15 @@
 namespace Modules\PkgBlog\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Modules\PkgBlog\Models\Article;
+use Modules\PkgBlog\Models\Comment;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use App\Models\User;
 use Illuminate\Support\Facades\Schema;
 
-class ArticleSeeder extends Seeder
+class CommentSeeder extends Seeder
 {
-    public static int $order = 3;
+    public static int $order = 6;
 
     public function run(): void
     {
@@ -21,19 +21,17 @@ class ArticleSeeder extends Seeder
         $MembreRole = User::MEMBRE;
 
         Schema::disableForeignKeyConstraints();
-        Article::truncate();
+        Comment::truncate();
         Schema::enableForeignKeyConstraints();
 
-        $csvFile = fopen(base_path("modules/PkgBlog/Database/data/articles.csv"), "r");
+        $csvFile = fopen(base_path("modules/PkgBlog/Database/data/comments.csv"), "r");
         $firstline = true;
         while (($data = fgetcsv($csvFile)) !== false) {
             if (!$firstline) {
-                Article::create([
-                    "title" => $data[0] ,
-                    "slug" => $data[1] ,
-                    "content" => $data[2] ,
-                    "category_id" => $data[3] ,
-                    "user_id" => $data[4] 
+                Comment::create([
+                    "content" => $data[0] ,
+                    "user_id" => $data[1] ,
+                    "article_id" => $data[2] 
                 ]);
             }
             $firstline = false;
@@ -53,27 +51,27 @@ class ArticleSeeder extends Seeder
         ];
 
         foreach ($actions as $action) {
-            Permission::create(['name' => $action . '-ArticleController', 'guard_name' => 'web']);
+            Permission::create(['name' => $action . '-CommentController', 'guard_name' => 'web']);
         }
 
         $admin = Role::where('name', $AdminRole)->first();
         $membre = Role::where('name', $MembreRole)->first();
 
         $admin->givePermissionTo([
-            'index-ArticleController',
-            'show-ArticleController',
-            'create-ArticleController',
-            'store-ArticleController',
-            'edit-ArticleController',
-            'update-ArticleController',
-            'destroy-ArticleController',
-            'export-ArticleController',
-            'import-ArticleController',
+            'index-CommentController',
+            'show-CommentController',
+            'create-CommentController',
+            'store-CommentController',
+            'edit-CommentController',
+            'update-CommentController',
+            'destroy-CommentController',
+            'export-CommentController',
+            'import-CommentController',
         ]);
 
         $membre->givePermissionTo([
-            'index-ArticleController',
-            'show-ArticleController'
+            'index-CommentController',
+            'show-CommentController'
         ]);
     }
 }

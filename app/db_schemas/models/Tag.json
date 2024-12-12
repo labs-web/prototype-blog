@@ -32,6 +32,10 @@
                 {
                     "key": "db_nullable",
                     "value": false
+                },
+                {
+                    "key": "db_unique",
+                    "value": true
                 }
             ]
         },
@@ -60,7 +64,7 @@
     "manyToOneRelations": [],
     "manyToManyRelations": [
         {
-            "through": "articles_tags",
+            "through": "article_tag",
             "with": "articles"
         }
     ],

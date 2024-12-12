@@ -20,8 +20,8 @@ class ArticleRequest extends FormRequest
             'title' => 'required|max:255',
             'slug' => 'required|max:255',
             'content' => 'required|max:255',
-            'category_id' => 'required|max:255',
-            'user_id' => 'required|max:255'
+            'category_id' => 'required',
+            'user_id' => 'required'
         ];
     }
 

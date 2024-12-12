@@ -32,6 +32,10 @@
                 {
                     "key": "db_nullable",
                     "value": false
+                },
+                {
+                    "key": "db_unique",
+                    "value": true
                 }
             ]
         },
@@ -42,26 +46,6 @@
                 {
                     "key": "db_nullable",
                     "value": false
-                }
-            ]
-        },
-        {
-            "name": "created_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "updated_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
                 }
             ]
         },
@@ -78,6 +62,26 @@
         {
             "name": "user_id",
             "type": "Integer",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "Date",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "updated_at",
+            "type": "Date",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -101,7 +105,7 @@
     ],
     "manyToManyRelations": [
         {
-            "through": "articles_tags",
+            "through": "article_tag",
             "with": "tags"
         }
     ],

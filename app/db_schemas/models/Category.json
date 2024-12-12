@@ -32,6 +32,10 @@
                 {
                     "key": "db_nullable",
                     "value": false
+                },
+                {
+                    "key": "db_unique",
+                    "value": true
                 }
             ]
         },

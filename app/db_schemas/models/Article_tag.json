@@ -1,9 +1,9 @@
 {
-    "name": "Cache_lock",
+    "name": "Article_tag",
     "attributes": [
         {
-            "name": "key",
-            "type": "String",
+            "name": "article_id",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -16,37 +16,42 @@
             ]
         },
         {
-            "name": "owner",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": false
-                }
-            ]
-        },
-        {
-            "name": "expiration",
+            "name": "tag_id",
             "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
                     "value": false
+                },
+                {
+                    "key": "db_primaryKey",
+                    "value": true
                 }
             ]
         }
     ],
     "oneToOneRelations": [],
-    "manyToOneRelations": [],
+    "manyToOneRelations": [
+        {
+            "column": "article_id",
+            "referencedTable": "articles",
+            "referencedColumn": "id"
+        },
+        {
+            "column": "tag_id",
+            "referencedTable": "tags",
+            "referencedColumn": "id"
+        }
+    ],
     "manyToManyRelations": [],
     "metaModels": [
         {
             "name": "creationOrder",
-            "value": 7
+            "value": 5
         },
         {
             "name": "isPivotTable",
-            "value": false
+            "value": true
         }
     ]
 }

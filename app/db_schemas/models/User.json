@@ -40,32 +40,12 @@
             ]
         },
         {
-            "name": "email_verified_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
             "name": "password",
             "type": "String",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
                     "value": false
-                }
-            ]
-        },
-        {
-            "name": "remember_token",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
                 }
             ]
         },

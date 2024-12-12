@@ -1,4 +1,45 @@
 {
+    "article_tag": {
+        "name": "article_tag",
+        "columns": [
+            {
+                "name": "article_id",
+                "type": "Integer",
+                "options": {
+                    "nullable": false,
+                    "default": null,
+                    "primaryKey": true,
+                    "unique": false
+                }
+            },
+            {
+                "name": "tag_id",
+                "type": "Integer",
+                "options": {
+                    "nullable": false,
+                    "default": null,
+                    "primaryKey": true,
+                    "unique": false
+                }
+            }
+        ],
+        "oneToOneRelations": [],
+        "manyToOneRelations": [
+            {
+                "column": "article_id",
+                "referencedTable": "articles",
+                "referencedColumn": "id"
+            },
+            {
+                "column": "tag_id",
+                "referencedTable": "tags",
+                "referencedColumn": "id"
+            }
+        ],
+        "manyToManyRelations": [],
+        "isPivotTable": true,
+        "creationOrder": 5
+    },
     "articles": {
         "name": "articles",
         "columns": [
@@ -29,7 +70,7 @@
                     "nullable": false,
                     "default": null,
                     "primaryKey": false,
-                    "unique": false
+                    "unique": true
                 }
             },
             {
@@ -37,26 +78,6 @@
                 "type": "String",
                 "options": {
                     "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "created_at",
-                "type": "Date",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "updated_at",
-                "type": "Date",
-                "options": {
-                    "nullable": true,
                     "default": null,
                     "primaryKey": false,
                     "unique": false
@@ -81,6 +102,26 @@
                     "primaryKey": false,
                     "unique": false
                 }
+            },
+            {
+                "name": "created_at",
+                "type": "Date",
+                "options": {
+                    "nullable": true,
+                    "default": "CURRENT_TIMESTAMP",
+                    "primaryKey": false,
+                    "unique": false
+                }
+            },
+            {
+                "name": "updated_at",
+                "type": "Date",
+                "options": {
+                    "nullable": true,
+                    "default": "CURRENT_TIMESTAMP",
+                    "primaryKey": false,
+                    "unique": false
+                }
             }
         ],
         "oneToOneRelations": [],
@@ -98,133 +139,12 @@
         ],
         "manyToManyRelations": [
             {
-                "through": "articles_tags",
+                "through": "article_tag",
                 "with": "tags"
             }
         ],
         "isPivotTable": false,
         "creationOrder": 3
-    },
-    "articles_tags": {
-        "name": "articles_tags",
-        "columns": [
-            {
-                "name": "article_id",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "tag_id",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            }
-        ],
-        "oneToOneRelations": [],
-        "manyToOneRelations": [
-            {
-                "column": "article_id",
-                "referencedTable": "articles",
-                "referencedColumn": "id"
-            },
-            {
-                "column": "tag_id",
-                "referencedTable": "tags",
-                "referencedColumn": "id"
-            }
-        ],
-        "manyToManyRelations": [],
-        "isPivotTable": true,
-        "creationOrder": 5
-    },
-    "cache": {
-        "name": "cache",
-        "columns": [
-            {
-                "name": "key",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": true,
-                    "unique": false
-                }
-            },
-            {
-                "name": "value",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "expiration",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            }
-        ],
-        "oneToOneRelations": [],
-        "manyToOneRelations": [],
-        "manyToManyRelations": [],
-        "isPivotTable": false,
-        "creationOrder": 6
-    },
-    "cache_locks": {
-        "name": "cache_locks",
-        "columns": [
-            {
-                "name": "key",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": true,
-                    "unique": false
-                }
-            },
-            {
-                "name": "owner",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "expiration",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            }
-        ],
-        "oneToOneRelations": [],
-        "manyToOneRelations": [],
-        "manyToManyRelations": [],
-        "isPivotTable": false,
-        "creationOrder": 7
     },
     "categories": {
         "name": "categories",
@@ -256,7 +176,7 @@
                     "nullable": false,
                     "default": null,
                     "primaryKey": false,
-                    "unique": false
+                    "unique": true
                 }
             },
             {
@@ -264,7 +184,7 @@
                 "type": "Date",
                 "options": {
                     "nullable": true,
-                    "default": null,
+                    "default": "CURRENT_TIMESTAMP",
                     "primaryKey": false,
                     "unique": false
                 }
@@ -274,7 +194,7 @@
                 "type": "Date",
                 "options": {
                     "nullable": true,
-                    "default": null,
+                    "default": "CURRENT_TIMESTAMP",
                     "primaryKey": false,
                     "unique": false
                 }
@@ -286,118 +206,8 @@
         "isPivotTable": false,
         "creationOrder": 1
     },
-    "job_batches": {
-        "name": "job_batches",
-        "columns": [
-            {
-                "name": "id",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": true,
-                    "unique": false
-                }
-            },
-            {
-                "name": "name",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "total_jobs",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "pending_jobs",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "failed_jobs",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "failed_job_ids",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "options",
-                "type": "String",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "cancelled_at",
-                "type": "Integer",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "created_at",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "finished_at",
-                "type": "Integer",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            }
-        ],
-        "oneToOneRelations": [],
-        "manyToOneRelations": [],
-        "manyToManyRelations": [],
-        "isPivotTable": false,
-        "creationOrder": 8
-    },
-    "jobs": {
-        "name": "jobs",
+    "comments": {
+        "name": "comments",
         "columns": [
             {
                 "name": "id",
@@ -410,82 +220,12 @@
                 }
             },
             {
-                "name": "queue",
+                "name": "content",
                 "type": "String",
                 "options": {
                     "nullable": false,
                     "default": null,
                     "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "payload",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "attempts",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "reserved_at",
-                "type": "Integer",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "available_at",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "created_at",
-                "type": "Integer",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            }
-        ],
-        "oneToOneRelations": [],
-        "manyToOneRelations": [],
-        "manyToManyRelations": [],
-        "isPivotTable": false,
-        "creationOrder": 9
-    },
-    "sessions": {
-        "name": "sessions",
-        "columns": [
-            {
-                "name": "id",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": true,
                     "unique": false
                 }
             },
@@ -500,51 +240,52 @@
                 }
             },
             {
-                "name": "ip_address",
-                "type": "String",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "user_agent",
-                "type": "String",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "payload",
-                "type": "String",
-                "options": {
-                    "nullable": false,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
-                "name": "last_activity",
+                "name": "article_id",
                 "type": "Integer",
                 "options": {
-                    "nullable": false,
+                    "nullable": true,
                     "default": null,
+                    "primaryKey": false,
+                    "unique": false
+                }
+            },
+            {
+                "name": "created_at",
+                "type": "Date",
+                "options": {
+                    "nullable": true,
+                    "default": "CURRENT_TIMESTAMP",
+                    "primaryKey": false,
+                    "unique": false
+                }
+            },
+            {
+                "name": "updated_at",
+                "type": "Date",
+                "options": {
+                    "nullable": true,
+                    "default": "CURRENT_TIMESTAMP",
                     "primaryKey": false,
                     "unique": false
                 }
             }
         ],
         "oneToOneRelations": [],
-        "manyToOneRelations": [],
+        "manyToOneRelations": [
+            {
+                "column": "user_id",
+                "referencedTable": "users",
+                "referencedColumn": "id"
+            },
+            {
+                "column": "article_id",
+                "referencedTable": "articles",
+                "referencedColumn": "id"
+            }
+        ],
         "manyToManyRelations": [],
         "isPivotTable": false,
-        "creationOrder": 10
+        "creationOrder": 6
     },
     "tags": {
         "name": "tags",
@@ -576,7 +317,7 @@
                     "nullable": false,
                     "default": null,
                     "primaryKey": false,
-                    "unique": false
+                    "unique": true
                 }
             },
             {
@@ -584,7 +325,7 @@
                 "type": "Date",
                 "options": {
                     "nullable": true,
-                    "default": null,
+                    "default": "CURRENT_TIMESTAMP",
                     "primaryKey": false,
                     "unique": false
                 }
@@ -594,7 +335,7 @@
                 "type": "Date",
                 "options": {
                     "nullable": true,
-                    "default": null,
+                    "default": "CURRENT_TIMESTAMP",
                     "primaryKey": false,
                     "unique": false
                 }
@@ -604,7 +345,7 @@
         "manyToOneRelations": [],
         "manyToManyRelations": [
             {
-                "through": "articles_tags",
+                "through": "article_tag",
                 "with": "articles"
             }
         ],
@@ -645,16 +386,6 @@
                 }
             },
             {
-                "name": "email_verified_at",
-                "type": "Date",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
                 "name": "password",
                 "type": "String",
                 "options": {
@@ -665,21 +396,11 @@
                 }
             },
             {
-                "name": "remember_token",
-                "type": "String",
-                "options": {
-                    "nullable": true,
-                    "default": null,
-                    "primaryKey": false,
-                    "unique": false
-                }
-            },
-            {
                 "name": "created_at",
                 "type": "Date",
                 "options": {
                     "nullable": true,
-                    "default": null,
+                    "default": "CURRENT_TIMESTAMP",
                     "primaryKey": false,
                     "unique": false
                 }
@@ -689,7 +410,7 @@
                 "type": "Date",
                 "options": {
                     "nullable": true,
-                    "default": null,
+                    "default": "CURRENT_TIMESTAMP",
                     "primaryKey": false,
                     "unique": false
                 }

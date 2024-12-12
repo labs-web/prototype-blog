@@ -1,9 +1,9 @@
 {
-    "name": "Session",
+    "name": "Comment",
     "attributes": [
         {
             "name": "id",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -12,6 +12,16 @@
                 {
                     "key": "db_primaryKey",
                     "value": true
+                }
+            ]
+        },
+        {
+            "name": "content",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": false
                 }
             ]
         },
@@ -26,53 +36,54 @@
             ]
         },
         {
-            "name": "ip_address",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "user_agent",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "payload",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": false
-                }
-            ]
-        },
-        {
-            "name": "last_activity",
+            "name": "article_id",
             "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
-                    "value": false
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "Date",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "updated_at",
+            "type": "Date",
+            "metaAttributes": [
+                {
+                    "key": "db_nullable",
+                    "value": true
                 }
             ]
         }
     ],
     "oneToOneRelations": [],
-    "manyToOneRelations": [],
+    "manyToOneRelations": [
+        {
+            "column": "user_id",
+            "referencedTable": "users",
+            "referencedColumn": "id"
+        },
+        {
+            "column": "article_id",
+            "referencedTable": "articles",
+            "referencedColumn": "id"
+        }
+    ],
     "manyToManyRelations": [],
     "metaModels": [
         {
             "name": "creationOrder",
-            "value": 10
+            "value": 6
         },
         {
             "name": "isPivotTable",

@@ -7,28 +7,23 @@ namespace Modules\PkgBlog\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User;
-use Modules\PkgBlog\Models\Category;
-use Modules\PkgBlog\Models\Tag;
+use Modules\PkgBlog\Models\Article;
 
-class Article extends Model
+class Comment extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'slug', 'content', 'category_id', 'user_id'];
+    protected $fillable = ['content', 'user_id', 'article_id'];
 
-    public function Category()
-    {
-        return $this->belongsTo(Category::class, 'category_id', 'id');
-    }
     public function User()
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
-
-    public function Tag()
+    public function Article()
     {
-        return $this->belongsToMany(Tag::class, 'article_tag');
+        return $this->belongsTo(Article::class, 'article_id', 'id');
     }
+
 
     public function __toString()
     {
