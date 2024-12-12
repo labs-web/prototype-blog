@@ -70,14 +70,14 @@
         {
             fieldId: 'user_id',
             fetchUrl: "{{ route('users.all') }}",
-            selectedValue: {{ $item ? $item->user_id : 'null' }},
+            selectedValue: {{ $item->user_id ? $item->user_id : 'undefined' }}
         },
         
         {
             fieldId: 'article_id',
             fetchUrl: "{{ route('articles.all') }}",
-            selectedValue: {{ $item ? $item->article_id : 'null' }},
-        },
+            selectedValue: {{ $item->article_id ? $item->article_id : 'undefined' }}
+        }
         
     ];
 </script>
