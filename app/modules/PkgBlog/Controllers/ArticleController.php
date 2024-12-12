@@ -124,4 +124,11 @@ class ArticleController extends AdminController
 
 
     }
+
+    // Il permet d'afficher les information en format JSON pour une utilisation avec Ajax
+    public function getArticles()
+    {
+        $articles = $this->articleService->all();
+        return response()->json($articles);
+    }
 }

@@ -49,7 +49,8 @@ class ArticleSeeder extends Seeder
             'update',
             'destroy',
             'export',
-            'import'
+            'import',
+            'getArticles'
         ];
 
         foreach ($actions as $action) {
@@ -69,6 +70,7 @@ class ArticleSeeder extends Seeder
             'destroy-ArticleController',
             'export-ArticleController',
             'import-ArticleController',
+            'getArticles-ArticleController',
         ]);
 
         $membre->givePermissionTo([

@@ -124,4 +124,11 @@ class CategoryController extends AdminController
 
 
     }
+
+    // Il permet d'afficher les information en format JSON pour une utilisation avec Ajax
+    public function getCategories()
+    {
+        $categories = $this->categoryService->all();
+        return response()->json($categories);
+    }
 }
