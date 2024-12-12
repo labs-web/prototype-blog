@@ -41,11 +41,11 @@
     "manyToManyRelations": [],
     "metaModels": [
         {
-            "key": "creationOrder",
+            "name": "creationOrder",
             "value": 7
         },
         {
-            "key": "isPivotTable",
+            "name": "isPivotTable",
             "value": false
         }
     ]

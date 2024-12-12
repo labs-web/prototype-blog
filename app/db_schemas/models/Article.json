@@ -107,11 +107,11 @@
     ],
     "metaModels": [
         {
-            "key": "creationOrder",
+            "name": "creationOrder",
             "value": 3
         },
         {
-            "key": "isPivotTable",
+            "name": "isPivotTable",
             "value": false
         }
     ]
