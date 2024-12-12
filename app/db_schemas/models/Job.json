@@ -1,5 +1,5 @@
 {
-    "name": "User",
+    "name": "Job",
     "attributes": [
         {
             "name": "id",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "name": "name",
+            "name": "queue",
             "type": "String",
             "metaAttributes": [
                 {
@@ -26,31 +26,7 @@
             ]
         },
         {
-            "name": "email",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": false
-                },
-                {
-                    "name": "db_unique",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "email_verified_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "password",
+            "name": "payload",
             "type": "String",
             "metaAttributes": [
                 {
@@ -60,32 +36,42 @@
             ]
         },
         {
-            "name": "remember_token",
-            "type": "String",
+            "name": "attempts",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "reserved_at",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "name": "db_nullable",
                     "value": true
+                }
+            ]
+        },
+        {
+            "name": "available_at",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
                 }
             ]
         },
         {
             "name": "created_at",
-            "type": "Date",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "name": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "updated_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
+                    "value": false
                 }
             ]
         }
@@ -96,7 +82,7 @@
     "metaModels": [
         {
             "name": "creationOrder",
-            "value": 2
+            "value": 10
         },
         {
             "name": "isPivotTable",

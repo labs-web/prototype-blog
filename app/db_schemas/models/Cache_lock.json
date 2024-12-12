@@ -1,9 +1,9 @@
 {
-    "name": "Tag",
+    "name": "Cache_lock",
     "attributes": [
         {
-            "name": "id",
-            "type": "Integer",
+            "name": "key",
+            "type": "String",
             "metaAttributes": [
                 {
                     "name": "db_nullable",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "name": "name",
+            "name": "owner",
             "type": "String",
             "metaAttributes": [
                 {
@@ -26,48 +26,23 @@
             ]
         },
         {
-            "name": "slug",
-            "type": "String",
+            "name": "expiration",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "name": "db_nullable",
                     "value": false
-                }
-            ]
-        },
-        {
-            "name": "created_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "updated_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
                 }
             ]
         }
     ],
     "oneToOneRelations": [],
     "manyToOneRelations": [],
-    "manyToManyRelations": [
-        {
-            "through": "article_tag",
-            "with": "articles"
-        }
-    ],
+    "manyToManyRelations": [],
     "metaModels": [
         {
             "name": "creationOrder",
-            "value": 4
+            "value": 7
         },
         {
             "name": "isPivotTable",

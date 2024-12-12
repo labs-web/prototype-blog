@@ -6,11 +6,11 @@
             "type": "Integer",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
                 },
                 {
-                    "key": "db_primaryKey",
+                    "name": "db_primaryKey",
                     "value": true
                 }
             ]
@@ -20,8 +20,12 @@
             "type": "String",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
+                },
+                {
+                    "name": "toString",
+                    "value": true
                 }
             ]
         },
@@ -30,12 +34,8 @@
             "type": "String",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
-                },
-                {
-                    "key": "db_unique",
-                    "value": true
                 }
             ]
         },
@@ -44,28 +44,8 @@
             "type": "String",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
-                }
-            ]
-        },
-        {
-            "name": "category_id",
-            "type": "Integer",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "user_id",
-            "type": "Integer",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
                 }
             ]
         },
@@ -74,7 +54,7 @@
             "type": "Date",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": true
                 }
             ]
@@ -84,8 +64,28 @@
             "type": "Date",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": true
+                }
+            ]
+        },
+        {
+            "name": "category_id",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "user_id",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
                 }
             ]
         }

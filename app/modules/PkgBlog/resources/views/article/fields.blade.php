@@ -108,13 +108,15 @@
         {
             fieldId: 'category_id',
             fetchUrl: "{{ route('categories.all') }}",
-            selectedValue: {{ $item->category_id ? $item->category_id : 'undefined' }}
+            selectedValue: {{ $item->category_id ? $item->category_id : 'undefined' }},
+            fieldValue: 'name'
         },
         
         {
             fieldId: 'user_id',
             fetchUrl: "{{ route('users.all') }}",
-            selectedValue: {{ $item->user_id ? $item->user_id : 'undefined' }}
+            selectedValue: {{ $item->user_id ? $item->user_id : 'undefined' }},
+            fieldValue: 'name'
         }
         
     ];

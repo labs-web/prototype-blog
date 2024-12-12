@@ -1,9 +1,9 @@
 {
-    "name": "User",
+    "name": "Session",
     "attributes": [
         {
             "name": "id",
-            "type": "Integer",
+            "type": "String",
             "metaAttributes": [
                 {
                     "name": "db_nullable",
@@ -16,7 +16,37 @@
             ]
         },
         {
-            "name": "name",
+            "name": "user_id",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "ip_address",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "user_agent",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "payload",
             "type": "String",
             "metaAttributes": [
                 {
@@ -26,66 +56,12 @@
             ]
         },
         {
-            "name": "email",
-            "type": "String",
+            "name": "last_activity",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "name": "db_nullable",
                     "value": false
-                },
-                {
-                    "name": "db_unique",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "email_verified_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "password",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": false
-                }
-            ]
-        },
-        {
-            "name": "remember_token",
-            "type": "String",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "created_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "updated_at",
-            "type": "Date",
-            "metaAttributes": [
-                {
-                    "name": "db_nullable",
-                    "value": true
                 }
             ]
         }
@@ -96,7 +72,7 @@
     "metaModels": [
         {
             "name": "creationOrder",
-            "value": 2
+            "value": 11
         },
         {
             "name": "isPivotTable",

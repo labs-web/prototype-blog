@@ -16,7 +16,7 @@ $(document).ready(function () {
     // Vérifier si des champs dynamiques à remplir sont spécifiés
     if (window.dynamicSelectManyToOne && Array.isArray(window.dynamicSelectManyToOne)) {
         window.dynamicSelectManyToOne.forEach(function (selectConfig) {
-            let { fieldId, fetchUrl, selectedValue } = selectConfig;
+            let { fieldId, fetchUrl, selectedValue,fieldValue } = selectConfig;
 
             // Vérifiez si le champ existe avant de procéder
             if ($('#' + fieldId).length > 0) {
@@ -29,7 +29,7 @@ $(document).ready(function () {
 
                         // Ajouter les options au champ
                         data.forEach(function (item) {
-                            let option = new Option(item.name, item.id);
+                            let option = new Option(item[fieldValue], item.id);
                             selectElement.append(option);
                         });
 

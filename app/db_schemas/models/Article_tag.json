@@ -6,12 +6,8 @@
             "type": "Integer",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
-                },
-                {
-                    "key": "db_primaryKey",
-                    "value": true
                 }
             ]
         },
@@ -20,12 +16,8 @@
             "type": "Integer",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
-                },
-                {
-                    "key": "db_primaryKey",
-                    "value": true
                 }
             ]
         }

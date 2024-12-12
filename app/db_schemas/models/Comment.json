@@ -6,11 +6,11 @@
             "type": "Integer",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
                 },
                 {
-                    "key": "db_primaryKey",
+                    "name": "db_primaryKey",
                     "value": true
                 }
             ]
@@ -20,28 +20,8 @@
             "type": "String",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": false
-                }
-            ]
-        },
-        {
-            "name": "user_id",
-            "type": "Integer",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "name": "article_id",
-            "type": "Integer",
-            "metaAttributes": [
-                {
-                    "key": "db_nullable",
-                    "value": true
                 }
             ]
         },
@@ -50,7 +30,7 @@
             "type": "Date",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": true
                 }
             ]
@@ -60,8 +40,28 @@
             "type": "Date",
             "metaAttributes": [
                 {
-                    "key": "db_nullable",
+                    "name": "db_nullable",
                     "value": true
+                }
+            ]
+        },
+        {
+            "name": "user_id",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "article_id",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
                 }
             ]
         }
@@ -69,13 +69,13 @@
     "oneToOneRelations": [],
     "manyToOneRelations": [
         {
-            "column": "user_id",
-            "referencedTable": "users",
+            "column": "article_id",
+            "referencedTable": "articles",
             "referencedColumn": "id"
         },
         {
-            "column": "article_id",
-            "referencedTable": "articles",
+            "column": "user_id",
+            "referencedTable": "users",
             "referencedColumn": "id"
         }
     ],
@@ -83,7 +83,7 @@
     "metaModels": [
         {
             "name": "creationOrder",
-            "value": 6
+            "value": 8
         },
         {
             "name": "isPivotTable",
