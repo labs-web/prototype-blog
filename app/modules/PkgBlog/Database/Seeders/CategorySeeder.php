@@ -46,7 +46,8 @@ class CategorySeeder extends Seeder
             'update',
             'destroy',
             'export',
-            'import'
+            'import',
+            'getCategories'
         ];
 
         foreach ($actions as $action) {
@@ -66,6 +67,7 @@ class CategorySeeder extends Seeder
             'destroy-CategoryController',
             'export-CategoryController',
             'import-CategoryController',
+            'getCategories-CategoryController',
         ]);
 
         $membre->givePermissionTo([

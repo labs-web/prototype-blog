@@ -16,8 +16,13 @@
                     <span class="text-danger">*</span>
                 
             </label>
-            <input name="name" type="input" class="form-control" id="name" placeholder="Entrez {{__('PkgBlog::category.name')}}"
-                value="{{ $item ? $item->name : old('name') }}">
+            <input
+                name="name"
+                type="input"
+                class="form-control"
+                id="name"
+                placeholder="{{ __('Enter PkgBlog::category.name') }}"
+                value="{{ $item ? $item.name : old('name') }}">
             @error('name')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
@@ -30,12 +35,19 @@
                     <span class="text-danger">*</span>
                 
             </label>
-            <input name="slug" type="input" class="form-control" id="slug" placeholder="Entrez {{__('PkgBlog::category.slug')}}"
-                value="{{ $item ? $item->slug : old('slug') }}">
+            <input
+                name="slug"
+                type="input"
+                class="form-control"
+                id="slug"
+                placeholder="{{ __('Enter PkgBlog::category.slug') }}"
+                value="{{ $item ? $item.slug : old('slug') }}">
             @error('slug')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
+        
+
         
     </div>
 
@@ -44,3 +56,9 @@
         <button type="submit" class="btn btn-info ml-2">{{ $item->id ? __('Core::msg.edit') : __('Core::msg.add') }}</button>
     </div>
 </form>
+
+<script>
+    window.dynamicSelectManyToOne = [
+        
+    ];
+</script>

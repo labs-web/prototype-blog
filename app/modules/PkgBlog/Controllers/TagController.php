@@ -124,4 +124,11 @@ class TagController extends AdminController
 
 
     }
+
+    // Il permet d'afficher les information en format JSON pour une utilisation avec Ajax
+    public function getTags()
+    {
+        $tags = $this->tagService->all();
+        return response()->json($tags);
+    }
 }

@@ -47,7 +47,8 @@ class CommentSeeder extends Seeder
             'update',
             'destroy',
             'export',
-            'import'
+            'import',
+            'getComments'
         ];
 
         foreach ($actions as $action) {
@@ -67,6 +68,7 @@ class CommentSeeder extends Seeder
             'destroy-CommentController',
             'export-CommentController',
             'import-CommentController',
+            'getComments-CommentController',
         ]);
 
         $membre->givePermissionTo([

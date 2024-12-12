@@ -22,7 +22,7 @@
                 class="form-control"
                 id="title"
                 placeholder="{{ __('Enter PkgBlog::article.title') }}"
-                value="{{ $item ? $item.title : old('title') }}">
+                value="{{ $item ? $item->title : old('title') }}">
             @error('title')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
@@ -41,7 +41,7 @@
                 class="form-control"
                 id="slug"
                 placeholder="{{ __('Enter PkgBlog::article.slug') }}"
-                value="{{ $item ? $item.slug : old('slug') }}">
+                value="{{ $item ? $item->slug : old('slug') }}">
             @error('slug')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
@@ -60,7 +60,7 @@
                 class="form-control"
                 id="content"
                 placeholder="{{ __('Enter PkgBlog::article.content') }}"
-                value="{{ $item ? $item.content : old('content') }}">
+                value="{{ $item ? $item->content : old('content') }}">
             @error('content')
                 <div class="text-danger">{{ $message }}</div>
             @enderror

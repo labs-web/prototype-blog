@@ -46,7 +46,8 @@ class TagSeeder extends Seeder
             'update',
             'destroy',
             'export',
-            'import'
+            'import',
+            'getTags'
         ];
 
         foreach ($actions as $action) {
@@ -66,6 +67,7 @@ class TagSeeder extends Seeder
             'destroy-TagController',
             'export-TagController',
             'import-TagController',
+            'getTags-TagController',
         ]);
 
         $membre->givePermissionTo([

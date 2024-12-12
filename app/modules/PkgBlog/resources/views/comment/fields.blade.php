@@ -16,22 +16,28 @@
                     <span class="text-danger">*</span>
                 
             </label>
-            <input name="content" type="input" class="form-control" id="content" placeholder="Entrez {{__('PkgBlog::comment.content')}}"
-                value="{{ $item ? $item->content : old('content') }}">
+            <input
+                name="content"
+                type="input"
+                class="form-control"
+                id="content"
+                placeholder="{{ __('Enter PkgBlog::comment.content') }}"
+                value="{{ $item ? $item.content : old('content') }}">
             @error('content')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
         
+
+        
         <div class="form-group">
             <label for="user_id">
                 {{ ucfirst(__('PkgBlog::comment.user_id')) }}
-                
-                    <span class="text-danger">*</span>
-                
+                <span class="text-danger">*</span>
             </label>
-            <input name="user_id" type="input" class="form-control" id="user_id" placeholder="Entrez {{__('PkgBlog::comment.user_id')}}"
-                value="{{ $item ? $item->user_id : old('user_id') }}">
+            <select id="user_id" name="user_id" class="form-control">
+                <option value="">Sélectionnez une option</option>
+            </select>
             @error('user_id')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
@@ -40,12 +46,11 @@
         <div class="form-group">
             <label for="article_id">
                 {{ ucfirst(__('PkgBlog::comment.article_id')) }}
-                
-                    <span class="text-danger">*</span>
-                
+                <span class="text-danger">*</span>
             </label>
-            <input name="article_id" type="input" class="form-control" id="article_id" placeholder="Entrez {{__('PkgBlog::comment.article_id')}}"
-                value="{{ $item ? $item->article_id : old('article_id') }}">
+            <select id="article_id" name="article_id" class="form-control">
+                <option value="">Sélectionnez une option</option>
+            </select>
             @error('article_id')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
@@ -58,3 +63,21 @@
         <button type="submit" class="btn btn-info ml-2">{{ $item->id ? __('Core::msg.edit') : __('Core::msg.add') }}</button>
     </div>
 </form>
+
+<script>
+    window.dynamicSelectManyToOne = [
+        
+        {
+            fieldId: 'user_id',
+            fetchUrl: "{{ route('users.all') }}",
+            selectedValue: {{ $item ? $item.user_id : 'null' }},
+        },
+        
+        {
+            fieldId: 'article_id',
+            fetchUrl: "{{ route('articles.all') }}",
+            selectedValue: {{ $item ? $item.article_id : 'null' }},
+        },
+        
+    ];
+</script>

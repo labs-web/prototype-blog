@@ -19,9 +19,9 @@ class UserSeeder extends Seeder
         $AdminRole = User::ADMIN;
         $MembreRole = User::MEMBRE;
 
-        Schema::disableForeignKeyConstraints();
-        User::truncate();
-        Schema::enableForeignKeyConstraints();
+        // Schema::disableForeignKeyConstraints();
+        // User::truncate();
+        // Schema::enableForeignKeyConstraints();
 
         // $csvFile = fopen(base_path("modules/PkgBlog/Database/data/users.csv"), "r");
         // $firstline = true;
@@ -46,7 +46,8 @@ class UserSeeder extends Seeder
             'update',
             'destroy',
             'export',
-            'import'
+            'import',
+            'getUsers'
         ];
 
         foreach ($actions as $action) {
@@ -66,6 +67,7 @@ class UserSeeder extends Seeder
             'destroy-UserController',
             'export-UserController',
             'import-UserController',
+            'getUsers-UserController',
         ]);
 
         $membre->givePermissionTo([

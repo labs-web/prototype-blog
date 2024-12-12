@@ -124,4 +124,11 @@ class CommentController extends AdminController
 
 
     }
+
+    // Il permet d'afficher les information en format JSON pour une utilisation avec Ajax
+    public function getComments()
+    {
+        $comments = $this->commentService->all();
+        return response()->json($comments);
+    }
 }
