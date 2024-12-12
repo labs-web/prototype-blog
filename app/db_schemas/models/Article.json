@@ -36,6 +36,10 @@
                 {
                     "name": "db_nullable",
                     "value": false
+                },
+                {
+                    "name": "displayInTable",
+                    "value": false
                 }
             ]
         },
@@ -45,6 +49,10 @@
             "metaAttributes": [
                 {
                     "name": "db_nullable",
+                    "value": false
+                },
+                {
+                    "name": "displayInTable",
                     "value": false
                 }
             ]
@@ -56,6 +64,10 @@
                 {
                     "name": "db_nullable",
                     "value": true
+                },
+                {
+                    "name": "displayInTable",
+                    "value": false
                 }
             ]
         },
@@ -66,6 +78,10 @@
                 {
                     "name": "db_nullable",
                     "value": true
+                },
+                {
+                    "name": "displayInTable",
+                    "value": false
                 }
             ]
         },
