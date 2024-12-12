@@ -27,7 +27,7 @@
         },
         {
             "name": "expiration",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

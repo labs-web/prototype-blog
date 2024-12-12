@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "id",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -37,7 +37,7 @@
         },
         {
             "name": "attempts",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -47,7 +47,7 @@
         },
         {
             "name": "reserved_at",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -57,7 +57,7 @@
         },
         {
             "name": "available_at",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -67,7 +67,7 @@
         },
         {
             "name": "created_at",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

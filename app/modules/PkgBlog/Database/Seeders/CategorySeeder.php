@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Schema;
 
 class CategorySeeder extends Seeder
 {
-    public static int $order = 1;
-    
+    public static int $order = ;
+
     public function run(): void
     {
         $AdminRole = User::ADMIN;

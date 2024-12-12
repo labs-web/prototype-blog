@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "article_id",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -13,7 +13,7 @@
         },
         {
             "name": "tag_id",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",

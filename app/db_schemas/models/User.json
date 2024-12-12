@@ -3,7 +3,7 @@
     "attributes": [
         {
             "name": "id",
-            "type": "String",
+            "type": "Integer",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -41,7 +41,7 @@
         },
         {
             "name": "email_verified_at",
-            "type": "String",
+            "type": "Date",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -71,7 +71,7 @@
         },
         {
             "name": "created_at",
-            "type": "String",
+            "type": "Date",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
@@ -81,7 +81,7 @@
         },
         {
             "name": "updated_at",
-            "type": "String",
+            "type": "Date",
             "metaAttributes": [
                 {
                     "key": "db_nullable",
