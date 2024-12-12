@@ -9,6 +9,8 @@ use Modules\PkgBlog\Controllers\CategoryController;
 // routes for category management
 Route::middleware('auth')->group(function () {
     Route::prefix('/admin/PkgBlog')->group(function () {
+
+        Route::get('categories/getCategories', [CategoryController::class, 'getCategories'])->name('categories.all');
         Route::resource('categories', CategoryController::class);
         // Routes supplémentaires avec préfixe
         Route::prefix('data')->group(function () {

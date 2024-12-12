@@ -9,6 +9,8 @@ use Modules\PkgBlog\Controllers\TagController;
 // routes for tag management
 Route::middleware('auth')->group(function () {
     Route::prefix('/admin/PkgBlog')->group(function () {
+
+        Route::get('tags/getTags', [TagController::class, 'getTags'])->name('tags.all');
         Route::resource('tags', TagController::class);
         // Routes supplémentaires avec préfixe
         Route::prefix('data')->group(function () {

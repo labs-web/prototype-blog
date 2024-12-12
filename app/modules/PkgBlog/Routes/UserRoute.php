@@ -9,6 +9,8 @@ use Modules\PkgBlog\Controllers\UserController;
 // routes for user management
 Route::middleware('auth')->group(function () {
     Route::prefix('/admin/PkgBlog')->group(function () {
+
+        Route::get('users/getUsers', [UserController::class, 'getUsers'])->name('users.all');
         Route::resource('users', UserController::class);
         // Routes supplémentaires avec préfixe
         Route::prefix('data')->group(function () {

@@ -70,7 +70,7 @@
         
         <div class="form-group">
             <label for="category_id">
-                {{ ucfirst(__('PkgBlog::article.category_id')) }}
+                {{ ucfirst(__('PkgBlog::category.singular')) }}
                 <span class="text-danger">*</span>
             </label>
             <select id="category_id" name="category_id" class="form-control">
@@ -83,7 +83,7 @@
         
         <div class="form-group">
             <label for="user_id">
-                {{ ucfirst(__('PkgBlog::article.user_id')) }}
+                {{ ucfirst(__('PkgBlog::user.singular')) }}
                 <span class="text-danger">*</span>
             </label>
             <select id="user_id" name="user_id" class="form-control">
@@ -108,13 +108,13 @@
         {
             fieldId: 'category_id',
             fetchUrl: "{{ route('categories.all') }}",
-            selectedValue: {{ $item ? $item.category_id : 'null' }},
+            selectedValue: {{ $item ? $item->category_id : 'null' }},
         },
         
         {
             fieldId: 'user_id',
             fetchUrl: "{{ route('users.all') }}",
-            selectedValue: {{ $item ? $item.user_id : 'null' }},
+            selectedValue: {{ $item ? $item->user_id : 'null' }},
         },
         
     ];

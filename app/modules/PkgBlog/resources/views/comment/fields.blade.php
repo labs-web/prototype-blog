@@ -22,7 +22,7 @@
                 class="form-control"
                 id="content"
                 placeholder="{{ __('Enter PkgBlog::comment.content') }}"
-                value="{{ $item ? $item.content : old('content') }}">
+                value="{{ $item ? $item->content : old('content') }}">
             @error('content')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
@@ -32,7 +32,7 @@
         
         <div class="form-group">
             <label for="user_id">
-                {{ ucfirst(__('PkgBlog::comment.user_id')) }}
+                {{ ucfirst(__('PkgBlog::user.singular')) }}
                 <span class="text-danger">*</span>
             </label>
             <select id="user_id" name="user_id" class="form-control">
@@ -45,7 +45,7 @@
         
         <div class="form-group">
             <label for="article_id">
-                {{ ucfirst(__('PkgBlog::comment.article_id')) }}
+                {{ ucfirst(__('PkgBlog::article.singular')) }}
                 <span class="text-danger">*</span>
             </label>
             <select id="article_id" name="article_id" class="form-control">
@@ -70,13 +70,13 @@
         {
             fieldId: 'user_id',
             fetchUrl: "{{ route('users.all') }}",
-            selectedValue: {{ $item ? $item.user_id : 'null' }},
+            selectedValue: {{ $item ? $item->user_id : 'null' }},
         },
         
         {
             fieldId: 'article_id',
             fetchUrl: "{{ route('articles.all') }}",
-            selectedValue: {{ $item ? $item.article_id : 'null' }},
+            selectedValue: {{ $item ? $item->article_id : 'null' }},
         },
         
     ];
