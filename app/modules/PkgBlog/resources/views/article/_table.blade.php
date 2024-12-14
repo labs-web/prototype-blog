@@ -13,7 +13,7 @@
             @foreach ($data as $article)
                 <tr>
                     <td>{{ $article->title }}</td>
-                    <td>{{ $article->category->name ?? "-" }}</td>
+                    <td>{{ $article->category->name ?? '-' }}</td>
                     <td class="text-center">
                         @can('show-ArticleController')
                             <a href="{{ route('articles.show', $article) }}" class="btn btn-default btn-sm">

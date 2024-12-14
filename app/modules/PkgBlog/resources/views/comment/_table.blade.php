@@ -5,8 +5,8 @@
         <thead>
             <tr>
                 <th>{{ ucfirst(__('PkgBlog::comment.content')) }}</th>
-                <th>{{ ucfirst(__('PkgBlog::comment.user_id')) }}</th>
-                <th>{{ ucfirst(__('PkgBlog::comment.article_id')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::user.singular')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::article.singular')) }}</th>
                 <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
@@ -14,8 +14,8 @@
             @foreach ($data as $comment)
                 <tr>
                     <td>{{ $comment->content }}</td>
-                    <td>{{ $comment->user_id }}</td>
-                    <td>{{ $comment->article_id }}</td>
+                    <td>{{ $comment->user->name ?? '-' }}</td>
+                    <td>{{ $comment->article->title ?? '-' }}</td>
                     <td class="text-center">
                         @can('show-CommentController')
                             <a href="{{ route('comments.show', $comment) }}" class="btn btn-default btn-sm">
