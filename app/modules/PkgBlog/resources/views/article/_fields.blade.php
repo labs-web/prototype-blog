@@ -1,4 +1,4 @@
-{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
+{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}
 
 <form action="{{ $item->id ? route('articles.update', $item->id) : route('articles.store') }}" method="POST">
     @csrf
