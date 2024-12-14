@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "./modules"
+		},
+		{
+			"path": "./../docs/pkg_global",
+			"name": "docs/pkg_global"
+		},
+		{
+			"path": "./../prompts",
+
+		},
+		{
+			"path": "./../modélisation",
+
+		}
+	],
+	"settings": {}
+}

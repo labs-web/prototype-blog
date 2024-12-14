@@ -1,0 +1,90 @@
+classDiagram
+
+namespace pkg_rh {
+  class Formateur 
+
+}
+  
+
+namespace pkg_competences {
+  class Competence 
+  class Technologie 
+  class Appreciation
+}
+Competence "1" --> "*" Technologie 
+
+
+
+namespace pkg_creation_projets {
+  class Projet 
+  class Resource 
+  class Livrable 
+  class NatureLivrable 
+  %% par défaut il faut ajouter deux livrable : Code, Présentation
+  class TransfertCompetence
+}
+Formateur "1" <-- "*" Projet
+Projet "1" --> "*" Resource
+Projet "1" --> "*" Livrable
+Projet "1" --> "*" TransfertCompetence
+TransfertCompetence "*" -- "1" Competence 
+TransfertCompetence "*" -- "*" Technologie
+Livrable "*" --> "1" NatureLivrable
+TransfertCompetence "*" -- "1" Appreciation
+
+
+
+namespace pkg_realisation_projets {
+  class RealisationProjet
+  class LivrableRealisation 
+}
+Projet "1" --> "*" RealisationProjet
+RealisationProjet "1" --> "*" LivrableRealisation
+LivrableRealisation "*" --> "1" Livrable
+
+
+namespace pkg_validations {
+class Validation 
+}
+RealisationProjet "1" --> "*" Validation
+Validation "*" --> "1" TransfertCompetence
+Validation "*" --> "1" Appreciation
+
+
+class Projet {
+  id : int
+  titre: String
+  travailAFaire: String
+  critereDeTravail: String
+  description: String
+  dateDebut: DateTime
+  dateFin: DateTime
+}
+
+class Resource {
+  id : int
+  nom: String
+  lien: String
+  description: String
+}
+
+
+class NatureLivrable {
+  id : int
+  nom: String
+  description: Text
+}
+
+class TransfertCompetence{
+  id : int
+}
+
+
+class Livrable {
+  id: int
+  titre: string
+  lien: string
+  description: text
+}
+
+

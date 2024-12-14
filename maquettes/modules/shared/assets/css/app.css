@@ -1,0 +1,71 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap'); */
+
+
+ 
+
+@import '/node_modules/admin-lte/dist/css/adminlte.min.css';
+@import '/node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '/node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '/node_modules/admin-lte/plugins/jqvmap/jqvmap.min.css';
+@import '/node_modules/admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css';
+@import '/node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css';
+@import '/node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css';
+@import '/node_modules/admin-lte/plugins/summernote/summernote-bs4.min.css';
+@import '/node_modules/admin-lte/plugins/bs-stepper/css/bs-stepper.min.css';
+
+
+/*TODO :  Le chargement des font-face block le chargement des fichiers CSS : 
+- pricolage - chargement après le chargement des fichier CSS
+
+*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('/modules/shared/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/modules/shared/assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/modules/shared/assets/fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/modules/shared/assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/modules/shared/assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/modules/shared/assets/fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+} 
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* TODO : ajouter commentaire  */
+.mt-4 {
+    margin-top: 2rem !important;
+}

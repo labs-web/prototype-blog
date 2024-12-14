@@ -1,0 +1,82 @@
+{
+    "name": "Session",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                },
+                {
+                    "name": "db_primaryKey",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "user_id",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "ip_address",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "user_agent",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "payload",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "last_activity",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                }
+            ]
+        }
+    ],
+    "oneToOneRelations": [],
+    "manyToOneRelations": [],
+    "manyToManyRelations": [],
+    "metaModels": [
+        {
+            "name": "creationOrder",
+            "value": 11
+        },
+        {
+            "name": "isPivotTable",
+            "value": false
+        }
+    ]
+}

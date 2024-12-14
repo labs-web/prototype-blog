@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "_site": true,
+        ".vscode": true,
+        "assets": true,
+        "_layouts": true,
+        "_includes": true,
+        "_config.yml": true,
+        ".gitignore": true,
+        "docs.code-workspace": true,
+        "Gemfile": true,
+        "Gemfile.lock": true,
+        "serve.ps1": true
+    }
+}

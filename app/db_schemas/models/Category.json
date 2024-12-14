@@ -1,0 +1,72 @@
+{
+    "name": "Category",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "Integer",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                },
+                {
+                    "name": "db_primaryKey",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "slug",
+            "type": "String",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "created_at",
+            "type": "Date",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "updated_at",
+            "type": "Date",
+            "metaAttributes": [
+                {
+                    "name": "db_nullable",
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "oneToOneRelations": [],
+    "manyToOneRelations": [],
+    "manyToManyRelations": [],
+    "metaModels": [
+        {
+            "name": "creationOrder",
+            "value": 1
+        },
+        {
+            "name": "isPivotTable",
+            "value": false
+        }
+    ]
+}
