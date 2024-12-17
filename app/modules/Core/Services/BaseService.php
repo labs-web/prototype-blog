@@ -140,11 +140,9 @@ abstract class BaseService implements ServiceInterface
      * @param array $columns Colonnes à récupérer.
      * @return Collection
      */
-    public function all(array $search = [], int $skip = null, int $limit = null, array $columns = ['*']): Collection
+    public function all(array $columns = ['*']): Collection
     {
-        $query = $this->allQuery($search, $skip, $limit);
-
-        return $query->get($columns);
+        return $this->model::all($columns);
     }
 
     /**

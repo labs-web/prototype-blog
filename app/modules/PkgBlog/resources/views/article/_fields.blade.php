@@ -94,6 +94,32 @@
             @enderror
         </div>
         
+
+
+        <div class="form-group">
+            <label for="tags">
+                {{ ucfirst(__('PkgBlog::article.tags')) }}
+                <span class="text-danger">*</span>
+            </label>
+    
+            <select
+                name="tags[]"
+                class="form-control select2"
+                id="tags"
+                multiple="multiple"
+                placeholder="{{ __('Enter PkgBlog::article.tags') }}">
+              
+                @foreach ($tags as $tag)
+                <option value="{{ $tag->id }}"
+                    {{ (isset($item) && $item->tags && $item->tags->contains('id', $tag->id)) || (is_array(old('tags')) && in_array($tag->id, old('tags'))) ? 'selected' : '' }}>
+                    {{ $tag->name }}
+                </option>
+               @endforeach
+            </select>
+            @error('tags')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
     </div>
 
     <div class="card-footer">

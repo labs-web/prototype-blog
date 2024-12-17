@@ -12,6 +12,8 @@ use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\PkgBlog\App\Exports\ArticleExport;
 use Modules\PkgBlog\App\Imports\ArticleImport;
+use Modules\PkgBlog\Models\Tag;
+use Modules\PkgBlog\Services\TagService;
 
 class ArticleController extends AdminController
 {
@@ -45,13 +47,20 @@ class ArticleController extends AdminController
     public function create()
     {
         $item = $this->articleService->createInstance();
-        return view('PkgBlog::article.create', compact('item'));
+        $tags = (new TagService())->all();
+        return view('PkgBlog::article.create', compact('item','tags'));
     }
 
     public function store(ArticleRequest $request)
     {
         $validatedData = $request->validated();
         $article = $this->articleService->create($validatedData);
+
+          // Attacher les tags
+    if ($request->has('tags')) {
+        $article->tags()->sync($request->tags);
+    }
+
         return redirect()->route('articles.index')->with(
             'success',
             __('Core::msg.addSuccess', [
@@ -71,13 +80,20 @@ class ArticleController extends AdminController
     public function edit(string $id)
     {
         $item = $this->articleService->find($id);
-        return view('PkgBlog::article.edit', compact('item'));
+        $tags = (new TagService())->all();
+        return view('PkgBlog::article.edit', compact('item','tags'));
     }
 
     public function update(ArticleRequest $request, string $id)
     {
         $validatedData = $request->validated();
         $article = $this->articleService->update($id, $validatedData);
+
+    // Mettre à jour les tags associés
+    if ($request->has('tags')) {
+        $article->tags()->sync($request->tags);
+    }
+
         return redirect()->route('articles.index')->with(
             'success',
             __('Core::msg.updateSuccess', [
