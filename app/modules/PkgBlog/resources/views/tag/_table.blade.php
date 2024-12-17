@@ -5,7 +5,6 @@
         <thead>
             <tr>
                 <th>{{ ucfirst(__('PkgBlog::tag.name')) }}</th>
-                <th>{{ ucfirst(__('PkgBlog::tag.slug')) }}</th>
                 <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
@@ -13,7 +12,6 @@
             @foreach ($data as $tag)
                 <tr>
                     <td>{{ $tag->name }}</td>
-                    <td>{{ $tag->slug }}</td>
                     <td class="text-center">
                         @can('show-TagController')
                             <a href="{{ route('tags.show', $tag) }}" class="btn btn-default btn-sm">
