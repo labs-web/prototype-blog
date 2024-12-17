@@ -1718,3 +1718,713 @@ Cannot read properties of null (reading 'name')
 [2024-12-17T18:54:11.920Z] [INFO] Génération CRUD terminée pour le modèle : User
 [2024-12-17T18:54:11.921Z] [SUCCESS] CRUD généré avec succès pour le modèle : User
 [2024-12-17T18:54:11.922Z] [INFO] Génération CRUD terminée pour tous les modèles.
+[2024-12-17T19:02:53.603Z] [INFO] Début de la génération CRUD pour tous les modèles...
+[2024-12-17T19:02:53.604Z] [INFO] Génération CRUD pour le modèle : Article
+[2024-12-17T19:02:53.605Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:02:53.617Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:02:53.622Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:02:53.628Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:02:53.641Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:02:53.653Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:02:53.663Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:02:53.672Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:02:53.680Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:02:53.689Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:02:53.696Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:02:53.705Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:02:53.712Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:02:53.721Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:02:53.728Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:02:53.738Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:02:53.745Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:02:53.753Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:02:53.760Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:02:53.769Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:02:53.770Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:02:53.771Z] [SUCCESS] CRUD généré avec succès pour le modèle : Article
+[2024-12-17T19:02:53.771Z] [INFO] Génération CRUD pour le modèle : Category
+[2024-12-17T19:02:53.772Z] [INFO] Début de la génération CRUD pour le modèle : Category
+[2024-12-17T19:02:53.776Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Category.php
+[2024-12-17T19:02:53.780Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160043_categories.php
+[2024-12-17T19:02:53.785Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CategorySeeder.php
+[2024-12-17T19:02:53.789Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\categories.csv
+[2024-12-17T19:02:53.794Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CategoryController.php
+[2024-12-17T19:02:53.800Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CategoryExport.php
+[2024-12-17T19:02:53.804Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CategoryImport.php
+[2024-12-17T19:02:53.809Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CategoryRequest.php
+[2024-12-17T19:02:53.815Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CategoryService.php
+[2024-12-17T19:02:53.819Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CategoryRoute.php
+[2024-12-17T19:02:53.822Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\category.php
+[2024-12-17T19:02:53.825Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\create.blade.php
+[2024-12-17T19:02:53.829Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\edit.blade.php
+[2024-12-17T19:02:53.835Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_fields.blade.php
+[2024-12-17T19:02:53.840Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\index.blade.php
+[2024-12-17T19:02:53.844Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\show.blade.php
+[2024-12-17T19:02:53.850Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_table.blade.php
+[2024-12-17T19:02:53.855Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:02:53.855Z] [INFO] Génération CRUD terminée pour le modèle : Category
+[2024-12-17T19:02:53.856Z] [SUCCESS] CRUD généré avec succès pour le modèle : Category
+[2024-12-17T19:02:53.857Z] [INFO] Génération CRUD pour le modèle : Comment
+[2024-12-17T19:02:53.858Z] [INFO] Début de la génération CRUD pour le modèle : Comment
+[2024-12-17T19:02:53.862Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Comment.php
+[2024-12-17T19:02:53.866Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160310_comments.php
+[2024-12-17T19:02:53.870Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CommentSeeder.php
+[2024-12-17T19:02:53.873Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\comments.csv
+[2024-12-17T19:02:53.877Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CommentController.php
+[2024-12-17T19:02:53.882Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CommentExport.php
+[2024-12-17T19:02:53.886Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CommentImport.php
+[2024-12-17T19:02:53.889Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CommentRequest.php
+[2024-12-17T19:02:53.893Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CommentService.php
+[2024-12-17T19:02:53.898Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CommentRoute.php
+[2024-12-17T19:02:53.902Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\comment.php
+[2024-12-17T19:02:53.906Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\create.blade.php
+[2024-12-17T19:02:53.909Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\edit.blade.php
+[2024-12-17T19:02:53.913Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_fields.blade.php
+[2024-12-17T19:02:53.918Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\index.blade.php
+[2024-12-17T19:02:53.922Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\show.blade.php
+[2024-12-17T19:02:53.926Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_table.blade.php
+[2024-12-17T19:02:53.931Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:02:53.932Z] [INFO] Génération CRUD terminée pour le modèle : Comment
+[2024-12-17T19:02:53.933Z] [SUCCESS] CRUD généré avec succès pour le modèle : Comment
+[2024-12-17T19:02:53.934Z] [INFO] Génération CRUD pour le modèle : Tag
+[2024-12-17T19:02:53.936Z] [INFO] Début de la génération CRUD pour le modèle : Tag
+[2024-12-17T19:02:53.939Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Tag.php
+[2024-12-17T19:02:53.942Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160235_tags.php
+[2024-12-17T19:02:53.946Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:02:53.951Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\TagSeeder.php
+[2024-12-17T19:02:53.954Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\tags.csv
+[2024-12-17T19:02:53.959Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\TagController.php
+[2024-12-17T19:02:53.964Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\TagExport.php
+[2024-12-17T19:02:53.970Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\TagImport.php
+[2024-12-17T19:02:53.974Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\TagRequest.php
+[2024-12-17T19:02:53.980Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\TagService.php
+[2024-12-17T19:02:53.985Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\TagRoute.php
+[2024-12-17T19:02:53.988Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\tag.php
+[2024-12-17T19:02:53.991Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\create.blade.php
+[2024-12-17T19:02:53.995Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\edit.blade.php
+[2024-12-17T19:02:54.001Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_fields.blade.php
+[2024-12-17T19:02:54.005Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\index.blade.php
+[2024-12-17T19:02:54.008Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\show.blade.php
+[2024-12-17T19:02:54.013Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_table.blade.php
+[2024-12-17T19:02:54.017Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:02:54.018Z] [INFO] Génération CRUD terminée pour le modèle : Tag
+[2024-12-17T19:02:54.019Z] [SUCCESS] CRUD généré avec succès pour le modèle : Tag
+[2024-12-17T19:02:54.020Z] [INFO] Génération CRUD pour le modèle : User
+[2024-12-17T19:02:54.020Z] [INFO] Début de la génération CRUD pour le modèle : User
+[2024-12-17T19:02:54.023Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\User.php
+[2024-12-17T19:02:54.026Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_185336_users.php
+[2024-12-17T19:02:54.030Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\UserSeeder.php
+[2024-12-17T19:02:54.035Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\users.csv
+[2024-12-17T19:02:54.039Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\UserController.php
+[2024-12-17T19:02:54.042Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\UserExport.php
+[2024-12-17T19:02:54.046Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\UserImport.php
+[2024-12-17T19:02:54.050Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\UserRequest.php
+[2024-12-17T19:02:54.054Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\UserService.php
+[2024-12-17T19:02:54.058Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\UserRoute.php
+[2024-12-17T19:02:54.061Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\user.php
+[2024-12-17T19:02:54.066Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\create.blade.php
+[2024-12-17T19:02:54.070Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\edit.blade.php
+[2024-12-17T19:02:54.074Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_fields.blade.php
+[2024-12-17T19:02:54.078Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\index.blade.php
+[2024-12-17T19:02:54.083Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\show.blade.php
+[2024-12-17T19:02:54.087Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_table.blade.php
+[2024-12-17T19:02:54.091Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:02:54.092Z] [INFO] Génération CRUD terminée pour le modèle : User
+[2024-12-17T19:02:54.093Z] [SUCCESS] CRUD généré avec succès pour le modèle : User
+[2024-12-17T19:02:54.093Z] [INFO] Génération CRUD terminée pour tous les modèles.
+[2024-12-17T19:07:59.626Z] [INFO] Début de la génération CRUD pour tous les modèles...
+[2024-12-17T19:07:59.627Z] [INFO] Génération CRUD pour le modèle : Article
+[2024-12-17T19:07:59.628Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:07:59.643Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:07:59.648Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:07:59.652Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:07:59.667Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:07:59.680Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:07:59.692Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:07:59.702Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:07:59.712Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:07:59.721Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:07:59.730Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:07:59.740Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:07:59.750Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:07:59.758Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:07:59.766Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:07:59.808Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:07:59.847Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:07:59.912Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:07:59.941Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:07:59.971Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:07:59.984Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:08:00.005Z] [SUCCESS] CRUD généré avec succès pour le modèle : Article
+[2024-12-17T19:08:00.010Z] [INFO] Génération CRUD pour le modèle : Category
+[2024-12-17T19:08:00.011Z] [INFO] Début de la génération CRUD pour le modèle : Category
+[2024-12-17T19:08:00.048Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Category.php
+[2024-12-17T19:08:00.065Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160043_categories.php
+[2024-12-17T19:08:00.071Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CategorySeeder.php
+[2024-12-17T19:08:00.076Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\categories.csv
+[2024-12-17T19:08:00.081Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CategoryController.php
+[2024-12-17T19:08:00.086Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CategoryExport.php
+[2024-12-17T19:08:00.090Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CategoryImport.php
+[2024-12-17T19:08:00.142Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CategoryRequest.php
+[2024-12-17T19:08:00.148Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CategoryService.php
+[2024-12-17T19:08:00.158Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CategoryRoute.php
+[2024-12-17T19:08:00.161Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\category.php
+[2024-12-17T19:08:00.166Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\create.blade.php
+[2024-12-17T19:08:00.171Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\edit.blade.php
+[2024-12-17T19:08:00.177Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_fields.blade.php
+[2024-12-17T19:08:00.182Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\index.blade.php
+[2024-12-17T19:08:00.187Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\show.blade.php
+[2024-12-17T19:08:00.194Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_table.blade.php
+[2024-12-17T19:08:00.198Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:00.198Z] [INFO] Génération CRUD terminée pour le modèle : Category
+[2024-12-17T19:08:00.199Z] [SUCCESS] CRUD généré avec succès pour le modèle : Category
+[2024-12-17T19:08:00.200Z] [INFO] Génération CRUD pour le modèle : Comment
+[2024-12-17T19:08:00.202Z] [INFO] Début de la génération CRUD pour le modèle : Comment
+[2024-12-17T19:08:00.207Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Comment.php
+[2024-12-17T19:08:00.211Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160310_comments.php
+[2024-12-17T19:08:00.215Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CommentSeeder.php
+[2024-12-17T19:08:00.219Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\comments.csv
+[2024-12-17T19:08:00.224Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CommentController.php
+[2024-12-17T19:08:00.228Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CommentExport.php
+[2024-12-17T19:08:00.232Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CommentImport.php
+[2024-12-17T19:08:00.237Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CommentRequest.php
+[2024-12-17T19:08:00.241Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CommentService.php
+[2024-12-17T19:08:00.244Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CommentRoute.php
+[2024-12-17T19:08:00.250Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\comment.php
+[2024-12-17T19:08:00.254Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\create.blade.php
+[2024-12-17T19:08:00.258Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\edit.blade.php
+[2024-12-17T19:08:00.263Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_fields.blade.php
+[2024-12-17T19:08:00.266Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\index.blade.php
+[2024-12-17T19:08:00.271Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\show.blade.php
+[2024-12-17T19:08:00.276Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_table.blade.php
+[2024-12-17T19:08:00.279Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:00.280Z] [INFO] Génération CRUD terminée pour le modèle : Comment
+[2024-12-17T19:08:00.281Z] [SUCCESS] CRUD généré avec succès pour le modèle : Comment
+[2024-12-17T19:08:00.282Z] [INFO] Génération CRUD pour le modèle : Tag
+[2024-12-17T19:08:00.282Z] [INFO] Début de la génération CRUD pour le modèle : Tag
+[2024-12-17T19:08:00.286Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Tag.php
+[2024-12-17T19:08:00.290Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160235_tags.php
+[2024-12-17T19:08:00.293Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:08:00.297Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\TagSeeder.php
+[2024-12-17T19:08:00.301Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\tags.csv
+[2024-12-17T19:08:00.308Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\TagController.php
+[2024-12-17T19:08:00.312Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\TagExport.php
+[2024-12-17T19:08:00.315Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\TagImport.php
+[2024-12-17T19:08:00.319Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\TagRequest.php
+[2024-12-17T19:08:00.324Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\TagService.php
+[2024-12-17T19:08:00.329Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\TagRoute.php
+[2024-12-17T19:08:00.333Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\tag.php
+[2024-12-17T19:08:00.338Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\create.blade.php
+[2024-12-17T19:08:00.343Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\edit.blade.php
+[2024-12-17T19:08:00.347Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_fields.blade.php
+[2024-12-17T19:08:00.351Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\index.blade.php
+[2024-12-17T19:08:00.355Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\show.blade.php
+[2024-12-17T19:08:00.360Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_table.blade.php
+[2024-12-17T19:08:00.364Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:00.365Z] [INFO] Génération CRUD terminée pour le modèle : Tag
+[2024-12-17T19:08:00.365Z] [SUCCESS] CRUD généré avec succès pour le modèle : Tag
+[2024-12-17T19:08:00.366Z] [INFO] Génération CRUD pour le modèle : User
+[2024-12-17T19:08:00.367Z] [INFO] Début de la génération CRUD pour le modèle : User
+[2024-12-17T19:08:00.371Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\User.php
+[2024-12-17T19:08:00.375Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_185336_users.php
+[2024-12-17T19:08:00.380Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\UserSeeder.php
+[2024-12-17T19:08:00.384Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\users.csv
+[2024-12-17T19:08:00.389Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\UserController.php
+[2024-12-17T19:08:00.394Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\UserExport.php
+[2024-12-17T19:08:00.397Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\UserImport.php
+[2024-12-17T19:08:00.402Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\UserRequest.php
+[2024-12-17T19:08:00.407Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\UserService.php
+[2024-12-17T19:08:00.412Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\UserRoute.php
+[2024-12-17T19:08:00.416Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\user.php
+[2024-12-17T19:08:00.420Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\create.blade.php
+[2024-12-17T19:08:00.425Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\edit.blade.php
+[2024-12-17T19:08:00.429Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_fields.blade.php
+[2024-12-17T19:08:00.434Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\index.blade.php
+[2024-12-17T19:08:00.438Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\show.blade.php
+[2024-12-17T19:08:00.443Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_table.blade.php
+[2024-12-17T19:08:00.448Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:00.448Z] [INFO] Génération CRUD terminée pour le modèle : User
+[2024-12-17T19:08:00.449Z] [SUCCESS] CRUD généré avec succès pour le modèle : User
+[2024-12-17T19:08:00.450Z] [INFO] Génération CRUD terminée pour tous les modèles.
+[2024-12-17T19:08:06.512Z] [INFO] Début de la génération CRUD pour tous les modèles...
+[2024-12-17T19:08:06.513Z] [INFO] Génération CRUD pour le modèle : Article
+[2024-12-17T19:08:06.514Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:08:06.529Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:08:06.533Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:08:06.539Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:08:06.561Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:08:06.569Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:08:06.579Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:08:06.588Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:08:06.600Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:08:06.615Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:08:06.622Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:08:06.630Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:08:06.641Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:08:06.652Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:08:06.664Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:08:06.679Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:08:06.694Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:08:06.705Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:08:06.732Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:08:06.742Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:06.743Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:08:06.745Z] [SUCCESS] CRUD généré avec succès pour le modèle : Article
+[2024-12-17T19:08:06.746Z] [INFO] Génération CRUD pour le modèle : Category
+[2024-12-17T19:08:06.747Z] [INFO] Début de la génération CRUD pour le modèle : Category
+[2024-12-17T19:08:06.753Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Category.php
+[2024-12-17T19:08:06.756Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160043_categories.php
+[2024-12-17T19:08:06.761Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CategorySeeder.php
+[2024-12-17T19:08:06.767Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\categories.csv
+[2024-12-17T19:08:06.780Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CategoryController.php
+[2024-12-17T19:08:06.792Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CategoryExport.php
+[2024-12-17T19:08:06.800Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CategoryImport.php
+[2024-12-17T19:08:06.806Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CategoryRequest.php
+[2024-12-17T19:08:06.811Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CategoryService.php
+[2024-12-17T19:08:06.815Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CategoryRoute.php
+[2024-12-17T19:08:06.821Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\category.php
+[2024-12-17T19:08:06.826Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\create.blade.php
+[2024-12-17T19:08:06.829Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\edit.blade.php
+[2024-12-17T19:08:06.834Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_fields.blade.php
+[2024-12-17T19:08:06.840Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\index.blade.php
+[2024-12-17T19:08:06.845Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\show.blade.php
+[2024-12-17T19:08:06.850Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_table.blade.php
+[2024-12-17T19:08:06.853Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:06.854Z] [INFO] Génération CRUD terminée pour le modèle : Category
+[2024-12-17T19:08:06.854Z] [SUCCESS] CRUD généré avec succès pour le modèle : Category
+[2024-12-17T19:08:06.855Z] [INFO] Génération CRUD pour le modèle : Comment
+[2024-12-17T19:08:06.856Z] [INFO] Début de la génération CRUD pour le modèle : Comment
+[2024-12-17T19:08:06.860Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Comment.php
+[2024-12-17T19:08:06.863Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160310_comments.php
+[2024-12-17T19:08:06.867Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CommentSeeder.php
+[2024-12-17T19:08:06.871Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\comments.csv
+[2024-12-17T19:08:06.876Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CommentController.php
+[2024-12-17T19:08:06.881Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CommentExport.php
+[2024-12-17T19:08:06.885Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CommentImport.php
+[2024-12-17T19:08:06.888Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CommentRequest.php
+[2024-12-17T19:08:06.892Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CommentService.php
+[2024-12-17T19:08:06.898Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CommentRoute.php
+[2024-12-17T19:08:06.902Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\comment.php
+[2024-12-17T19:08:06.905Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\create.blade.php
+[2024-12-17T19:08:06.909Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\edit.blade.php
+[2024-12-17T19:08:06.914Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_fields.blade.php
+[2024-12-17T19:08:06.918Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\index.blade.php
+[2024-12-17T19:08:06.922Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\show.blade.php
+[2024-12-17T19:08:06.927Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_table.blade.php
+[2024-12-17T19:08:06.932Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:06.933Z] [INFO] Génération CRUD terminée pour le modèle : Comment
+[2024-12-17T19:08:06.933Z] [SUCCESS] CRUD généré avec succès pour le modèle : Comment
+[2024-12-17T19:08:06.934Z] [INFO] Génération CRUD pour le modèle : Tag
+[2024-12-17T19:08:06.935Z] [INFO] Début de la génération CRUD pour le modèle : Tag
+[2024-12-17T19:08:06.938Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Tag.php
+[2024-12-17T19:08:06.942Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160235_tags.php
+[2024-12-17T19:08:06.945Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:08:06.949Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\TagSeeder.php
+[2024-12-17T19:08:06.953Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\tags.csv
+[2024-12-17T19:08:06.960Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\TagController.php
+[2024-12-17T19:08:06.966Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\TagExport.php
+[2024-12-17T19:08:06.969Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\TagImport.php
+[2024-12-17T19:08:06.972Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\TagRequest.php
+[2024-12-17T19:08:06.976Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\TagService.php
+[2024-12-17T19:08:06.979Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\TagRoute.php
+[2024-12-17T19:08:06.983Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\tag.php
+[2024-12-17T19:08:06.988Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\create.blade.php
+[2024-12-17T19:08:06.993Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\edit.blade.php
+[2024-12-17T19:08:06.999Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_fields.blade.php
+[2024-12-17T19:08:07.003Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\index.blade.php
+[2024-12-17T19:08:07.006Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\show.blade.php
+[2024-12-17T19:08:07.011Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_table.blade.php
+[2024-12-17T19:08:07.016Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:07.016Z] [INFO] Génération CRUD terminée pour le modèle : Tag
+[2024-12-17T19:08:07.017Z] [SUCCESS] CRUD généré avec succès pour le modèle : Tag
+[2024-12-17T19:08:07.018Z] [INFO] Génération CRUD pour le modèle : User
+[2024-12-17T19:08:07.019Z] [INFO] Début de la génération CRUD pour le modèle : User
+[2024-12-17T19:08:07.022Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\User.php
+[2024-12-17T19:08:07.025Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_185336_users.php
+[2024-12-17T19:08:07.029Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\UserSeeder.php
+[2024-12-17T19:08:07.034Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\users.csv
+[2024-12-17T19:08:07.039Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\UserController.php
+[2024-12-17T19:08:07.043Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\UserExport.php
+[2024-12-17T19:08:07.048Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\UserImport.php
+[2024-12-17T19:08:07.054Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\UserRequest.php
+[2024-12-17T19:08:07.059Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\UserService.php
+[2024-12-17T19:08:07.063Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\UserRoute.php
+[2024-12-17T19:08:07.069Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\user.php
+[2024-12-17T19:08:07.074Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\create.blade.php
+[2024-12-17T19:08:07.079Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\edit.blade.php
+[2024-12-17T19:08:07.085Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_fields.blade.php
+[2024-12-17T19:08:07.090Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\index.blade.php
+[2024-12-17T19:08:07.095Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\show.blade.php
+[2024-12-17T19:08:07.099Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_table.blade.php
+[2024-12-17T19:08:07.107Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:08:07.108Z] [INFO] Génération CRUD terminée pour le modèle : User
+[2024-12-17T19:08:07.109Z] [SUCCESS] CRUD généré avec succès pour le modèle : User
+[2024-12-17T19:08:07.110Z] [INFO] Génération CRUD terminée pour tous les modèles.
+[2024-12-17T19:10:59.603Z] [INFO] Début de la génération CRUD pour tous les modèles...
+[2024-12-17T19:10:59.604Z] [INFO] Génération CRUD pour le modèle : Article
+[2024-12-17T19:10:59.605Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:10:59.617Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:10:59.622Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:10:59.627Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:10:59.642Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:10:59.656Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:10:59.667Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:10:59.675Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:10:59.684Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:10:59.692Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:10:59.699Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:10:59.708Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:10:59.717Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:10:59.725Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:10:59.731Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:10:59.741Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:10:59.747Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:10:59.757Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:10:59.763Z] [ERROR] Erreur lors de la génération du CRUD pour le modèle : Article
+[2024-12-17T19:10:59.767Z] [ERROR] La génération du fichier a échoué : attribute.metaAttributes?.some is not a function
+Détails supplémentaires : TypeError: attribute.metaAttributes?.some is not a function
+    at file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:59:55
+    at Array.find (<anonymous>)
+    at file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:58:75
+    at Array.map (<anonymous>)
+    at TableViewDataTemplate.describeColumns (file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:45:10)
+    at TableViewDataTemplate.getData (file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:19:30)
+    at Generator.run (file:///E:/laravel-builders/gapp3/src/generators/Generator.js:38:43)
+    at async CrudGenerator._runGenerator (file:///E:/laravel-builders/gapp3/src/generators/CrudGenerator.js:80:9)
+    at async CrudGenerator._generateResources (file:///E:/laravel-builders/gapp3/src/generators/CrudGenerator.js:63:9)
+    at async CrudGenerator.run (file:///E:/laravel-builders/gapp3/src/generators/CrudGenerator.js:25:9)
+[2024-12-17T19:10:59.768Z] [INFO] Génération CRUD pour le modèle : Category
+[2024-12-17T19:10:59.769Z] [INFO] Début de la génération CRUD pour le modèle : Category
+[2024-12-17T19:10:59.775Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Category.php
+[2024-12-17T19:10:59.779Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160043_categories.php
+[2024-12-17T19:10:59.784Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CategorySeeder.php
+[2024-12-17T19:10:59.787Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\categories.csv
+[2024-12-17T19:10:59.792Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CategoryController.php
+[2024-12-17T19:10:59.797Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CategoryExport.php
+[2024-12-17T19:10:59.801Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CategoryImport.php
+[2024-12-17T19:10:59.805Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CategoryRequest.php
+[2024-12-17T19:10:59.809Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CategoryService.php
+[2024-12-17T19:10:59.813Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CategoryRoute.php
+[2024-12-17T19:10:59.816Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\category.php
+[2024-12-17T19:10:59.821Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\create.blade.php
+[2024-12-17T19:10:59.824Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\edit.blade.php
+[2024-12-17T19:10:59.831Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_fields.blade.php
+[2024-12-17T19:10:59.836Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\index.blade.php
+[2024-12-17T19:10:59.841Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\show.blade.php
+[2024-12-17T19:10:59.846Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_table.blade.php
+[2024-12-17T19:10:59.857Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:10:59.858Z] [INFO] Génération CRUD terminée pour le modèle : Category
+[2024-12-17T19:10:59.858Z] [SUCCESS] CRUD généré avec succès pour le modèle : Category
+[2024-12-17T19:10:59.859Z] [INFO] Génération CRUD pour le modèle : Comment
+[2024-12-17T19:10:59.860Z] [INFO] Début de la génération CRUD pour le modèle : Comment
+[2024-12-17T19:10:59.863Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Comment.php
+[2024-12-17T19:10:59.868Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160310_comments.php
+[2024-12-17T19:10:59.872Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CommentSeeder.php
+[2024-12-17T19:10:59.875Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\comments.csv
+[2024-12-17T19:10:59.879Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CommentController.php
+[2024-12-17T19:10:59.884Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CommentExport.php
+[2024-12-17T19:10:59.888Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CommentImport.php
+[2024-12-17T19:10:59.892Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CommentRequest.php
+[2024-12-17T19:10:59.895Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CommentService.php
+[2024-12-17T19:10:59.899Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CommentRoute.php
+[2024-12-17T19:10:59.904Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\comment.php
+[2024-12-17T19:10:59.908Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\create.blade.php
+[2024-12-17T19:10:59.911Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\edit.blade.php
+[2024-12-17T19:10:59.916Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_fields.blade.php
+[2024-12-17T19:10:59.921Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\index.blade.php
+[2024-12-17T19:10:59.924Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\show.blade.php
+[2024-12-17T19:10:59.926Z] [ERROR] Erreur lors de la génération du CRUD pour le modèle : Comment
+[2024-12-17T19:10:59.929Z] [ERROR] La génération du fichier a échoué : attribute.metaAttributes?.some is not a function
+Détails supplémentaires : TypeError: attribute.metaAttributes?.some is not a function
+    at file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:59:55
+    at Array.find (<anonymous>)
+    at file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:58:75
+    at Array.map (<anonymous>)
+    at TableViewDataTemplate.describeColumns (file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:45:10)
+    at TableViewDataTemplate.getData (file:///E:/laravel-builders/gapp3/src/templateModels/views/TableViewDataTemplate.js:19:30)
+    at Generator.run (file:///E:/laravel-builders/gapp3/src/generators/Generator.js:38:43)
+    at async CrudGenerator._runGenerator (file:///E:/laravel-builders/gapp3/src/generators/CrudGenerator.js:80:9)
+    at async CrudGenerator._generateResources (file:///E:/laravel-builders/gapp3/src/generators/CrudGenerator.js:63:9)
+    at async CrudGenerator.run (file:///E:/laravel-builders/gapp3/src/generators/CrudGenerator.js:25:9)
+[2024-12-17T19:10:59.930Z] [INFO] Génération CRUD pour le modèle : Tag
+[2024-12-17T19:10:59.931Z] [INFO] Début de la génération CRUD pour le modèle : Tag
+[2024-12-17T19:10:59.935Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Tag.php
+[2024-12-17T19:10:59.939Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160235_tags.php
+[2024-12-17T19:10:59.943Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:10:59.948Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\TagSeeder.php
+[2024-12-17T19:10:59.952Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\tags.csv
+[2024-12-17T19:10:59.958Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\TagController.php
+[2024-12-17T19:10:59.961Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\TagExport.php
+[2024-12-17T19:10:59.966Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\TagImport.php
+[2024-12-17T19:10:59.970Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\TagRequest.php
+[2024-12-17T19:10:59.974Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\TagService.php
+[2024-12-17T19:10:59.977Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\TagRoute.php
+[2024-12-17T19:10:59.981Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\tag.php
+[2024-12-17T19:10:59.986Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\create.blade.php
+[2024-12-17T19:10:59.990Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\edit.blade.php
+[2024-12-17T19:10:59.995Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_fields.blade.php
+[2024-12-17T19:11:00.003Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\index.blade.php
+[2024-12-17T19:11:00.008Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\show.blade.php
+[2024-12-17T19:11:00.012Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_table.blade.php
+[2024-12-17T19:11:00.019Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:11:00.020Z] [INFO] Génération CRUD terminée pour le modèle : Tag
+[2024-12-17T19:11:00.020Z] [SUCCESS] CRUD généré avec succès pour le modèle : Tag
+[2024-12-17T19:11:00.021Z] [INFO] Génération CRUD pour le modèle : User
+[2024-12-17T19:11:00.022Z] [INFO] Début de la génération CRUD pour le modèle : User
+[2024-12-17T19:11:00.025Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\User.php
+[2024-12-17T19:11:00.028Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_185336_users.php
+[2024-12-17T19:11:00.032Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\UserSeeder.php
+[2024-12-17T19:11:00.037Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\users.csv
+[2024-12-17T19:11:00.042Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\UserController.php
+[2024-12-17T19:11:00.046Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\UserExport.php
+[2024-12-17T19:11:00.051Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\UserImport.php
+[2024-12-17T19:11:00.055Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\UserRequest.php
+[2024-12-17T19:11:00.058Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\UserService.php
+[2024-12-17T19:11:00.061Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\UserRoute.php
+[2024-12-17T19:11:00.066Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\user.php
+[2024-12-17T19:11:00.070Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\create.blade.php
+[2024-12-17T19:11:00.074Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\edit.blade.php
+[2024-12-17T19:11:00.079Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_fields.blade.php
+[2024-12-17T19:11:00.084Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\index.blade.php
+[2024-12-17T19:11:00.089Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\show.blade.php
+[2024-12-17T19:11:00.092Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_table.blade.php
+[2024-12-17T19:11:00.096Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:11:00.097Z] [INFO] Génération CRUD terminée pour le modèle : User
+[2024-12-17T19:11:00.098Z] [SUCCESS] CRUD généré avec succès pour le modèle : User
+[2024-12-17T19:11:00.099Z] [INFO] Génération CRUD terminée pour tous les modèles.
+[2024-12-17T19:11:38.539Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:11:38.551Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:11:38.555Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:11:38.559Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:11:38.568Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:11:38.577Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:11:38.590Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:11:38.597Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:11:38.605Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:11:38.612Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:11:38.618Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:11:38.626Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:11:38.633Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:11:38.641Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:11:38.648Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:11:38.658Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:11:38.665Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:11:38.672Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:11:46.845Z] [ERROR] Usage: gapp make:crud <moduleName> <modelName>
+[2024-12-17T19:12:23.606Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:12:23.618Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:12:23.623Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:12:23.628Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:12:23.641Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:12:23.654Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:12:23.664Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:12:23.672Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:12:23.680Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:12:23.689Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:12:23.696Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:12:23.706Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:12:23.716Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:12:23.724Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:12:23.730Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:12:23.740Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:12:23.747Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:12:23.755Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:18:41.500Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:18:41.513Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:18:41.518Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:18:41.522Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:18:41.537Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:18:41.550Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:18:41.559Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:18:41.567Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:18:41.574Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:18:41.583Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:18:41.590Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:18:41.597Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:18:41.604Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:18:41.613Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:18:41.620Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:18:41.630Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:18:41.637Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:18:41.646Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:18:41.654Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:18:41.663Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:18:41.664Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:20:40.396Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:20:40.412Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:20:40.417Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:20:40.421Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:20:40.433Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:20:40.444Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:20:40.453Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:20:40.461Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:20:40.469Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:20:40.477Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:20:40.484Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:20:40.492Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:20:40.499Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:20:40.506Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:20:40.514Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:20:40.523Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:20:40.530Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:20:40.537Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:22:13.513Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:22:13.524Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:22:13.525Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:22:16.678Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:22:16.700Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:22:16.707Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:22:16.713Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:22:16.735Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:22:16.745Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:22:16.757Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:22:16.770Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:22:16.788Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:22:16.803Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:22:16.815Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:22:16.829Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:22:16.844Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:22:16.853Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:22:16.862Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:22:16.873Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:22:16.882Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:22:16.889Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:22:19.429Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:22:19.437Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:22:19.438Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:34:19.621Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:34:19.641Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:34:19.646Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:34:19.650Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:34:19.664Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:34:19.673Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:34:19.684Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:34:19.691Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:34:19.701Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:34:19.708Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:34:19.716Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:34:19.724Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:34:19.734Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:34:19.743Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:34:19.751Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:34:19.760Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:34:19.769Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:34:19.776Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:34:19.786Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:34:19.793Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:34:19.794Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:49:47.847Z] [INFO] Début de la génération CRUD pour tous les modèles...
+[2024-12-17T19:49:47.848Z] [INFO] Génération CRUD pour le modèle : Article
+[2024-12-17T19:49:47.850Z] [INFO] Début de la génération CRUD pour le modèle : Article
+[2024-12-17T19:49:47.866Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Article.php
+[2024-12-17T19:49:47.874Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160213_articles.php
+[2024-12-17T19:49:47.879Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:49:47.893Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\ArticleSeeder.php
+[2024-12-17T19:49:47.903Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\articles.csv
+[2024-12-17T19:49:47.913Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\ArticleController.php
+[2024-12-17T19:49:47.920Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\ArticleExport.php
+[2024-12-17T19:49:47.928Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\ArticleImport.php
+[2024-12-17T19:49:47.935Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\ArticleRequest.php
+[2024-12-17T19:49:47.943Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\ArticleService.php
+[2024-12-17T19:49:47.951Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\ArticleRoute.php
+[2024-12-17T19:49:47.959Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\article.php
+[2024-12-17T19:49:47.967Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\create.blade.php
+[2024-12-17T19:49:47.973Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\edit.blade.php
+[2024-12-17T19:49:47.983Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_fields.blade.php
+[2024-12-17T19:49:47.989Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\index.blade.php
+[2024-12-17T19:49:47.998Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\show.blade.php
+[2024-12-17T19:49:48.006Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\article\_table.blade.php
+[2024-12-17T19:49:48.015Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:49:48.016Z] [INFO] Génération CRUD terminée pour le modèle : Article
+[2024-12-17T19:49:48.016Z] [SUCCESS] CRUD généré avec succès pour le modèle : Article
+[2024-12-17T19:49:48.017Z] [INFO] Génération CRUD pour le modèle : Category
+[2024-12-17T19:49:48.018Z] [INFO] Début de la génération CRUD pour le modèle : Category
+[2024-12-17T19:49:48.022Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Category.php
+[2024-12-17T19:49:48.026Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160043_categories.php
+[2024-12-17T19:49:48.030Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CategorySeeder.php
+[2024-12-17T19:49:48.034Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\categories.csv
+[2024-12-17T19:49:48.041Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CategoryController.php
+[2024-12-17T19:49:48.046Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CategoryExport.php
+[2024-12-17T19:49:48.051Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CategoryImport.php
+[2024-12-17T19:49:48.055Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CategoryRequest.php
+[2024-12-17T19:49:48.062Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CategoryService.php
+[2024-12-17T19:49:48.066Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CategoryRoute.php
+[2024-12-17T19:49:48.069Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\category.php
+[2024-12-17T19:49:48.072Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\create.blade.php
+[2024-12-17T19:49:48.077Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\edit.blade.php
+[2024-12-17T19:49:48.082Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_fields.blade.php
+[2024-12-17T19:49:48.086Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\index.blade.php
+[2024-12-17T19:49:48.090Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\show.blade.php
+[2024-12-17T19:49:48.096Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\category\_table.blade.php
+[2024-12-17T19:49:48.101Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:49:48.101Z] [INFO] Génération CRUD terminée pour le modèle : Category
+[2024-12-17T19:49:48.102Z] [SUCCESS] CRUD généré avec succès pour le modèle : Category
+[2024-12-17T19:49:48.103Z] [INFO] Génération CRUD pour le modèle : Comment
+[2024-12-17T19:49:48.103Z] [INFO] Début de la génération CRUD pour le modèle : Comment
+[2024-12-17T19:49:48.108Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Comment.php
+[2024-12-17T19:49:48.112Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160310_comments.php
+[2024-12-17T19:49:48.116Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CommentSeeder.php
+[2024-12-17T19:49:48.119Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\comments.csv
+[2024-12-17T19:49:48.125Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CommentController.php
+[2024-12-17T19:49:48.130Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CommentExport.php
+[2024-12-17T19:49:48.133Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CommentImport.php
+[2024-12-17T19:49:48.137Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CommentRequest.php
+[2024-12-17T19:49:48.141Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CommentService.php
+[2024-12-17T19:49:48.145Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CommentRoute.php
+[2024-12-17T19:49:48.150Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\comment.php
+[2024-12-17T19:49:48.154Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\create.blade.php
+[2024-12-17T19:49:48.158Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\edit.blade.php
+[2024-12-17T19:49:48.163Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_fields.blade.php
+[2024-12-17T19:49:48.167Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\index.blade.php
+[2024-12-17T19:49:48.171Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\show.blade.php
+[2024-12-17T19:49:48.176Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_table.blade.php
+[2024-12-17T19:49:48.181Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:49:48.182Z] [INFO] Génération CRUD terminée pour le modèle : Comment
+[2024-12-17T19:49:48.183Z] [SUCCESS] CRUD généré avec succès pour le modèle : Comment
+[2024-12-17T19:49:48.184Z] [INFO] Génération CRUD pour le modèle : Tag
+[2024-12-17T19:49:48.185Z] [INFO] Début de la génération CRUD pour le modèle : Tag
+[2024-12-17T19:49:48.188Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Tag.php
+[2024-12-17T19:49:48.192Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160235_tags.php
+[2024-12-17T19:49:48.195Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160236_article_tag.php
+[2024-12-17T19:49:48.200Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\TagSeeder.php
+[2024-12-17T19:49:48.204Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\tags.csv
+[2024-12-17T19:49:48.210Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\TagController.php
+[2024-12-17T19:49:48.215Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\TagExport.php
+[2024-12-17T19:49:48.218Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\TagImport.php
+[2024-12-17T19:49:48.222Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\TagRequest.php
+[2024-12-17T19:49:48.228Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\TagService.php
+[2024-12-17T19:49:48.232Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\TagRoute.php
+[2024-12-17T19:49:48.236Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\tag.php
+[2024-12-17T19:49:48.240Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\create.blade.php
+[2024-12-17T19:49:48.245Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\edit.blade.php
+[2024-12-17T19:49:48.249Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_fields.blade.php
+[2024-12-17T19:49:48.253Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\index.blade.php
+[2024-12-17T19:49:48.256Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\show.blade.php
+[2024-12-17T19:49:48.261Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\tag\_table.blade.php
+[2024-12-17T19:49:48.265Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:49:48.266Z] [INFO] Génération CRUD terminée pour le modèle : Tag
+[2024-12-17T19:49:48.267Z] [SUCCESS] CRUD généré avec succès pour le modèle : Tag
+[2024-12-17T19:49:48.267Z] [INFO] Génération CRUD pour le modèle : User
+[2024-12-17T19:49:48.268Z] [INFO] Début de la génération CRUD pour le modèle : User
+[2024-12-17T19:49:48.271Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\User.php
+[2024-12-17T19:49:48.275Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_185336_users.php
+[2024-12-17T19:49:48.278Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\UserSeeder.php
+[2024-12-17T19:49:48.282Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\users.csv
+[2024-12-17T19:49:48.287Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\UserController.php
+[2024-12-17T19:49:48.292Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\UserExport.php
+[2024-12-17T19:49:48.296Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\UserImport.php
+[2024-12-17T19:49:48.301Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\UserRequest.php
+[2024-12-17T19:49:48.305Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\UserService.php
+[2024-12-17T19:49:48.309Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\UserRoute.php
+[2024-12-17T19:49:48.313Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\user.php
+[2024-12-17T19:49:48.317Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\create.blade.php
+[2024-12-17T19:49:48.320Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\edit.blade.php
+[2024-12-17T19:49:48.325Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_fields.blade.php
+[2024-12-17T19:49:48.329Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\index.blade.php
+[2024-12-17T19:49:48.334Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\show.blade.php
+[2024-12-17T19:49:48.339Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\user\_table.blade.php
+[2024-12-17T19:49:48.345Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T19:49:48.346Z] [INFO] Génération CRUD terminée pour le modèle : User
+[2024-12-17T19:49:48.347Z] [SUCCESS] CRUD généré avec succès pour le modèle : User
+[2024-12-17T19:49:48.348Z] [INFO] Génération CRUD terminée pour tous les modèles.
+[2024-12-17T20:18:54.789Z] [INFO] Début de la génération CRUD pour le modèle : Article

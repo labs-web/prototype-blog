@@ -4,12 +4,16 @@
     <table class="table table-striped text-nowrap">
         <thead>
             <tr>
+                <th>{{ ucfirst(__('PkgBlog::user.singular')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::article.singular')) }}</th>
                 <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($data as $comment)
                 <tr>
+                    <td>{{ $comment->user->name ?? '-' }}</td>
+                    <td>{{ $comment->article->title ?? '-' }}</td>
                     <td class="text-center">
                         @can('show-CommentController')
                             <a href="{{ route('comments.show', $comment) }}" class="btn btn-default btn-sm">

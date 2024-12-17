@@ -5,6 +5,7 @@
         <thead>
             <tr>
                 <th>{{ ucfirst(__('PkgBlog::user.name')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::user.password')) }}</th>
                 <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
@@ -12,6 +13,7 @@
             @foreach ($data as $user)
                 <tr>
                     <td>{{ $user->name }}</td>
+                    <td>{{ $user->password }}</td>
                     <td class="text-center">
                         @can('show-UserController')
                             <a href="{{ route('users.show', $user) }}" class="btn btn-default btn-sm">

@@ -5,6 +5,8 @@
         <thead>
             <tr>
                 <th>{{ ucfirst(__('PkgBlog::article.title')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::category.singular')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::user.singular')) }}</th>
                 <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
@@ -12,6 +14,8 @@
             @foreach ($data as $article)
                 <tr>
                     <td>{{ $article->title }}</td>
+                    <td>{{ $article->category->name ?? '-' }}</td>
+                    <td>{{ $article->user->name ?? '-' }}</td>
                     <td class="text-center">
                         @can('show-ArticleController')
                             <a href="{{ route('articles.show', $article) }}" class="btn btn-default btn-sm">
