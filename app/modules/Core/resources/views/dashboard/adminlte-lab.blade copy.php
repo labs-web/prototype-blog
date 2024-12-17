@@ -1,19 +1,26 @@
-@extends('layouts.adminlte-lab-layout')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Advanced form elements</title>
+  <!-- Select2 -->
 
+  
+  <link rel="stylesheet" href="http://[::1]:3000/node_modules/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="http://[::1]:3000/node_modules//admin-lte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <link rel="stylesheet" href="http://[::1]:3000/node_modules/admin-lte/dist/css/adminlte.min.css">
 
-@section('title', __('Core::dashboard.title'))
-
-@section('content')
-
-<h1>Admin LTE</h1>
-
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
  
 
     <!-- Main content -->
-    <section class="content">
+a    <section class="content">
       <div class="container-fluid">
         
         <!-- SELECT2 EXAMPLE -->
@@ -236,4 +243,27 @@
   </div>
 
 
-@endsection
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="http://[::1]:3000/node_modules/admin-lte/plugins/jquery/jquery.min.js"></script>
+
+<!-- Select2 -->
+<script src="http://[::1]:3000/node_modules/admin-lte/plugins/select2/js/select2.full.min.js"></script>
+
+<!-- Page specific script -->
+<script>
+  $(function () {
+
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+  })
+</script>
+</body>
+</html>
