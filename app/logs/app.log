@@ -1313,3 +1313,23 @@
 [2024-12-17T14:53:33.693Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_table.blade.php
 [2024-12-17T14:53:33.707Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
 [2024-12-17T14:53:33.708Z] [INFO] Génération CRUD terminée pour le modèle : Comment
+[2024-12-17T15:27:05.249Z] [INFO] Début de la génération CRUD pour le modèle : Comment
+[2024-12-17T15:27:05.263Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Models\Comment.php
+[2024-12-17T15:27:05.268Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Migrations\2024_12_12_160310_comments.php
+[2024-12-17T15:27:05.283Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\Seeders\CommentSeeder.php
+[2024-12-17T15:27:05.292Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\Database\data\comments.csv
+[2024-12-17T15:27:05.303Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Controllers\CommentController.php
+[2024-12-17T15:27:05.313Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Exports\CommentExport.php
+[2024-12-17T15:27:05.321Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Imports\CommentImport.php
+[2024-12-17T15:27:05.329Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\App\Requests\CommentRequest.php
+[2024-12-17T15:27:05.340Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Services\CommentService.php
+[2024-12-17T15:27:05.350Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\Routes\CommentRoute.php
+[2024-12-17T15:27:05.357Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\lang\fr\comment.php
+[2024-12-17T15:27:05.367Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\create.blade.php
+[2024-12-17T15:27:05.375Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\edit.blade.php
+[2024-12-17T15:27:05.386Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_fields.blade.php
+[2024-12-17T15:27:05.397Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\index.blade.php
+[2024-12-17T15:27:05.404Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\show.blade.php
+[2024-12-17T15:27:05.415Z] [SUCCESS] E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\comment\_table.blade.php
+[2024-12-17T15:27:05.423Z] [WARNING] Code manuel: E:\labs-web\prototype-blog\app\modules\PkgBlog\resources\views\layouts\_sidebar.blade.php
+[2024-12-17T15:27:05.424Z] [INFO] Génération CRUD terminée pour le modèle : Comment
