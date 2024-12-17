@@ -71,7 +71,9 @@
         <div class="form-group">
             <label for="category_id">
                 {{ ucfirst(__('PkgBlog::category.singular')) }}
-                <span class="text-danger">*</span>
+                
+                    <span class="text-danger">*</span>
+                
             </label>
             <select id="category_id" name="category_id" class="form-control">
                 <option value="">Sélectionnez une option</option>
@@ -84,7 +86,9 @@
         <div class="form-group">
             <label for="user_id">
                 {{ ucfirst(__('PkgBlog::user.singular')) }}
-                <span class="text-danger">*</span>
+                
+                    <span class="text-danger">*</span>
+                
             </label>
             <select id="user_id" name="user_id" class="form-control">
                 <option value="">Sélectionnez une option</option>
@@ -95,31 +99,32 @@
         </div>
         
 
-
+        
         <div class="form-group">
             <label for="tags">
-                {{ ucfirst(__('PkgBlog::article.tags')) }}
-                <span class="text-danger">*</span>
+                {{ ucfirst(__('PkgBlog::Tag.plural')) }}
             </label>
-    
             <select
+                id="tags"
                 name="tags[]"
                 class="form-control select2"
-                id="tags"
-                multiple="multiple"
-                placeholder="{{ __('Enter PkgBlog::article.tags') }}">
-              
+                multiple="multiple">
                 @foreach ($tags as $tag)
-                <option value="{{ $tag->id }}"
-                    {{ (isset($item) && $item->tags && $item->tags->contains('id', $tag->id)) || (is_array(old('tags')) && in_array($tag->id, old('tags'))) ? 'selected' : '' }}>
-                    {{ $tag->name }}
-                </option>
-               @endforeach
+                    <option value="{{ $tag->id }}"
+                        {{ (isset($item) && $item->tags && $item->tags->contains('id', $tag->id)) || (is_array(old('tags')) && in_array($tag->id, old('tags'))) ? 'selected' : '' }}>
+                        {{ $tag-> }}
+                    </option>
+                @endforeach
             </select>
             @error('tags')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
+
         </div>
+        
+
+
+
     </div>
 
     <div class="card-footer">

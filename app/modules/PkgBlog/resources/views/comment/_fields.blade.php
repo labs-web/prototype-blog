@@ -33,7 +33,9 @@
         <div class="form-group">
             <label for="article_id">
                 {{ ucfirst(__('PkgBlog::article.singular')) }}
-                <span class="text-danger">*</span>
+                
+                    <span class="text-danger">*</span>
+                
             </label>
             <select id="article_id" name="article_id" class="form-control">
                 <option value="">Sélectionnez une option</option>
@@ -46,7 +48,9 @@
         <div class="form-group">
             <label for="user_id">
                 {{ ucfirst(__('PkgBlog::user.singular')) }}
-                <span class="text-danger">*</span>
+                
+                    <span class="text-danger">*</span>
+                
             </label>
             <select id="user_id" name="user_id" class="form-control">
                 <option value="">Sélectionnez une option</option>
@@ -56,6 +60,11 @@
             @enderror
         </div>
         
+
+        
+
+
+
     </div>
 
     <div class="card-footer">
@@ -71,7 +80,7 @@
             fieldId: 'article_id',
             fetchUrl: "{{ route('articles.all') }}",
             selectedValue: {{ $item->article_id ? $item->article_id : 'undefined' }},
-            fieldValue: 'name'
+            fieldValue: 'title'
         },
         
         {

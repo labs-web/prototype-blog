@@ -3,7 +3,6 @@
 @extends('layouts.admin')
 @section('title', __('Core::msg.edit') . ' ' . __('PkgBlog::article.singular'))
 
-
 @section('content')
     <div class="content-header">
     </div>
@@ -20,12 +19,6 @@
                         </div>
                         <!-- Inclure le formulaire -->
                         @include('PkgBlog::article._fields')
-
-                        
-
-                    
-
-
                     </div>
                 </div>
             </div>

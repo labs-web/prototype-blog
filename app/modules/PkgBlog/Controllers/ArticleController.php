@@ -4,24 +4,24 @@
 
 namespace Modules\PkgBlog\Controllers;
 
-
 use Modules\Core\Controllers\Base\AdminController;
 use Modules\PkgBlog\App\Requests\ArticleRequest;
 use Modules\PkgBlog\Services\ArticleService;
+use Modules\PkgBlog\Services\TagService;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\PkgBlog\App\Exports\ArticleExport;
 use Modules\PkgBlog\App\Imports\ArticleImport;
-use Modules\PkgBlog\Models\Tag;
-use Modules\PkgBlog\Services\TagService;
 
 class ArticleController extends AdminController
 {
     protected $articleService;
+    protected $tagService;
 
-    public function __construct(ArticleService $articleService)
+    public function __construct(ArticleService $articleService, TagService $tagService)
     {
         $this->articleService = $articleService;
+        $this->tagService = $tagService;
     }
 
     public function index(Request $request)
@@ -47,8 +47,8 @@ class ArticleController extends AdminController
     public function create()
     {
         $item = $this->articleService->createInstance();
-        $tags = (new TagService())->all();
-        return view('PkgBlog::article.create', compact('item','tags'));
+        $tags = $this->tagService->all();
+        return view('PkgBlog::article.create', compact('item', 'tags'));
     }
 
     public function store(ArticleRequest $request)
@@ -56,21 +56,15 @@ class ArticleController extends AdminController
         $validatedData = $request->validated();
         $article = $this->articleService->create($validatedData);
 
-          // Attacher les tags
-    if ($request->has('tags')) {
-        $article->tags()->sync($request->tags);
+        if ($request->has('tags')) {
+            $article->tags()->sync($request->input('tags'));
+        }
+
+        return redirect()->route('articles.index')->with('success', __('Core::msg.addSuccess', [
+            'entityToString' => $article,
+            'modelName' => __('PkgBlog::article.singular')
+        ]));
     }
-
-        return redirect()->route('articles.index')->with(
-            'success',
-            __('Core::msg.addSuccess', [
-                'entityToString' => $article,
-                'modelName' =>  __('PkgBlog::article.singular')
-                ])
-        );
-
-    }
-
     public function show(string $id)
     {
         $item = $this->articleService->find($id);
@@ -80,8 +74,8 @@ class ArticleController extends AdminController
     public function edit(string $id)
     {
         $item = $this->articleService->find($id);
-        $tags = (new TagService())->all();
-        return view('PkgBlog::article.edit', compact('item','tags'));
+        $tags = $this->tagService->all();
+        return view('PkgBlog::article.edit', compact('item', 'tags'));
     }
 
     public function update(ArticleRequest $request, string $id)
@@ -89,10 +83,10 @@ class ArticleController extends AdminController
         $validatedData = $request->validated();
         $article = $this->articleService->update($id, $validatedData);
 
-    // Mettre à jour les tags associés
-    if ($request->has('tags')) {
-        $article->tags()->sync($request->tags);
-    }
+
+        if ($request->has('tags')) {
+            $article->tags()->sync($request->input('tags'));
+        }
 
         return redirect()->route('articles.index')->with(
             'success',
