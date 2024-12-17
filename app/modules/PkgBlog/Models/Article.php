@@ -32,7 +32,7 @@ class Article extends Model
 
     public function __toString()
     {
-        return $this->title;
+        return $this->id;
     }
 
 }

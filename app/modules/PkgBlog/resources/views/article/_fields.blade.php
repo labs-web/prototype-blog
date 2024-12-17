@@ -112,7 +112,7 @@
                 @foreach ($tags as $tag)
                     <option value="{{ $tag->id }}"
                         {{ (isset($item) && $item->tags && $item->tags->contains('id', $tag->id)) || (is_array(old('tags')) && in_array($tag->id, old('tags'))) ? 'selected' : '' }}>
-                        {{ $tag-> }}
+                        {{ $tag->name }}
                     </option>
                 @endforeach
             </select>
