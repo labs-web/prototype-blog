@@ -27,7 +27,9 @@ class UserExport implements FromCollection, WithHeadings, ShouldAutoSize, WithSt
         return [
             'name',
             'email',
+            'email_verified_at',
             'password',
+            'remember_token',
         ];
     }
 
@@ -37,7 +39,9 @@ class UserExport implements FromCollection, WithHeadings, ShouldAutoSize, WithSt
             return [
                 'name' => $user->name,
                 'email' => $user->email,
+                'email_verified_at' => $user->email_verified_at,
                 'password' => $user->password,
+                'remember_token' => $user->remember_token,
             ];
         });
     }

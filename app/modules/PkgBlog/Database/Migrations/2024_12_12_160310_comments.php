@@ -21,8 +21,8 @@ return new class extends Migration {
 
             $table->timestamps();
 
-            $table->foreignId('user_id')->constrained('users');
             $table->foreignId('article_id')->constrained('articles');
+            $table->foreignId('user_id')->constrained('users');
 
         });
     }

@@ -4,7 +4,6 @@
 
 namespace Modules\PkgBlog\Controllers;
 
-
 use Modules\Core\Controllers\Base\AdminController;
 use Modules\PkgBlog\App\Requests\CommentRequest;
 use Modules\PkgBlog\Services\CommentService;
@@ -52,16 +51,13 @@ class CommentController extends AdminController
     {
         $validatedData = $request->validated();
         $comment = $this->commentService->create($validatedData);
-        return redirect()->route('comments.index')->with(
-            'success',
-            __('Core::msg.addSuccess', [
-                'entityToString' => $comment,
-                'modelName' =>  __('PkgBlog::comment.singular')
-                ])
-        );
 
+
+        return redirect()->route('comments.index')->with('success', __('Core::msg.addSuccess', [
+            'entityToString' => $comment,
+            'modelName' => __('PkgBlog::comment.singular')
+        ]));
     }
-
     public function show(string $id)
     {
         $item = $this->commentService->find($id);
@@ -78,6 +74,9 @@ class CommentController extends AdminController
     {
         $validatedData = $request->validated();
         $comment = $this->commentService->update($id, $validatedData);
+
+
+
         return redirect()->route('comments.index')->with(
             'success',
             __('Core::msg.updateSuccess', [

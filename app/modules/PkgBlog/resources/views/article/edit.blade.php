@@ -18,7 +18,7 @@
                             </h3>
                         </div>
                         <!-- Inclure le formulaire -->
-                        @include('PkgBlog::article.fields')
+                        @include('PkgBlog::article._fields')
                     </div>
                 </div>
             </div>

@@ -24,4 +24,8 @@ class DashboardController extends AppController
     {
         return view('Core::dashboard.index'); // Charge la vue `dashboard/index.blade.php`.
     }
+
+    public function adminlte_lab(){
+        return view('Core::dashboard.adminlte-lab');
+    }
 }

@@ -16,23 +16,23 @@ class Article extends Model
 
     protected $fillable = ['title', 'slug', 'content', 'category_id', 'user_id'];
 
-    public function Category()
+    public function category()
     {
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
-    public function User()
+    public function user()
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
-    public function Tag()
+    public function tags()
     {
         return $this->belongsToMany(Tag::class, 'article_tag');
     }
 
     public function __toString()
     {
-        return $this->title;
+        return $this->id;
     }
 
 }
