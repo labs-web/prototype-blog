@@ -3,27 +3,24 @@
 
 
 
-namespace Modules\PkgBlog\Services;
+namespace Modules\PkgProfile\Services;
 
-use Modules\PkgBlog\Models\Article;
+use Modules\PkgProfile\Models\Tag;
 use Modules\Core\Services\BaseService;
 
 /**
- * Classe ArticleService pour gérer la persistance de l'entité Article.
+ * Classe TagService pour gérer la persistance de l'entité Tag.
  */
-class ArticleService extends BaseService
+class TagService extends BaseService
 {
     /**
-     * Les champs de recherche disponibles pour articles.
+     * Les champs de recherche disponibles pour tags.
      *
      * @var array
      */
     protected $fieldsSearchable = [
-        'title',
-        'slug',
-        'content',
-        'category_id',
-        'user_id'
+        'name',
+        'slug'
     ];
 
     /**
@@ -37,15 +34,15 @@ class ArticleService extends BaseService
     }
 
     /**
-     * Constructeur de la classe ArticleService.
+     * Constructeur de la classe TagService.
      */
     public function __construct()
     {
-        parent::__construct(new Article());
+        parent::__construct(new Tag());
     }
 
     /**
-     * Crée une nouvelle instance de article.
+     * Crée une nouvelle instance de tag.
      *
      * @param array $data Données pour la création.
      * @return mixed

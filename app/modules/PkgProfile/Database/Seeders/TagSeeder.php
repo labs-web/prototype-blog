@@ -2,18 +2,18 @@
 // Ce fichier est maintenu par ESSARRAJ Fouad
 
 
-namespace Modules\PkgBlog\Database\Seeders;
+namespace Modules\PkgProfile\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Modules\PkgBlog\Models\Comment;
+use Modules\PkgProfile\Models\Tag;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use App\Models\User;
 use Illuminate\Support\Facades\Schema;
 
-class CommentSeeder extends Seeder
+class TagSeeder extends Seeder
 {
-    public static int $order = 6;
+    public static int $order = 4;
 
     public function run(): void
     {
@@ -21,17 +21,16 @@ class CommentSeeder extends Seeder
         $MembreRole = User::MEMBRE;
 
         Schema::disableForeignKeyConstraints();
-        Comment::truncate();
+        Tag::truncate();
         Schema::enableForeignKeyConstraints();
 
-        $csvFile = fopen(base_path("modules/PkgBlog/Database/data/comments.csv"), "r");
+        $csvFile = fopen(base_path("modules/PkgProfile/Database/data/tags.csv"), "r");
         $firstline = true;
         while (($data = fgetcsv($csvFile)) !== false) {
             if (!$firstline) {
-                Comment::create([
-                    "content" => $data[0] ,
-                    "article_id" => $data[1] ,
-                    "user_id" => $data[2] 
+                Tag::create([
+                    "name" => $data[0] ,
+                    "slug" => $data[1] 
                 ]);
             }
             $firstline = false;
@@ -48,32 +47,32 @@ class CommentSeeder extends Seeder
             'destroy',
             'export',
             'import',
-            'getComments'
+            'getTags'
         ];
 
         foreach ($actions as $action) {
-            Permission::create(['name' => $action . '-CommentController', 'guard_name' => 'web']);
+            Permission::create(['name' => $action . '-TagController', 'guard_name' => 'web']);
         }
 
         $admin = Role::where('name', $AdminRole)->first();
         $membre = Role::where('name', $MembreRole)->first();
 
         $admin->givePermissionTo([
-            'index-CommentController',
-            'show-CommentController',
-            'create-CommentController',
-            'store-CommentController',
-            'edit-CommentController',
-            'update-CommentController',
-            'destroy-CommentController',
-            'export-CommentController',
-            'import-CommentController',
-            'getComments-CommentController',
+            'index-TagController',
+            'show-TagController',
+            'create-TagController',
+            'store-TagController',
+            'edit-TagController',
+            'update-TagController',
+            'destroy-TagController',
+            'export-TagController',
+            'import-TagController',
+            'getTags-TagController',
         ]);
 
         $membre->givePermissionTo([
-            'index-CommentController',
-            'show-CommentController'
+            'index-TagController',
+            'show-TagController'
         ]);
     }
 }

@@ -20,8 +20,8 @@ class CommentService extends BaseService
      */
     protected $fieldsSearchable = [
         'content',
-        'user_id',
-        'article_id'
+        'article_id',
+        'user_id'
     ];
 
     /**

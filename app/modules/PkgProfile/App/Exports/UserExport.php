@@ -3,9 +3,9 @@
 
 
 
-namespace Modules\PkgBlog\App\Exports;
+namespace Modules\PkgProfile\App\Exports;
 
-use Modules\PkgBlog\Models\Comment;
+use Modules\PkgProfile\Models\User;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
@@ -13,7 +13,7 @@ use Maatwebsite\Excel\Concerns\WithStyles;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use PhpOffice\PhpSpreadsheet\Style\Border;
 
-class CommentExport implements FromCollection, WithHeadings, ShouldAutoSize, WithStyles
+class UserExport implements FromCollection, WithHeadings, ShouldAutoSize, WithStyles
 {
     protected $data;
 
@@ -25,19 +25,23 @@ class CommentExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
     public function headings(): array
     {
         return [
-            'content',
-            'article_id',
-            'user_id',
+            'name',
+            'email',
+            'email_verified_at',
+            'password',
+            'remember_token',
         ];
     }
 
     public function collection()
     {
-        return $this->data->map(function ($comment) {
+        return $this->data->map(function ($user) {
             return [
-                'content' => $comment->content,
-                'article_id' => $comment->article_id,
-                'user_id' => $comment->user_id,
+                'name' => $user->name,
+                'email' => $user->email,
+                'email_verified_at' => $user->email_verified_at,
+                'password' => $user->password,
+                'remember_token' => $user->remember_token,
             ];
         });
     }

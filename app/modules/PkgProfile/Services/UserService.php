@@ -3,27 +3,27 @@
 
 
 
-namespace Modules\PkgBlog\Services;
+namespace Modules\PkgProfile\Services;
 
-use Modules\PkgBlog\Models\Article;
+use Modules\PkgProfile\Models\User;
 use Modules\Core\Services\BaseService;
 
 /**
- * Classe ArticleService pour gérer la persistance de l'entité Article.
+ * Classe UserService pour gérer la persistance de l'entité User.
  */
-class ArticleService extends BaseService
+class UserService extends BaseService
 {
     /**
-     * Les champs de recherche disponibles pour articles.
+     * Les champs de recherche disponibles pour users.
      *
      * @var array
      */
     protected $fieldsSearchable = [
-        'title',
-        'slug',
-        'content',
-        'category_id',
-        'user_id'
+        'name',
+        'email',
+        'email_verified_at',
+        'password',
+        'remember_token'
     ];
 
     /**
@@ -37,15 +37,15 @@ class ArticleService extends BaseService
     }
 
     /**
-     * Constructeur de la classe ArticleService.
+     * Constructeur de la classe UserService.
      */
     public function __construct()
     {
-        parent::__construct(new Article());
+        parent::__construct(new User());
     }
 
     /**
-     * Crée une nouvelle instance de article.
+     * Crée une nouvelle instance de user.
      *
      * @param array $data Données pour la création.
      * @return mixed

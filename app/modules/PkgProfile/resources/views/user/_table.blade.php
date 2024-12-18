@@ -4,33 +4,33 @@
     <table class="table table-striped text-nowrap">
         <thead>
             <tr>
-                <th>{{ ucfirst(__('PkgBlog::article.singular')) }}</th>
-                <th>{{ ucfirst(__('PkgBlog::user.singular')) }}</th>
+                <th>{{ ucfirst(__('PkgProfile::user.name')) }}</th>
+                <th>{{ ucfirst(__('PkgProfile::user.password')) }}</th>
                 <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($data as $comment)
+            @foreach ($data as $user)
                 <tr>
-                    <td>{{ $comment->article->title ?? '-' }}</td>
-                    <td>{{ $comment->user->name ?? '-' }}</td>
+                    <td>{{ $user->name }}</td>
+                    <td>{{ $user->password }}</td>
                     <td class="text-center">
-                        @can('show-CommentController')
-                            <a href="{{ route('comments.show', $comment) }}" class="btn btn-default btn-sm">
+                        @can('show-UserController')
+                            <a href="{{ route('users.show', $user) }}" class="btn btn-default btn-sm">
                                 <i class="far fa-eye"></i>
                             </a>
                         @endcan
-                        @can('edit-CommentController')
-                            <a href="{{ route('comments.edit', $comment) }}" class="btn btn-sm btn-default">
+                        @can('edit-UserController')
+                            <a href="{{ route('users.edit', $user) }}" class="btn btn-sm btn-default">
                                 <i class="fas fa-pen-square"></i>
                             </a>
                         @endcan
-                        @can('destroy-CommentController')
-                            <form action="{{ route('comments.destroy', $comment) }}" method="POST" style="display: inline;">
+                        @can('destroy-UserController')
+                            <form action="{{ route('users.destroy', $user) }}" method="POST" style="display: inline;">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-sm btn-danger"
-                                    onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce comment ?')">
+                                    onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce user ?')">
                                     <i class="fas fa-trash"></i>
                                 </button>
                             </form>
@@ -44,8 +44,8 @@
 
 <div class="d-md-flex justify-content-between align-items-center p-2">
     <div class="d-flex align-items-center mb-2 ml-2 mt-2">
-        @can('import-CommentController')
-            <form action="{{ route('comments.import') }}" method="post" class="mt-2" enctype="multipart/form-data"
+        @can('import-UserController')
+            <form action="{{ route('users.import') }}" method="post" class="mt-2" enctype="multipart/form-data"
                 id="importForm">
                 @csrf
                 <label for="upload" class="btn btn-default btn-sm font-weight-normal">
@@ -55,9 +55,9 @@
                 <input type="file" id="upload" name="file" style="display:none;" onchange="submitForm()" />
             </form>
         @endcan
-        @can('export-CommentController')
+        @can('export-UserController')
             <form class="">
-                <a href="{{ route('comments.export') }}" class="btn btn-default btn-sm mt-0 mx-2">
+                <a href="{{ route('users.export') }}" class="btn btn-default btn-sm mt-0 mx-2">
                     <i class="fas fa-file-export"></i>
                     {{ __('Core::msg.export') }}</a>
             </form>

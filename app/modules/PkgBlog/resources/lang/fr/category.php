@@ -1,8 +1,10 @@
 <?php
+// Ce fichier est maintenu par ESSARRAJ Fouad
+
 
 return [
-    'singular' => 'Catégorie',
-    'plural' => 'Catégories',
-    'name' => 'nom',
-    'slug' => 'référence',
+    'singular' => 'Category',
+    'plural' => 'Categories',
+    'name' => 'name',
+    'slug' => 'slug',
 ];

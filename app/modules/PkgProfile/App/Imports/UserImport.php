@@ -3,15 +3,15 @@
 
 
 
-namespace Modules\PkgBlog\App\Imports;
+namespace Modules\PkgProfile\App\Imports;
 
 use Carbon\Carbon;
-use Modules\PkgBlog\Models\Comment;
+use Modules\PkgProfile\Models\User;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Illuminate\Support\Facades\Validator;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class CommentImport implements ToModel, WithHeadingRow
+class UserImport implements ToModel, WithHeadingRow
 {
     /**
      * Vérifie si une tâche avec les mêmes attributs existe déjà dans la base de données.
@@ -21,14 +21,14 @@ class CommentImport implements ToModel, WithHeadingRow
      */
     private function recordExists(array $row): bool
     {
-        return Comment::where('id', $row['id'])->exists();
+        return User::where('name', $row['name'])->exists();
     }
 
     /**
      * Crée ou met à jour un enregistrement à partir des données importées.
      *
      * @param array $row Ligne de données importée.
-     * @return <Comment|null
+     * @return <User|null
      */
     public function model(array $row)
     {
@@ -37,10 +37,12 @@ class CommentImport implements ToModel, WithHeadingRow
         }
 
         // Crée un nouvel enregistrement à partir des données importées
-        return new Comment([
-            'content' => $row['content'],
-            'article_id' => $row['article_id'],
-            'user_id' => $row['user_id'],
+        return new User([
+            'name' => $row['name'],
+            'email' => $row['email'],
+            'email_verified_at' => $row['email_verified_at'],
+            'password' => $row['password'],
+            'remember_token' => $row['remember_token'],
         ]);
     }
 }

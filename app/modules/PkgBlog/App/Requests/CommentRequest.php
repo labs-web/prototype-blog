@@ -18,8 +18,8 @@ class CommentRequest extends FormRequest
     {
         return [
             'content' => 'required|max:255',
-            'user_id' => 'required',
-            'article_id' => 'required'
+            'article_id' => 'required',
+            'user_id' => 'required'
         ];
     }
 
@@ -28,10 +28,10 @@ class CommentRequest extends FormRequest
         return [
             'content.required' => __('validation.required', ['attribute' => __('PkgBlog::category.content')]),
             'content.max' => __('validation.contentMax'),
-            'user_id.required' => __('validation.required', ['attribute' => __('PkgBlog::category.user_id')]),
-            'user_id.max' => __('validation.user_idMax'),
             'article_id.required' => __('validation.required', ['attribute' => __('PkgBlog::category.article_id')]),
-            'article_id.max' => __('validation.article_idMax')
+            'article_id.max' => __('validation.article_idMax'),
+            'user_id.required' => __('validation.required', ['attribute' => __('PkgBlog::category.user_id')]),
+            'user_id.max' => __('validation.user_idMax')
         ];
     }
 }
