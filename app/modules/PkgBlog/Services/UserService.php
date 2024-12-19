@@ -21,7 +21,9 @@ class UserService extends BaseService
     protected $fieldsSearchable = [
         'name',
         'email',
-        'password'
+        'email_verified_at',
+        'password',
+        'remember_token'
     ];
 
     /**

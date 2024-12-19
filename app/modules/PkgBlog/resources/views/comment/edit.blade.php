@@ -1,4 +1,4 @@
-{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
+{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}
 
 @extends('layouts.admin')
 @section('title', __('Core::msg.edit') . ' ' . __('PkgBlog::comment.singular'))
@@ -18,7 +18,7 @@
                             </h3>
                         </div>
                         <!-- Inclure le formulaire -->
-                        @include('PkgBlog::comment.fields')
+                        @include('PkgBlog::comment._fields')
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
+{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}
 
 @extends('layouts.admin')
 @section('title', __('Core::msg.show') . ' ' . __('PkgBlog::user.singular'))
@@ -33,8 +33,16 @@
                                 <p>{{ $item->email }}</p>
                             </div>
                             <div class="col-sm-12">
+                                <label for="email_verified_at">{{ ucfirst(__('PkgBlog::user.email_verified_at')) }}:</label>
+                                <p>{{ $item->email_verified_at }}</p>
+                            </div>
+                            <div class="col-sm-12">
                                 <label for="password">{{ ucfirst(__('PkgBlog::user.password')) }}:</label>
                                 <p>{{ $item->password }}</p>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="remember_token">{{ ucfirst(__('PkgBlog::user.remember_token')) }}:</label>
+                                <p>{{ $item->remember_token }}</p>
                             </div>
                         </div>
                     </div>

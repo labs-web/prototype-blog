@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div id="data-container">
-                        @include('PkgBlog::article.table')
+                        @include('PkgBlog::article._table')
                         </div>
                     </div>
                 </div>

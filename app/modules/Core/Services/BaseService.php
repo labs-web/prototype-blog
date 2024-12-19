@@ -16,6 +16,17 @@ abstract class BaseService implements ServiceInterface
 {
 
     /**
+     * Configure les relations à inclure dans les requêtes.
+     *
+     * @return void
+     */
+    protected function withRelations()
+    {
+      
+    }
+
+
+    /**
      * Le modèle Eloquent associé à ce référentiel.
      *
      * @var Model
@@ -55,6 +66,9 @@ abstract class BaseService implements ServiceInterface
      */
     public function paginate($search = [], $perPage = 0, array $columns = ['*']): LengthAwarePaginator
     {
+        // Configure les relations avant de paginer
+      
+
         if ($perPage == 0) { $perPage = $this->paginationLimit;}
 
         $query = $this->allQuery($search);
@@ -126,11 +140,9 @@ abstract class BaseService implements ServiceInterface
      * @param array $columns Colonnes à récupérer.
      * @return Collection
      */
-    public function all(array $search = [], int $skip = null, int $limit = null, array $columns = ['*']): Collection
+    public function all(array $columns = ['*']): Collection
     {
-        $query = $this->allQuery($search, $skip, $limit);
-
-        return $query->get($columns);
+        return $this->model::all($columns);
     }
 
     /**

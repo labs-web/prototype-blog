@@ -19,7 +19,9 @@ class UserRequest extends FormRequest
         return [
             'name' => 'required|max:255',
             'email' => 'required|max:255',
-            'password' => 'required|max:255'
+            'email_verified_at' => 'required',
+            'password' => 'required|max:255',
+            'remember_token' => 'required|max:255'
         ];
     }
 
@@ -30,8 +32,12 @@ class UserRequest extends FormRequest
             'name.max' => __('validation.nameMax'),
             'email.required' => __('validation.required', ['attribute' => __('PkgBlog::category.email')]),
             'email.max' => __('validation.emailMax'),
+            'email_verified_at.required' => __('validation.required', ['attribute' => __('PkgBlog::category.email_verified_at')]),
+            'email_verified_at.max' => __('validation.email_verified_atMax'),
             'password.required' => __('validation.required', ['attribute' => __('PkgBlog::category.password')]),
-            'password.max' => __('validation.passwordMax')
+            'password.max' => __('validation.passwordMax'),
+            'remember_token.required' => __('validation.required', ['attribute' => __('PkgBlog::category.remember_token')]),
+            'remember_token.max' => __('validation.remember_tokenMax')
         ];
     }
 }

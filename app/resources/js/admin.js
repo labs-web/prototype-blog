@@ -1,17 +1,22 @@
-import $ from 'admin-lte/plugins/jquery/jquery.min.js';
+// import $ from 'admin-lte/plugins/jquery/jquery.min.js';
+import $ from "jquery";
+import select2 from 'select2';
+select2(); // <-- select2 must be called
 
-import 'admin-lte/plugins/jquery/jquery.min.js';
-
-import 'bootstrap';
-import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
+// // import 'bootstrap';
+// // import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
 import "admin-lte/dist/js/adminlte";
-import 'admin-lte/plugins/select2/js/select2.min.js';
+
 
 import { setupSearchHandler } from './app.recherche';
 
+console.log($);
+$.noConflict();
+console.log($.fn.select2); // Devrait afficher la fonction Select2
+
 setupSearchHandler();
 
-
+// ManyToOne Select 
 $(document).ready(function () {
     // Vérifier si des champs dynamiques à remplir sont spécifiés
     if (window.dynamicSelectManyToOne && Array.isArray(window.dynamicSelectManyToOne)) {
@@ -46,3 +51,15 @@ $(document).ready(function () {
         });
     }
 });
+
+
+// ManyToMany Select 2 
+$(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+    
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+  })

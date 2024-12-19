@@ -5,15 +5,8 @@
         <thead>
             <tr>
                 <th>{{ ucfirst(__('PkgBlog::article.title')) }}</th>
-                
-                <th>{{ ucfirst(__('PkgBlog::article.slug')) }}</th>
-                
-                <th>{{ ucfirst(__('PkgBlog::article.content')) }}</th>
-                
-                <th>{{ ucfirst(__('PkgBlog::article.category_id')) }}</th>
-                
-                <th>{{ ucfirst(__('PkgBlog::article.user_id')) }}</th>
-                
+                <th>{{ ucfirst(__('PkgBlog::category.singular')) }}</th>
+                <th>{{ ucfirst(__('PkgBlog::user.singular')) }}</th>
                 <th class="text-center">{{ __('Core::msg.action') }}</th>
             </tr>
         </thead>
@@ -21,10 +14,8 @@
             @foreach ($data as $article)
                 <tr>
                     <td>{{ $article->title }}</td>
-                    <td>{{ $article->slug }}</td>
-                    <td>{{ $article->content }}</td>
-                    <td>{{ $article->category_id }}</td>
-                    <td>{{ $article->user_id }}</td>
+                    <td>{{ $article->category->name ?? '-' }}</td>
+                    <td>{{ $article->user->name ?? '-' }}</td>
                     <td class="text-center">
                         @can('show-ArticleController')
                             <a href="{{ route('articles.show', $article) }}" class="btn btn-default btn-sm">

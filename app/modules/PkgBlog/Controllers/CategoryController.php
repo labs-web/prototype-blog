@@ -4,7 +4,6 @@
 
 namespace Modules\PkgBlog\Controllers;
 
-
 use Modules\Core\Controllers\Base\AdminController;
 use Modules\PkgBlog\App\Requests\CategoryRequest;
 use Modules\PkgBlog\Services\CategoryService;
@@ -52,16 +51,13 @@ class CategoryController extends AdminController
     {
         $validatedData = $request->validated();
         $category = $this->categoryService->create($validatedData);
-        return redirect()->route('categories.index')->with(
-            'success',
-            __('Core::msg.addSuccess', [
-                'entityToString' => $category,
-                'modelName' =>  __('PkgBlog::category.singular')
-                ])
-        );
 
+
+        return redirect()->route('categories.index')->with('success', __('Core::msg.addSuccess', [
+            'entityToString' => $category,
+            'modelName' => __('PkgBlog::category.singular')
+        ]));
     }
-
     public function show(string $id)
     {
         $item = $this->categoryService->find($id);
@@ -78,6 +74,9 @@ class CategoryController extends AdminController
     {
         $validatedData = $request->validated();
         $category = $this->categoryService->update($id, $validatedData);
+
+
+
         return redirect()->route('categories.index')->with(
             'success',
             __('Core::msg.updateSuccess', [

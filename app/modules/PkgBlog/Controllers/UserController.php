@@ -4,7 +4,6 @@
 
 namespace Modules\PkgBlog\Controllers;
 
-
 use Modules\Core\Controllers\Base\AdminController;
 use Modules\PkgBlog\App\Requests\UserRequest;
 use Modules\PkgBlog\Services\UserService;
@@ -52,16 +51,13 @@ class UserController extends AdminController
     {
         $validatedData = $request->validated();
         $user = $this->userService->create($validatedData);
-        return redirect()->route('users.index')->with(
-            'success',
-            __('Core::msg.addSuccess', [
-                'entityToString' => $user,
-                'modelName' =>  __('PkgBlog::user.singular')
-                ])
-        );
 
+
+        return redirect()->route('users.index')->with('success', __('Core::msg.addSuccess', [
+            'entityToString' => $user,
+            'modelName' => __('PkgBlog::user.singular')
+        ]));
     }
-
     public function show(string $id)
     {
         $item = $this->userService->find($id);
@@ -78,6 +74,9 @@ class UserController extends AdminController
     {
         $validatedData = $request->validated();
         $user = $this->userService->update($id, $validatedData);
+
+
+
         return redirect()->route('users.index')->with(
             'success',
             __('Core::msg.updateSuccess', [

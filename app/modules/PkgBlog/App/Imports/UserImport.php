@@ -40,7 +40,9 @@ class UserImport implements ToModel, WithHeadingRow
         return new User([
             'name' => $row['name'],
             'email' => $row['email'],
+            'email_verified_at' => $row['email_verified_at'],
             'password' => $row['password'],
+            'remember_token' => $row['remember_token'],
         ]);
     }
 }

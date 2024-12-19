@@ -1,4 +1,4 @@
-{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
+{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}
 
 @extends('layouts.admin')
 @section('title', curd_index_title('PkgBlog::comment'))
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div id="data-container">
-                        @include('PkgBlog::comment.table')
+                        @include('PkgBlog::comment._table')
                         </div>
                     </div>
                 </div>

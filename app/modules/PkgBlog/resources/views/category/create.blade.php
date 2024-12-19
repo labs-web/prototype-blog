@@ -1,4 +1,4 @@
-{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}  
+{{-- Ce fichier est maintenu par ESSARRAJ Fouad --}}
 
 @extends('layouts.admin')
 @section('title', curd_index_add_label('PkgBlog::category'))
@@ -18,7 +18,7 @@
                             </h3>
                         </div>
                         <!-- Obtenir le formulaire -->
-                        @include('PkgBlog::category.fields')
+                        @include('PkgBlog::category._fields')
                     </div>
                 </div>
             </div>

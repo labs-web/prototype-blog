@@ -4,10 +4,10 @@
 
 namespace Modules\PkgBlog\Controllers;
 
-
 use Modules\Core\Controllers\Base\AdminController;
 use Modules\PkgBlog\App\Requests\TagRequest;
 use Modules\PkgBlog\Services\TagService;
+use Modules\PkgBlog\Services\ArticleService;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\PkgBlog\App\Exports\TagExport;
@@ -16,10 +16,12 @@ use Modules\PkgBlog\App\Imports\TagImport;
 class TagController extends AdminController
 {
     protected $tagService;
+    protected $articleService;
 
-    public function __construct(TagService $tagService)
+    public function __construct(TagService $tagService, ArticleService $articleService)
     {
         $this->tagService = $tagService;
+        $this->articleService = $articleService;
     }
 
     public function index(Request $request)
@@ -45,23 +47,24 @@ class TagController extends AdminController
     public function create()
     {
         $item = $this->tagService->createInstance();
-        return view('PkgBlog::tag.create', compact('item'));
+        $articles = $this->articleService->all();
+        return view('PkgBlog::tag.create', compact('item', 'articles'));
     }
 
     public function store(TagRequest $request)
     {
         $validatedData = $request->validated();
         $tag = $this->tagService->create($validatedData);
-        return redirect()->route('tags.index')->with(
-            'success',
-            __('Core::msg.addSuccess', [
-                'entityToString' => $tag,
-                'modelName' =>  __('PkgBlog::tag.singular')
-                ])
-        );
 
+        if ($request->has('articles')) {
+            $tag->articles()->sync($request->input('articles'));
+        }
+
+        return redirect()->route('tags.index')->with('success', __('Core::msg.addSuccess', [
+            'entityToString' => $tag,
+            'modelName' => __('PkgBlog::tag.singular')
+        ]));
     }
-
     public function show(string $id)
     {
         $item = $this->tagService->find($id);
@@ -71,13 +74,20 @@ class TagController extends AdminController
     public function edit(string $id)
     {
         $item = $this->tagService->find($id);
-        return view('PkgBlog::tag.edit', compact('item'));
+        $articles = $this->articleService->all();
+        return view('PkgBlog::tag.edit', compact('item', 'articles'));
     }
 
     public function update(TagRequest $request, string $id)
     {
         $validatedData = $request->validated();
         $tag = $this->tagService->update($id, $validatedData);
+
+
+        if ($request->has('articles')) {
+            $tag->articles()->sync($request->input('articles'));
+        }
+
         return redirect()->route('tags.index')->with(
             'success',
             __('Core::msg.updateSuccess', [

@@ -1,20 +1,18 @@
+/* select2 doit être importé avant : adminlte.css */
+@import 'select2';
+@import 'admin-lte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css';
 
-@import './font-adminlte/fonts.css';
-@import 'admin-lte/dist/css/adminlte.min.css';
+
 @import 'admin-lte/plugins/fontawesome-free/css/all.min.css';
 @import 'admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
 @import 'admin-lte/plugins/jqvmap/jqvmap.min.css';
-@import 'admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css';
+
+
 @import 'admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css';
 @import 'admin-lte/plugins/daterangepicker/daterangepicker.css';
 @import 'admin-lte/plugins/summernote/summernote-bs4.min.css';
-@import 'admin-lte/plugins/select2/css/select2.min.css';
+
+@import './font-adminlte/fonts.css';
+@import 'admin-lte';
+
 @import './loading-spin';
-
-/* 
-* {
-    font-family: "Nunito", sans-serif;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-} */
-
